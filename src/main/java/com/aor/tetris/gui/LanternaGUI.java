@@ -82,8 +82,10 @@ public class LanternaGUI implements GUI {
     }
 
     @Override
-    public void drawHero(Position position) {
-        drawCharacter(position.getX(), position.getY(), 'H', "#FFD700");
+    public void drawHero(Position position,String Color) {
+        TextGraphics tg = screen.newTextGraphics();
+        tg.setForegroundColor(TextColor.Factory.fromString(Color));
+        tg.putString(position.getX(), position.getY()," ");
     }
 
     @Override

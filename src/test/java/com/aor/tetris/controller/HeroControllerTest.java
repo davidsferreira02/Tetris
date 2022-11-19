@@ -1,10 +1,6 @@
 package com.aor.tetris.controller;
 
-import com.aor.tetris.controller.game.HeroController;
 import com.aor.tetris.model.Position;
-import com.aor.tetris.model.game.arena.Arena;
-import com.aor.tetris.model.game.elements.Hero;
-import com.aor.tetris.model.game.elements.Wall;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

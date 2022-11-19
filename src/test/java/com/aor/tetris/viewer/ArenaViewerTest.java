@@ -2,10 +2,6 @@ package com.aor.tetris.viewer;
 
 import com.aor.tetris.gui.GUI;
 import com.aor.tetris.model.Position;
-import com.aor.tetris.model.game.arena.Arena;
-import com.aor.tetris.model.game.elements.Hero;
-import com.aor.tetris.model.game.elements.Monster;
-import com.aor.tetris.model.game.elements.Wall;
 import com.aor.tetris.viewer.game.GameViewer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,13 +1,8 @@
 package com.aor.tetris.controller;
 
 import com.aor.tetris.Game;
-import com.aor.tetris.controller.game.MonsterController;
 import com.aor.tetris.gui.GUI;
 import com.aor.tetris.model.Position;
-import com.aor.tetris.model.game.arena.Arena;
-import com.aor.tetris.model.game.elements.Hero;
-import com.aor.tetris.model.game.elements.Monster;
-import com.aor.tetris.model.game.elements.Wall;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

@@ -1,9 +1,6 @@
 package com.aor.tetris.controller;
 
-import com.aor.tetris.controller.game.HeroController;
 import com.aor.tetris.gui.GUI;
-import com.aor.tetris.model.game.arena.Arena;
-import com.aor.tetris.model.game.arena.RandomArenaBuilder;
 import net.jqwik.api.*;
 import net.jqwik.api.constraints.IntRange;
 

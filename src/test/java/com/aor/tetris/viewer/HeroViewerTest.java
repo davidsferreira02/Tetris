@@ -1,7 +1,6 @@
 package com.aor.tetris.viewer;
 
 import com.aor.tetris.gui.GUI;
-import com.aor.tetris.model.game.elements.Hero;
 import com.aor.tetris.viewer.game.HeroViewer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
