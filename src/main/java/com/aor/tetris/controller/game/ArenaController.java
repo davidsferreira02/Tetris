@@ -3,7 +3,7 @@ package com.aor.tetris.controller.game;
 import com.aor.tetris.Game;
 import com.aor.tetris.gui.GUI;
 import com.aor.tetris.model.Position;
-import com.aor.tetris.model.game.arena.Screen;
+import com.aor.tetris.model.game.arena.Tetris;
 import com.aor.tetris.model.menu.Menu;
 import com.aor.tetris.states.MenuState;
 
@@ -11,7 +11,7 @@ public class ArenaController extends GameController {
 
     private long lastMovement;
 
-    public ArenaController(Screen arena) {
+    public ArenaController(Tetris arena) {
         super(arena);
         this.lastMovement = 0;
 

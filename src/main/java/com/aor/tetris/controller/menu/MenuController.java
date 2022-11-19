@@ -3,11 +3,8 @@ package com.aor.tetris.controller.menu;
 import com.aor.tetris.Game;
 import com.aor.tetris.controller.Controller;
 import com.aor.tetris.gui.GUI;
-import com.aor.tetris.model.Position;
-import com.aor.tetris.model.game.arena.Screen;
 import com.aor.tetris.model.menu.Menu;
 import com.aor.tetris.model.menu.Tutorial;
-import com.aor.tetris.states.GameState;
 import com.aor.tetris.states.TutorialState;
 
 import java.io.IOException;

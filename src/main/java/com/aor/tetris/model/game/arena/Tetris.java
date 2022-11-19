@@ -3,32 +3,25 @@ package com.aor.tetris.model.game.arena;
 import com.aor.tetris.model.Position;
 import com.aor.tetris.model.game.direction.Direction;
 import com.aor.tetris.model.game.forms.*;
-
-public class Screen {
+/*
+public class Tetris {
 
 
         protected Direction direction;
         private Position centralPosition;
         protected  String color;
-        private int largura;
-        private int altura;
 
 
-        public Screen(int largura,int altura){
-        this.largura=largura;
-        this.altura=altura;
+
+        public Tetris(Position position){
+
+            this.direction = Direction.UP;
+            this.centralPosition = new Position(position.getX(), position.getY());
 
         }
 
-        public int getLargura(){
-            return largura;
-        }
-        public int getAltura(){
-            return altura;
-        }
-
-        public Screen copy() {
-            Screen t = new I(this.centralPosition);
+        public Tetris copy() {
+            Tetris t = new I(this.centralPosition);
             if(this instanceof J) t = new J(this.centralPosition);
             else if(this instanceof L) t = new L(this.centralPosition);
             else if(this instanceof O) t = new O(this.centralPosition);
@@ -45,7 +38,7 @@ public class Screen {
             return color;
         }
 
-        //public Position[] getPositions(Direction direction);
+        public Position[] getPositions(Direction direction);
 
         public Position getCentralPosition(){return centralPosition;}
 
@@ -59,7 +52,7 @@ public class Screen {
 
         public Direction getDirection(){return this.direction;}
 
-        /*public Position[]  rotateRightPositions(){
+        public Position[]  rotateRightPositions(){
             Direction tempdirection = Direction.UP;
             switch(this.direction){
                 case UP:
@@ -76,7 +69,7 @@ public class Screen {
                     break;
             }
             return getActualPositions(this.centralPosition,tempdirection);
-        }*/
+        }
 
         public void  rotateRight(){
             switch(this.direction){
@@ -96,7 +89,7 @@ public class Screen {
         }
 
 
-       /* public Position[] rotateLeftPositions(){
+        public Position[] rotateLeftPositions(){
             Direction tempdirection = Direction.UP;
             switch(this.direction) {
                 case UP:
@@ -114,7 +107,7 @@ public class Screen {
             }
            // return getActualPositions(this.centralPosition,tempdirection);
 
-        }*/
+        }
 
         public void rotateLeft(){
             switch(this.direction) {
@@ -142,7 +135,7 @@ public class Screen {
         public void moveDown(){
             this.centralPosition = new Position(centralPosition.getX(), centralPosition.getY()+1);
         }
-       /* public Position[] moveRightPositions(){
+        public Position[] moveRightPositions(){
             return getActualPositions( new Position(centralPosition.getX()+1, centralPosition.getY() ),this.direction);
         }
         public Position[] moveLeftPositions(){
@@ -150,7 +143,7 @@ public class Screen {
         }
         public Position[] moveDownPositions(){
             return getActualPositions(new Position(centralPosition.getX(), centralPosition.getY()+1),this.direction);
-        }*/
+        }
 
         /*public Position[] getActualPositions(Position centralPosition,Direction direction){
            Position[] positions = getPositions(direction);
@@ -158,7 +151,8 @@ public class Screen {
                 positions[i] = new Position(positions[i].getX()+centralPosition.getX(),positions[i].getY()+centralPosition.getY());
             }
             return positions;
-        }*/
+        }
 
 
     }
+*/
