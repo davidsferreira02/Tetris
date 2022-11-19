@@ -1,17 +1,17 @@
 package com.aor.tetris.model.game.forms;
 
 import com.aor.tetris.model.Position;
-import com.aor.tetris.model.game.arena.Tetris;
+import com.aor.tetris.model.game.arena.Screen;
 import com.aor.tetris.model.game.direction.Direction;
 
-public class I extends Tetris {
+public class I extends Screen {
 
     public I(Position position) {
         super(position);
         this.color = "RED";
     }
 
-    public I(Tetris tetris) {
+    public I(Screen tetris) {
         super(tetris.getCentralPosition());
         this.color = "RED";
     }

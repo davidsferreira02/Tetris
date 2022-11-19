@@ -1,5 +1,6 @@
 package com.aor.tetris.gui;
 
+import com.aor.tetris.model.Color;
 import com.aor.tetris.model.Position;
 import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.graphics.TextGraphics;
@@ -26,7 +27,8 @@ class LanternaGUITest {
 
     @Test
     void drawHero() {
-        gui.drawHero(new Position(1, 1));
+        Color color=new Color();
+        gui.drawHero(new Position(1, 1), color.getColor("RED"));
 
         Mockito.verify(tg, Mockito.times(1)).setForegroundColor(new TextColor.RGB(255, 215, 0));
         Mockito.verify(tg, Mockito.times(1)).putString(1, 2, "H");
