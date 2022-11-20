@@ -28,10 +28,11 @@ public class EndGameViewerTest {
         endGameViewer.drawElements(gui);
         Mockito.verify(gui, Mockito.times(8)).drawText(Mockito.any(Position.class), Mockito.any(String.class),Mockito.any(String.class));
     }
-    /*@Test
-    public void draw(GUI gui) throws IOException {
-        drawElements(gui);
-        gui.refresh();
-    }*/
+    @Test
+    public void drawTest() throws IOException{
+        endGameViewer.draw(gui);
+        Mockito.verify(gui,Mockito.times(1)).refresh();
+    }
+
 
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.tetris.viewer.EndGameViewerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-20T21:43:07" hostname="LAPTOP-E57OMIBJ" time="0.103">
+<testsuite name="com.aor.tetris.viewer.EndGameViewerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-20T22:05:16" hostname="LAPTOP-E57OMIBJ" time="0.091">
   <properties/>
-  <testcase name="drawElementsTest()" classname="com.aor.tetris.viewer.EndGameViewerTest" time="0.103"/>
+  <testcase name="drawTest()" classname="com.aor.tetris.viewer.EndGameViewerTest" time="0.091"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
