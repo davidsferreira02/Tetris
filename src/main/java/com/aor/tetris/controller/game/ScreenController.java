@@ -52,36 +52,36 @@ public class ScreenController extends GameController {
              game.setState(null);
         }
     }
-
-
     private int moveDown() {
-    return 0;
+
+        Position [] position=getModel().getForms().moveDownPositions();
+        return 0;
     }
 
     private void dropBlocks(){
-        Position [] position=getModel().getForms().getActualPositions(getModel().getForms().getCentralPosition(),getModel().getForms().getDirection());
-        for(Position positions :position){
 
         }
-    }
 
 
 
 
 
     private void moveRight() {
+        Position [] position=getModel().getForms().moveRightPositions();
 
     }
 
     private void moveLeft() {
+        Position [] position=getModel().getForms().moveLeftPositions();
 
     }
 
     private void rotateRight() {
+        Position [] position=getModel().getForms().rotateRightPositions();
 
     }
 
     private void rotateLeft() {
-
+        Position [] position=getModel().getForms().rotateLeftPositions()
     }
 }
