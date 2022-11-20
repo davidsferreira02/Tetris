@@ -2,18 +2,19 @@ package com.aor.tetris.controller.game;
 
 import com.aor.tetris.Game;
 import com.aor.tetris.gui.GUI;
+
 import com.aor.tetris.model.Position;
-import com.aor.tetris.model.game.arena.Tetris;
 import com.aor.tetris.model.menu.Menu;
 import com.aor.tetris.states.MenuState;
+import com.aor.tetris.model.game.arena.Screen;
 
-public class ArenaController extends GameController {
+public class ScreenController extends GameController {
 
-    private long lastMovement;
+    private long lastControl;
 
-    public ArenaController(Tetris arena) {
-        super(arena);
-        this.lastMovement = 0;
+    public ScreenController(Screen screen) {
+        super(screen);
+        this.lastControl = 0;
 
 
     }
@@ -21,9 +22,9 @@ public class ArenaController extends GameController {
     @Override
     public void step(Game game, GUI.ACTION action, long time) {
         int endOfGame = 1;
+        this.lastControl=time;
         switch (action){
             case QUIT:
-
                 game.setState(new MenuState(new Menu()));
                 break;
             case DOWN:
@@ -48,18 +49,20 @@ public class ArenaController extends GameController {
                 break;
         }
         if (endOfGame == -1) {
-
+             game.setState(null);
         }
     }
 
 
     private int moveDown() {
-
     return 0;
     }
 
-    private void dropBlocks() {
-   Position [] positions;
+    private void dropBlocks(){
+        Position [] position=getModel().getForms().getActualPositions(getModel().getForms().getCentralPosition(),getModel().getForms().getDirection());
+        for(Position positions :position){
+
+        }
     }
 
 

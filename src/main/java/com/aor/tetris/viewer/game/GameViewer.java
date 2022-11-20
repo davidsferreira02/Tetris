@@ -2,13 +2,14 @@ package com.aor.tetris.viewer.game;
 
 import com.aor.tetris.gui.GUI;
 import com.aor.tetris.model.Position;
-import com.aor.tetris.model.game.arena.Tetris;
+import com.aor.tetris.model.game.arena.Screen;
 import com.aor.tetris.viewer.Viewer;
 import com.aor.tetris.model.Color;
 
-public class GameViewer extends Viewer<Tetris> {
-    public GameViewer(Tetris arena) {
-        super(arena);
+
+public class GameViewer extends Viewer<Screen> {
+    public GameViewer(Screen screen) {
+        super(screen);
     }
 
     @Override

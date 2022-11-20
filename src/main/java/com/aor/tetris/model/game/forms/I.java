@@ -3,15 +3,15 @@ package com.aor.tetris.model.game.forms;
 import com.aor.tetris.model.Position;
 import com.aor.tetris.model.game.direction.Direction;
 
-public class I extends Tetris {
+public class I extends Forms {
 
     public I(Position position) {
         super(position);
         this.color = "RED";
     }
 
-    public I(Tetris tetris) {
-        super(tetris.getCentralPosition());
+    public I(Forms forms) {
+        super(forms.getCentralPosition());
         this.color = "RED";
     }
 
