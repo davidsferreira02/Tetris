@@ -4,6 +4,7 @@ import com.aor.tetris.Game;
 import com.aor.tetris.gui.GUI;
 
 import com.aor.tetris.model.Position;
+import com.aor.tetris.model.game.BlockRestrictions;
 import com.aor.tetris.model.menu.Menu;
 import com.aor.tetris.states.MenuState;
 import com.aor.tetris.model.game.arena.Screen;
@@ -67,21 +68,21 @@ public class ScreenController extends GameController {
 
 
     private void moveRight() {
-        Position [] position=getModel().getForms().moveRightPositions();
-
+        Position[] position=getModel().getForms().moveRightPositions();
+    boolean canMove=getModel().getBlockHero().canMove(position);
     }
 
     private void moveLeft() {
         Position [] position=getModel().getForms().moveLeftPositions();
-
+        boolean canMove=getModel().getBlockHero().canMove(position);
     }
 
     private void rotateRight() {
         Position [] position=getModel().getForms().rotateRightPositions();
-
+        boolean canMove=getModel().getBlockHero().canMove(position);
     }
 
     private void rotateLeft() {
-        Position [] position=getModel().getForms().rotateLeftPositions()
+        Position [] position=getModel().getForms().rotateLeftPositions();
     }
 }
