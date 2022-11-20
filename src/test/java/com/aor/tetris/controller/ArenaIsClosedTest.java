@@ -1,15 +1,12 @@
 package com.aor.tetris.controller;
 
-import com.aor.tetris.controller.game.HeroController;
 import com.aor.tetris.gui.GUI;
-import com.aor.tetris.model.game.arena.Arena;
-import com.aor.tetris.model.game.arena.RandomArenaBuilder;
 import net.jqwik.api.*;
 import net.jqwik.api.constraints.IntRange;
 
 import java.util.List;
 
-public class ArenaIsClosedTest {
+/*public class ArenaIsClosedTest {
     @Property
     void allArenasAreClosed(@ForAll @IntRange(min = 3, max = 50) int width, @ForAll @IntRange(min = 3, max = 50) int height, @ForAll List<GUI.@From("moveActions") ACTION> actions) {
         RandomArenaBuilder rab = new RandomArenaBuilder(width, height, 0);
@@ -30,3 +27,4 @@ public class ArenaIsClosedTest {
         return Arbitraries.of(GUI.ACTION.UP, GUI.ACTION.RIGHT, GUI.ACTION.DOWN, GUI.ACTION.LEFT);
     }
 }
+*/

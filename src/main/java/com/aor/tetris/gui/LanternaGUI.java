@@ -75,20 +75,23 @@ public class LanternaGUI implements GUI {
         if (keyStroke.getKeyType() == KeyType.ArrowRight) return ACTION.RIGHT;
         if (keyStroke.getKeyType() == KeyType.ArrowDown) return ACTION.DOWN;
         if (keyStroke.getKeyType() == KeyType.ArrowLeft) return ACTION.LEFT;
-
         if (keyStroke.getKeyType() == KeyType.Enter) return ACTION.SELECT;
+        if (keyStroke.getKeyType() == KeyType.Character && Character.toLowerCase(keyStroke.getCharacter()) == 'f') return ACTION.L;
+        if (keyStroke.getKeyType() == KeyType.Character && Character.toLowerCase(keyStroke.getCharacter()) == ' ') return ACTION.SPACE;
 
         return ACTION.NONE;
     }
 
     @Override
-    public void drawHero(Position position) {
-        drawCharacter(position.getX(), position.getY(), 'H', "#FFD700");
+    public void drawHero(Position position,String Color) {
+        TextGraphics tg = screen.newTextGraphics();
+        tg.setForegroundColor(TextColor.Factory.fromString(Color));
+        tg.putString(position.getX(), position.getY()," ");
     }
 
     @Override
     public void drawWall(Position position) {
-        drawCharacter(position.getX(), position.getY(), '#', "#3333FF");
+        drawCharacter(position.getX(), position.getY(), '-', "#3333FF");
     }
 
     @Override
