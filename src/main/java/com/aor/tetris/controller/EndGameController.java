@@ -8,7 +8,7 @@ import com.aor.tetris.states.MenuState;
 
 import java.io.IOException;
 
-public abstract class EndGameController extends Controller<EndGame>{
+public class EndGameController extends Controller<EndGame>{
 
     public EndGameController (EndGame end){
         super(end);
