@@ -17,7 +17,7 @@ public class BlockRestrictions {
         this.height = height;
     }
 
-    public BlockHero [][] getBlockHero(){
+    public BlockHero [][] getBlockRestrictions(){
         return blockHero;
     }
 
@@ -47,5 +47,10 @@ public class BlockRestrictions {
             }
         }
         return true;
+    }
+
+    public void addBlockHero(BlockHero Hero,Position position){
+        blockHero[position.getX()][position.getX()]=Hero;
+
     }
 }

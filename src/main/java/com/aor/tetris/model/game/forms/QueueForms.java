@@ -29,29 +29,29 @@ public class QueueForms{
     private Forms generateLast() {
         Random random = new Random();
         int num = random.nextInt(7);
-        Forms next = new Z(new Position(5,1));
+        Forms nextBlock = new Z(new Position(7,1));
 
         switch (num){
             case 0:
-                next = new I(new Position(5,0));
+                nextBlock = new I(new Position(7,0));
                 break;
             case 1:
-                next = new J(new Position(5,1));
+                nextBlock = new J(new Position(7,1));
                 break;
             case 2:
-                next = new L(new Position(5,1));
+                nextBlock = new L(new Position(7,1));
                 break;
             case 3:
-                next = new O(new Position(5,1));
+                nextBlock = new O(new Position(7,1));
                 break;
             case 4:
-                next = new S(new Position(5,1));
+                nextBlock = new S(new Position(7,1));
                 break;
             case 5:
-                next = new T(new Position(5,1));
+                nextBlock = new T(new Position(7,1));
                 break;
         }
 
-        return next;
+        return nextBlock;
     }
 }

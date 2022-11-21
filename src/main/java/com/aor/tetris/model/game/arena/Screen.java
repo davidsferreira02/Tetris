@@ -1,6 +1,8 @@
 package com.aor.tetris.model.game.arena;
 
 
+import com.aor.tetris.model.game.BlockRestrictions;
+import com.aor.tetris.model.game.elements.BlockHero;
 import com.aor.tetris.model.game.forms.Forms;
 import com.aor.tetris.model.game.forms.QueueForms;
 
@@ -10,6 +12,8 @@ public class Screen {
 
         private QueueForms queue;
         private Forms forms;
+
+        private BlockRestrictions blockRestrictions;
 
 
 
@@ -39,4 +43,8 @@ public class Screen {
         public Forms getForms() { return forms; }
 
         public void setForms(Forms fomrs) { this.forms = fomrs;}
-    }
+
+        public BlockRestrictions getBlockRestrictions(){
+            return blockRestrictions;
+        }
+}
