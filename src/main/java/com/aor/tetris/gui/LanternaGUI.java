@@ -1,6 +1,10 @@
 package com.aor.tetris.gui;
 
+import com.aor.tetris.model.Arena.Arena;
+import com.aor.tetris.model.Color;
 import com.aor.tetris.model.Position;
+import com.aor.tetris.model.game.Forms.QueueOfForms;
+import com.aor.tetris.model.game.Forms.Forms;
 import com.googlecode.lanterna.TerminalSize;
 import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.graphics.TextGraphics;
@@ -11,21 +15,20 @@ import com.googlecode.lanterna.screen.TerminalScreen;
 import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.terminal.Terminal;
 import com.googlecode.lanterna.terminal.swing.AWTTerminalFontConfiguration;
+import com.googlecode.lanterna.terminal.swing.AWTTerminalFrame;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-public class LanternaGUI implements GUI {
+public class LanternaGUI implements GUI{
     private final Screen screen;
+    private final com.aor.tetris.model.Color colors = new Color();
 
-    public LanternaGUI(Screen screen) {
-        this.screen = screen;
-    }
-
-    public LanternaGUI(int width, int height) throws IOException, FontFormatException, URISyntaxException {
+    public LanternaGUI(int width, int height) throws IOException, URISyntaxException, FontFormatException {
         AWTTerminalFontConfiguration fontConfig = loadSquareFont();
         Terminal terminal = createTerminal(width, height, fontConfig);
         this.screen = createScreen(terminal);
@@ -42,16 +45,17 @@ public class LanternaGUI implements GUI {
     }
 
     private Terminal createTerminal(int width, int height, AWTTerminalFontConfiguration fontConfig) throws IOException {
-        TerminalSize terminalSize = new TerminalSize(width, height + 1);
-        DefaultTerminalFactory terminalFactory = new DefaultTerminalFactory()
-                .setInitialTerminalSize(terminalSize);
+        TerminalSize terminalSize = new TerminalSize(width, height);
+        DefaultTerminalFactory terminalFactory = new DefaultTerminalFactory().setInitialTerminalSize(terminalSize);
         terminalFactory.setForceAWTOverSwing(true);
         terminalFactory.setTerminalEmulatorFontConfiguration(fontConfig);
         Terminal terminal = terminalFactory.createTerminal();
+        ((AWTTerminalFrame) terminal).setTitle("--TETRIS--");
+        ((AWTTerminalFrame) terminal).setIconImage(ImageIO.read(getClass().getClassLoader().getResource("tetris.jpg")));
         return terminal;
     }
 
-    private AWTTerminalFontConfiguration loadSquareFont() throws URISyntaxException, FontFormatException, IOException {
+    private AWTTerminalFontConfiguration loadSquareFont() throws FontFormatException, IOException, URISyntaxException {
         URL resource = getClass().getClassLoader().getResource("fonts/square.ttf");
         File fontFile = new File(resource.toURI());
         Font font = Font.createFont(Font.TRUETYPE_FONT, fontFile);
@@ -59,44 +63,8 @@ public class LanternaGUI implements GUI {
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         ge.registerFont(font);
 
-        Font loadedFont = font.deriveFont(Font.PLAIN, 25);
-        AWTTerminalFontConfiguration fontConfig = AWTTerminalFontConfiguration.newInstance(loadedFont);
-        return fontConfig;
-    }
-
-    public ACTION getNextAction() throws IOException {
-        KeyStroke keyStroke = screen.pollInput();
-        if (keyStroke == null) return ACTION.NONE;
-
-        if (keyStroke.getKeyType() == KeyType.EOF) return ACTION.QUIT;
-        if (keyStroke.getKeyType() == KeyType.Character && keyStroke.getCharacter() == 'q') return ACTION.QUIT;
-
-        if (keyStroke.getKeyType() == KeyType.ArrowUp) return ACTION.UP;
-        if (keyStroke.getKeyType() == KeyType.ArrowRight) return ACTION.RIGHT;
-        if (keyStroke.getKeyType() == KeyType.ArrowDown) return ACTION.DOWN;
-        if (keyStroke.getKeyType() == KeyType.ArrowLeft) return ACTION.LEFT;
-        if (keyStroke.getKeyType() == KeyType.Enter) return ACTION.SELECT;
-        if (keyStroke.getKeyType() == KeyType.Character && Character.toLowerCase(keyStroke.getCharacter()) == 'f') return ACTION.L;
-        if (keyStroke.getKeyType() == KeyType.Character && Character.toLowerCase(keyStroke.getCharacter()) == ' ') return ACTION.SPACE;
-
-        return ACTION.NONE;
-    }
-
-    @Override
-    public void drawHero(Position position,String Color) {
-        TextGraphics tg = screen.newTextGraphics();
-        tg.setForegroundColor(TextColor.Factory.fromString(Color));
-        tg.putString(position.getX(), position.getY()," ");
-    }
-
-    @Override
-    public void drawWall(Position position) {
-        drawCharacter(position.getX(), position.getY(), '-', "#3333FF");
-    }
-
-    @Override
-    public void drawMonster(Position position) {
-        drawCharacter(position.getX(), position.getY(), '@', "#CC0000");
+        Font loadedFont = font.deriveFont(Font.PLAIN, 30);
+        return AWTTerminalFontConfiguration.newInstance(loadedFont);
     }
 
     @Override
@@ -106,10 +74,34 @@ public class LanternaGUI implements GUI {
         tg.putString(position.getX(), position.getY(), text);
     }
 
-    private void drawCharacter(int x, int y, char c, String color) {
+    @Override
+    public void drawSquare(Position position, String color){
         TextGraphics tg = screen.newTextGraphics();
-        tg.setForegroundColor(TextColor.Factory.fromString(color));
-        tg.putString(x, y + 1, "" + c);
+        tg.setBackgroundColor(TextColor.Factory.fromString(color));
+        tg.putString(position.getX(), position.getY(), " ");
+    }
+
+
+    @Override
+    public ACTION getNextAction() throws IOException {
+        KeyStroke keyStroke = screen.pollInput();
+        if (keyStroke == null) return ACTION.NONE;
+
+        if (keyStroke.getKeyType() == KeyType.EOF) return ACTION.QUIT;
+        if (keyStroke.getKeyType() == KeyType.Character && keyStroke.getCharacter() == 'q') return ACTION.QUIT;
+        if (keyStroke.getKeyType() == KeyType.Escape) return ACTION.QUIT;
+
+        if (keyStroke.getKeyType() == KeyType.ArrowUp || (keyStroke.getKeyType() == KeyType.Character && Character.toLowerCase(keyStroke.getCharacter()) == 'x')) return ACTION.UP;
+        if (keyStroke.getKeyType() == KeyType.ArrowRight) return ACTION.RIGHT;
+        if (keyStroke.getKeyType() == KeyType.ArrowDown) return ACTION.DOWN;
+        if (keyStroke.getKeyType() == KeyType.ArrowLeft) return ACTION.LEFT;
+        if (keyStroke.getKeyType() == KeyType.Character && Character.toLowerCase(keyStroke.getCharacter()) == 'z') return ACTION.Z;
+        if (keyStroke.getKeyType() == KeyType.Character && Character.toLowerCase(keyStroke.getCharacter()) == ' ') return ACTION.SPACE;
+
+
+        if (keyStroke.getKeyType() == KeyType.Enter) return ACTION.SELECT;
+
+        return ACTION.NONE;
     }
 
     @Override
@@ -125,5 +117,50 @@ public class LanternaGUI implements GUI {
     @Override
     public void close() throws IOException {
         screen.close();
+    }
+
+    @Override
+    public void drawForms(Forms forms){
+        if (forms != null) {
+            for (Position position : forms.getActualPosition(forms.getCentralPosition(), forms.getDirection())) {
+                drawSquare(new Position(position.getX() + 1, 1 + position.getY()), colors.getColor(forms.getColor()));
+            }
+        }
+    }
+
+    @Override
+    public void drawArena(Arena arena){
+        for(int y = 0; y < arena.getArena().length; y++){
+            for(int x = 0; x < arena.getArena()[0].length; x++){
+                if (arena.getArena()[y][x] != null)
+                    drawSquare(new Position(x+1,1+y), colors.getColor(arena.getArena()[y][x].getColor()));
+            }
+        }
+    }
+
+    @Override
+    public void drawQueue(QueueOfForms queue){
+        for(int i = 14; i<20;i++) {
+            for(int j = 10; j < 20;j++) {
+                drawSquare(new Position(i, j), colors.getColor("GRAY"));
+            }
+        }
+
+        for(int i = 11;i <= 17;i+=3) {
+            for(int j = 15;j <19;j++ ) {
+                drawSquare(new Position(j, i), colors.getColor("DARKER_GRAY"));
+                drawSquare(new Position(j, i+1), colors.getColor("DARKER_GRAY"));
+            }
+            Forms forms = queue.getFormsQueue().get((i - 11)/3);
+            drawTetriminoPos(forms, new Position(17,  i + 1));
+        }
+    }
+
+    private void drawTetriminoPos(Forms forms, Position CentralPos){
+        if (forms != null) {
+            for (Position position : forms.getPositions(forms.getDirection())) {
+                drawSquare(new Position(position.getX() + CentralPos.getX(), position.getY() + CentralPos.getY()), colors.getColor(forms.getColor()));
+            }
+        }
     }
 }

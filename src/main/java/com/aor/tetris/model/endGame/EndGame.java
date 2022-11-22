@@ -1,10 +1,10 @@
-package com.aor.tetris.model.menu;
+package com.aor.tetris.model.endGame;
 
-public class Tutorial {
+public class EndGame {
 
     private final String entry;
 
-    public Tutorial(){
+    public EndGame(){
         this.entry = "Exit";
     }
 

@@ -1,19 +1,26 @@
 package com.aor.tetris.gui;
-
 import com.aor.tetris.model.Position;
+import com.aor.tetris.model.Arena.Arena;
+import com.aor.tetris.model.game.Forms.QueueOfForms;
+import com.aor.tetris.model.game.Forms.Forms;
 
 import java.io.IOException;
 
 public interface GUI {
     ACTION getNextAction() throws IOException;
 
-    void drawHero(Position position,String Color);
+    void drawQueue(QueueOfForms queue);
 
-    void drawWall(Position position);
 
-    void drawMonster(Position position);
+
+    void drawArena(Arena arena);
+
+    void drawForms(Forms forms);
+
 
     void drawText(Position position, String text, String color);
+
+    void drawSquare(Position position, String color);
 
     void clear();
 
@@ -21,5 +28,5 @@ public interface GUI {
 
     void close() throws IOException;
 
-    enum ACTION {UP, RIGHT, DOWN, LEFT, NONE, QUIT, SELECT,L,SPACE}
+    enum ACTION {UP, RIGHT, DOWN, LEFT, NONE, QUIT, SELECT, Z, SPACE}
 }

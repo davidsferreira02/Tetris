@@ -1,32 +1,35 @@
 package com.aor.tetris.model;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-public class Color {
-    private final Map<String, String> COLOR = new HashMap<>();
+public class Color{
+    private final Map<String, String> COLORS = new HashMap<>();
+
     public Color(){
-        loadColors();
+        loadCOLORS();
     }
-    private void loadColors(){
-        COLOR.put("RED", "#FF0000");
-        COLOR.put("LIGHT_GRAY","#B3B3B3");
-        COLOR.put("CYAN", "#00FFFF");;
-        COLOR.put("GREEN", "#00FF00");
-        COLOR.put("WHITE", "#FFFFFF");
-        COLOR.put("BLUE", "#0000FF");
-        COLOR.put("ORANGE", "#FF7F00");
-        COLOR.put("GRAY","#666666");
-        COLOR.put("YELLOW", "#FFFF00");
-        COLOR.put("DARKER_GRAY","#4B4B4B");
-        COLOR.put("PURPLE", "#800080");
+
+    private void loadCOLORS(){
+        COLORS.put("CYAN", "#00FFFF");
+        COLORS.put("YELLOW", "#FFFF00");
+        COLORS.put("PURPLE", "#800080");
+        COLORS.put("GREEN", "#00FF00");
+        COLORS.put("RED", "#FF0000");
+        COLORS.put("BLUE", "#0000FF");
+        COLORS.put("ORANGE", "#FF7F00");
+        COLORS.put("WHITE", "#FFFFFF");
+        COLORS.put("LIGHT_GRAY","#B3B3B3");
+        COLORS.put("GRAY","#666666");
+        COLORS.put("DARKER_GRAY","#4B4B4B");
+
+
     }
 
     public String getColor(String color){
-        return COLOR.get(color);
+        return COLORS.get(color);
     }
-    public Map<String, String> getCOLORS(){
-        return COLOR;
-    }
-
 }
+

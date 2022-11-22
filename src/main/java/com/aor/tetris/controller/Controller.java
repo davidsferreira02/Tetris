@@ -3,8 +3,6 @@ package com.aor.tetris.controller;
 import com.aor.tetris.Game;
 import com.aor.tetris.gui.GUI;
 
-import java.io.IOException;
-
 public abstract class Controller<T> {
     private final T model;
 
@@ -16,5 +14,5 @@ public abstract class Controller<T> {
         return model;
     }
 
-    public abstract void step(Game game, GUI.ACTION action, long time) throws IOException;
+    public abstract void step(Game main, GUI.ACTION action, long time);
 }

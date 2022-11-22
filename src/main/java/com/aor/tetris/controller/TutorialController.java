@@ -1,11 +1,9 @@
-package com.aor.tetris.controller.menu;
-
+package com.aor.tetris.controller;
 
 import com.aor.tetris.Game;
-import com.aor.tetris.controller.Controller;
 import com.aor.tetris.gui.GUI;
 import com.aor.tetris.model.menu.Menu;
-import com.aor.tetris.model.menu.Tutorial;
+import com.aor.tetris.model.Tutorial.Tutorial;
 import com.aor.tetris.states.MenuState;
 
 public class TutorialController extends Controller<Tutorial> {

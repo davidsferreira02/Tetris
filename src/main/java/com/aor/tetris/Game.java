@@ -10,24 +10,35 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 
 public class Game {
-    private final LanternaGUI gui;
+    private static Game instance;
     private State state;
+    private final LanternaGUI gui;
 
-    public Game() throws FontFormatException, IOException, URISyntaxException {
-        this.gui = new LanternaGUI(20, 20);
-        this.state = new MenuState(new Menu());
+
+    private Game() throws IOException, URISyntaxException, FontFormatException {
+        gui = new LanternaGUI(22, 22);
+        state = new MenuState(new Menu());
     }
 
-    public static void main(String[] args) throws IOException, FontFormatException, URISyntaxException {
-        new Game().start();
+    public static Game getInstance() throws IOException, URISyntaxException, FontFormatException {
+        if (instance == null){
+            instance = new Game();
+        }
+        return instance;
     }
 
-    public void setState(State state) {
+    public static void main(String[] args) throws IOException, URISyntaxException, FontFormatException {
+        getInstance().start();
+    }
+
+    public void setState(State state){
         this.state = state;
     }
 
+    public State getState() {return state;}
+
     private void start() throws IOException {
-        int FPS = 10;
+        int FPS = 40;
         int frameTime = 1000 / FPS;
 
         while (this.state != null) {
@@ -46,4 +57,5 @@ public class Game {
 
         gui.close();
     }
+
 }

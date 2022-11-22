@@ -1,11 +1,10 @@
 package com.aor.tetris.states;
 
-
 import com.aor.tetris.controller.Controller;
-import com.aor.tetris.controller.menu.TutorialController;
-import com.aor.tetris.model.menu.Tutorial;
+import com.aor.tetris.controller.TutorialController;
+import com.aor.tetris.model.Tutorial.Tutorial;
+import com.aor.tetris.viewer.TutorialViewer;
 import com.aor.tetris.viewer.Viewer;
-import com.aor.tetris.viewer.menu.TutorialViewer;
 
 public class TutorialState extends State<Tutorial>{
     public TutorialState(Tutorial model){

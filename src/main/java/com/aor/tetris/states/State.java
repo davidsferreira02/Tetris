@@ -7,7 +7,8 @@ import com.aor.tetris.viewer.Viewer;
 
 import java.io.IOException;
 
-public abstract class State<T> {
+
+public abstract class State <T> {
     private final T model;
     private final Controller<T> controller;
     private final Viewer<T> viewer;
@@ -26,9 +27,10 @@ public abstract class State<T> {
         return model;
     }
 
-    public void step(Game game, GUI gui, long time) throws IOException {
+    public void step(Game main, GUI gui, long time) throws IOException {
         GUI.ACTION action = gui.getNextAction();
-        controller.step(game, action, time);
+        controller.step(main, action, time);
         viewer.draw(gui);
     }
 }
+
