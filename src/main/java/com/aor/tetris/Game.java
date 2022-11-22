@@ -2,7 +2,7 @@ package com.aor.tetris;
 
 import com.aor.tetris.gui.LanternaGUI;
 import com.aor.tetris.model.menu.Menu;
-import com.aor.tetris.states.MenuState;
+import com.aor.tetris.states.Menu.MenuState;
 import com.aor.tetris.states.State;
 
 import java.awt.*;
@@ -34,8 +34,6 @@ public class Game {
     public void setState(State state){
         this.state = state;
     }
-
-    public State getState() {return state;}
 
     private void start() throws IOException {
         int FPS = 40;

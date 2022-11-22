@@ -1,10 +1,10 @@
 package com.aor.tetris.gui;
 
 import com.aor.tetris.model.Arena.Arena;
-import com.aor.tetris.model.Color;
-import com.aor.tetris.model.Position;
-import com.aor.tetris.model.game.Forms.QueueOfForms;
-import com.aor.tetris.model.game.Forms.Forms;
+import com.aor.tetris.model.Hero.Color;
+import com.aor.tetris.model.Hero.Position;
+import com.aor.tetris.model.Forms.QueueOfForms;
+import com.aor.tetris.model.Forms.Forms;
 import com.googlecode.lanterna.TerminalSize;
 import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.graphics.TextGraphics;

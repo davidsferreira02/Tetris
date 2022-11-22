@@ -4,12 +4,12 @@ package com.aor.tetris.controller.game;
 import com.aor.tetris.Game;
 import com.aor.tetris.gui.GUI;
 import com.aor.tetris.model.endGame.EndGame;
-import com.aor.tetris.model.Position;
+import com.aor.tetris.model.Hero.Position;
 import com.aor.tetris.model.menu.Menu;
-import com.aor.tetris.model.game.BlockHero;
+import com.aor.tetris.model.Hero.BlockHero;
 import com.aor.tetris.model.Arena.Screen;
-import com.aor.tetris.states.EndGameState;
-import com.aor.tetris.states.MenuState;
+import com.aor.tetris.states.endGame.EndGameState;
+import com.aor.tetris.states.Menu.MenuState;
 
 public class ScreenController extends GameController{
     private long lastMovement;

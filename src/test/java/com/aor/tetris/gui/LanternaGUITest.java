@@ -1,7 +1,7 @@
 package com.aor.tetris.gui;
 
-import com.aor.tetris.model.Color;
-import com.aor.tetris.model.Position;
+import com.aor.tetris.model.Hero.Color;
+import com.aor.tetris.model.Hero.Position;
 import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.graphics.TextGraphics;
 import com.googlecode.lanterna.screen.Screen;

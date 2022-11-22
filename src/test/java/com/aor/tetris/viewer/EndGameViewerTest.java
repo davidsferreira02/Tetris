@@ -1,11 +1,10 @@
 package com.aor.tetris.viewer;
 
 import com.aor.tetris.gui.GUI;
-import com.aor.tetris.model.Color;
-import com.aor.tetris.model.Position;
+import com.aor.tetris.model.Hero.Position;
 import com.aor.tetris.model.game.EndGame.EndGame;
 import com.aor.tetris.viewer.EndGame.EndGameViewer;
-import org.junit.jupiter.api.BeforeEach;
+import com.aor.tetris.viewer.endGame.EndGameViewer;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 

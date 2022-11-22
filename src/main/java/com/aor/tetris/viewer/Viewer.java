@@ -1,7 +1,7 @@
 package com.aor.tetris.viewer;
 
 import com.aor.tetris.gui.GUI;
-import com.aor.tetris.model.Color;
+import com.aor.tetris.model.Hero.Color;
 
 import java.io.IOException;
 

@@ -1,7 +1,7 @@
 package com.aor.tetris.viewer;
 
 import com.aor.tetris.gui.GUI;
-import com.aor.tetris.model.Position;
+import com.aor.tetris.model.Hero.Position;
 import com.aor.tetris.model.game.arena.Screen;
 import com.aor.tetris.viewer.game.GameViewer;
 import org.junit.jupiter.api.BeforeEach;

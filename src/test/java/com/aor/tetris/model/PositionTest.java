@@ -1,5 +1,6 @@
 package com.aor.tetris.model;
 
+import com.aor.tetris.model.Hero.Position;
 import net.jqwik.api.ForAll;
 import net.jqwik.api.Property;
 

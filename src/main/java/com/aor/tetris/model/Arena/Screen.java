@@ -1,7 +1,7 @@
 package com.aor.tetris.model.Arena;
 
-import com.aor.tetris.model.game.Forms.Forms;
-import com.aor.tetris.model.game.Forms.QueueOfForms;
+import com.aor.tetris.model.Forms.Forms;
+import com.aor.tetris.model.Forms.QueueOfForms;
 
 public class Screen {
 

@@ -1,7 +1,7 @@
 package com.aor.tetris.model.Arena;
 
-import com.aor.tetris.model.Position;
-import com.aor.tetris.model.game.BlockHero;
+import com.aor.tetris.model.Hero.Position;
+import com.aor.tetris.model.Hero.BlockHero;
 
 public class Arena {
 
