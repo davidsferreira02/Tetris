@@ -1,11 +1,6 @@
 package com.aor.tetris.model;
 
-import com.aor.tetris.controller.Controller;
-import com.aor.tetris.controller.menu.MenuController;
 import com.aor.tetris.model.menu.Menu;
-import com.aor.tetris.states.State;
-import com.aor.tetris.viewer.Viewer;
-import com.aor.tetris.viewer.menu.MenuViewer;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

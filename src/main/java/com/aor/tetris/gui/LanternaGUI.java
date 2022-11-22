@@ -26,7 +26,7 @@ import java.net.URL;
 
 public class LanternaGUI implements GUI{
     private final Screen screen;
-    private final com.aor.tetris.model.Color colors = new Color();
+    private final Color colors = new Color();
 
     public LanternaGUI(int width, int height) throws IOException, URISyntaxException, FontFormatException {
         AWTTerminalFontConfiguration fontConfig = loadSquareFont();
