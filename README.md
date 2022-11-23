@@ -5,8 +5,8 @@
 | Name                 | Number    | E-Mail                 |
 | -------------------- | --------- | ---------------------- |
 | Nuno Silva           | 202108827 |up202108827@edu.fe.up.pt|
-|       |  ||
-|       |  ||
+| David Ferreira       | 202006302 |up202006302@edu.fc.up.pt|
+| Gonçalo Santos       | 202108839 |up202108839@edu.fe.up.pt|
 
 **Gameplay**
 
