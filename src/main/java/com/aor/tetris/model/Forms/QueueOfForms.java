@@ -23,29 +23,32 @@ public class QueueOfForms {
     private Forms generateLast() {
         Random random = new Random();
         int num = random.nextInt(7);
-        Forms next = new Z(new Position(10,1));
+        Forms nextForms=new I(new Position(10,0));
 
         switch (num){
             case 0:
-                next = new I(new Position(10,0));
+                nextForms = new I(new Position(10,0));
                 break;
             case 1:
-                next = new J(new Position(10,1));
+                nextForms = new J(new Position(10,1));
                 break;
             case 2:
-                next = new L(new Position(10,1));
+                nextForms = new L(new Position(10,1));
                 break;
             case 3:
-                next = new O(new Position(10,1));
+                nextForms = new O(new Position(10,1));
                 break;
             case 4:
-                next = new S(new Position(10,1));
+                nextForms = new S(new Position(10,1));
                 break;
             case 5:
-                next = new T(new Position(10,1));
+                nextForms = new T(new Position(10,1));
                 break;
+            case 6:
+                nextForms = new Z(new Position(10,1));
         }
 
-        return next;
+
+        return nextForms;
     }
 }
