@@ -50,8 +50,8 @@ public class LanternaGUI implements GUI{
         terminalFactory.setForceAWTOverSwing(true);
         terminalFactory.setTerminalEmulatorFontConfiguration(fontConfig);
         Terminal terminal = terminalFactory.createTerminal();
-        ((AWTTerminalFrame) terminal).setTitle("--TETRIS--");
-        ((AWTTerminalFrame) terminal).setIconImage(ImageIO.read(getClass().getClassLoader().getResource("tetris.jpg")));
+        ((AWTTerminalFrame) terminal).setTitle("TETRIS");
+        ((AWTTerminalFrame) terminal).setIconImage(ImageIO.read(getClass().getClassLoader().getResource("NSwitchDS_Tetris.jpg")));
         return terminal;
     }
 
