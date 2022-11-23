@@ -20,34 +20,29 @@ public class QueueOfForms {
         FormsQueue.add(generateLast());
         return FormsQueue.remove();
     }
-
-    public ArrayList<Forms> getFormsQueue() {
-        return new ArrayList(FormsQueue);
-    }
-
     private Forms generateLast() {
         Random random = new Random();
         int num = random.nextInt(7);
-        Forms next = new Z(new Position(5,1));
+        Forms next = new Z(new Position(10,1));
 
         switch (num){
             case 0:
-                next = new I(new Position(5,0));
+                next = new I(new Position(10,0));
                 break;
             case 1:
-                next = new J(new Position(5,1));
+                next = new J(new Position(10,1));
                 break;
             case 2:
-                next = new L(new Position(5,1));
+                next = new L(new Position(10,1));
                 break;
             case 3:
-                next = new O(new Position(5,1));
+                next = new O(new Position(10,1));
                 break;
             case 4:
-                next = new S(new Position(5,1));
+                next = new S(new Position(10,1));
                 break;
             case 5:
-                next = new T(new Position(5,1));
+                next = new T(new Position(10,1));
                 break;
         }
 

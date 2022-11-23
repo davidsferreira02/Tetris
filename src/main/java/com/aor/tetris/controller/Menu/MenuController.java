@@ -24,11 +24,11 @@ public class MenuController extends Controller<Menu> {
                 getModel().nextEntry();
                 break;
             case SELECT:
-                if (getModel().isSelectedExit()) game.setState(null);
                 if (getModel().isSelectedPlay()) game.setState(new GameState(new Screen(20,20)));
                 if (getModel().isSelectedTutorial()) game.setState(new TutorialState(new Tutorial()));
+                if (getModel().isSelectedExit()) game.setState(null);
                 break;
-            case QUIT:
+            case EXIT:
                 game.setState(null);
         }
     }

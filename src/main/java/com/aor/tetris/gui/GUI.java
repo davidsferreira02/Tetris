@@ -9,8 +9,6 @@ import java.io.IOException;
 public interface GUI {
     ACTION getNextAction() throws IOException;
 
-    void drawQueue(QueueOfForms queue);
-
 
 
     void drawArena(Arena arena);
@@ -28,5 +26,5 @@ public interface GUI {
 
     void close() throws IOException;
 
-    enum ACTION {UP, RIGHT, DOWN, LEFT, NONE, QUIT, SELECT, Z, SPACE}
+    enum ACTION {UP, RIGHT, DOWN, LEFT, NONE,EXIT, SELECT, Z, SPACE}
 }

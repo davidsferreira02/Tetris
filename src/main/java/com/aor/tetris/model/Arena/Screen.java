@@ -5,14 +5,13 @@ import com.aor.tetris.model.Forms.QueueOfForms;
 
 public class Screen {
 
-    private final int width;
-    private final int height;
 
-    private QueueOfForms queueOfForms;
     private Arena arena;
+    private QueueOfForms queueOfForms;
     private Forms forms;
 
-
+    private final int width;
+    private final int height;
 
 
     public Screen(int width, int height) {

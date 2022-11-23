@@ -23,7 +23,7 @@ public class ScreenController extends GameController{
     public void step(Game game, GUI.ACTION action, long time) {
         int endOfGame = 1;
         if(time-lastMovement>200){
-            endOfGame = moveDown();
+            endOfGame = BlockMoveDown();
             if (endOfGame == -1) {
                 game.setState(new EndGameState(new EndGame()));
             }
@@ -31,11 +31,11 @@ public class ScreenController extends GameController{
         }
 
         switch (action){
-            case QUIT:
+            case EXIT:
                 game.setState(new MenuState(new Menu()));
                 break;
             case DOWN:
-                endOfGame = moveDown();
+                endOfGame = BlockMoveDown();
                 break;
             case RIGHT:
                 moveRight();
@@ -50,7 +50,7 @@ public class ScreenController extends GameController{
                 rotateLeft();
                 break;
             case SPACE:
-                endOfGame = dropDown();
+                endOfGame = BlockDropDown();
                 break;
             default:
                 break;
@@ -60,19 +60,6 @@ public class ScreenController extends GameController{
         }
     }
 
-    private int moveDown() {
-        Position[] position = getModel().getForms().moveDownPosition();
-        boolean canMove = getModel().getArena().canMove(position);
-        if (canMove) {
-            getModel().getForms().moveDown();
-            return 1;
-        }
-        else {
-            dropBlocks();
-            changeForms();
-            return checkGameOver();
-        }
-    }
     private int checkGameOver() {
         Position[] position = getModel().getForms().getActualPosition(getModel().getForms().getCentralPosition(),getModel().getForms().getDirection());
         boolean canMove = getModel().getArena().canMove(position);
@@ -81,6 +68,28 @@ public class ScreenController extends GameController{
             return -1;
         }
         return 0;
+    }
+
+    private int BlockDropDown() {
+        int BlcokCanMove =BlockMoveDown();
+        while (BlcokCanMove != 0){
+            if(BlcokCanMove == -1) return -1;
+            BlcokCanMove = BlockMoveDown();
+        }
+        return 0;
+    }
+    private int BlockMoveDown() {
+        Position[] position = getModel().getForms().moveDownPosition();
+        boolean BlockCanMove = getModel().getArena().canMove(position);
+        if (BlockCanMove) {
+            getModel().getForms().moveDown();
+            return 1;
+        }
+        else {
+            dropBlocks();
+            changeForms();
+            return checkGameOver();
+        }
     }
 
 
@@ -97,17 +106,9 @@ public class ScreenController extends GameController{
     }
 
 
-    private int dropDown() {
-        int canMove = moveDown();
-        while (canMove != 0){
-            if(canMove == -1) return -1;
-            canMove = moveDown();
-        }
-        return 0;
-    }
 
     private void rotateLeft() {
-        Position[] position = getModel().getForms().rotateLeftPositions();
+        Position[] position = getModel().getForms().rotateLeftPosition();
         boolean canMove = getModel().getArena().canMove(position);
         if (canMove) getModel().getForms().rotateLeft();
     }
@@ -117,7 +118,7 @@ public class ScreenController extends GameController{
         if (canMove) getModel().getForms().moveLeft();
     }
     private void rotateRight() {
-        Position[] position = getModel().getForms().rotateRightPositions();
+        Position[] position = getModel().getForms().rotateRightPosition();
         boolean canMove = getModel().getArena().canMove(position);
         if (canMove) getModel().getForms().rotateRight();
     }

@@ -18,28 +18,29 @@ public class Arena {
     public BlockHero[][] getArena(){
         return arena;
     }
+    public boolean canMove(Position[] position){
+        boolean BlockcanMove = true;
+        for (Position positions : position) {
+            if (!BlockcanOccupy(positions)) {
+                BlockcanMove = false;
+                break;
+            }
+        }
+        return BlockcanMove;
+    }
 
-    public boolean canOccupy(Position pos) {
+    public boolean BlockcanOccupy(Position pos) {
         if (pos.getX()<0 || pos.getX()>=arena[0].length) return false;
         if (pos.getY()<0 || pos.getY()>=arena.length) return false;
         return arena[pos.getY()][pos.getX()] == null;
     }
 
-
-
-    public boolean canMove(Position[] positions){
-        boolean canMove = true;
-        for (Position p : positions) {
-            if (!canOccupy(p)) {
-                canMove = false;
-                break;
-            }
-        }
-        return canMove;
+    public void addBlock(Position position, BlockHero hero){
+        arena[position.getY()][position.getX()] = hero;
     }
 
-    public void addBlock(Position pos, BlockHero hero){
-        arena[pos.getY()][pos.getX()] = hero;
-    }
+
+
+
 
 }

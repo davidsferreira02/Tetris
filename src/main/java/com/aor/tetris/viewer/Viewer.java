@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public abstract class Viewer <T>{
     private final T model;
-    protected final Color color = new Color();
+    public final Color color = new Color();
 
     public Viewer(T model) {
         this.model = model;

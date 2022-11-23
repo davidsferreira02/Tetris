@@ -87,9 +87,9 @@ public class LanternaGUI implements GUI{
         KeyStroke keyStroke = screen.pollInput();
         if (keyStroke == null) return ACTION.NONE;
 
-        if (keyStroke.getKeyType() == KeyType.EOF) return ACTION.QUIT;
-        if (keyStroke.getKeyType() == KeyType.Character && keyStroke.getCharacter() == 'q') return ACTION.QUIT;
-        if (keyStroke.getKeyType() == KeyType.Escape) return ACTION.QUIT;
+        if (keyStroke.getKeyType() == KeyType.EOF) return ACTION.EXIT;
+        if (keyStroke.getKeyType() == KeyType.Character && keyStroke.getCharacter() == 'q') return ACTION.EXIT;
+        if (keyStroke.getKeyType() == KeyType.Escape) return ACTION.EXIT;
 
         if (keyStroke.getKeyType() == KeyType.ArrowUp || (keyStroke.getKeyType() == KeyType.Character && Character.toLowerCase(keyStroke.getCharacter()) == 'x')) return ACTION.UP;
         if (keyStroke.getKeyType() == KeyType.ArrowRight) return ACTION.RIGHT;
@@ -134,32 +134,6 @@ public class LanternaGUI implements GUI{
             for(int x = 0; x < arena.getArena()[0].length; x++){
                 if (arena.getArena()[y][x] != null)
                     drawSquare(new Position(x+1,1+y), colors.getColor(arena.getArena()[y][x].getColor()));
-            }
-        }
-    }
-
-    @Override
-    public void drawQueue(QueueOfForms queue){
-        for(int i = 14; i<20;i++) {
-            for(int j = 10; j < 20;j++) {
-                drawSquare(new Position(i, j), colors.getColor("GRAY"));
-            }
-        }
-
-        for(int i = 11;i <= 17;i+=3) {
-            for(int j = 15;j <19;j++ ) {
-                drawSquare(new Position(j, i), colors.getColor("DARKER_GRAY"));
-                drawSquare(new Position(j, i+1), colors.getColor("DARKER_GRAY"));
-            }
-            Forms forms = queue.getFormsQueue().get((i - 11)/3);
-            drawTetriminoPos(forms, new Position(17,  i + 1));
-        }
-    }
-
-    private void drawTetriminoPos(Forms forms, Position CentralPos){
-        if (forms != null) {
-            for (Position position : forms.getPositions(forms.getDirection())) {
-                drawSquare(new Position(position.getX() + CentralPos.getX(), position.getY() + CentralPos.getY()), colors.getColor(forms.getColor()));
             }
         }
     }
