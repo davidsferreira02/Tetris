@@ -52,5 +52,3 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 ![image](https://user-images.githubusercontent.com/93007518/203609735-16e38d9a-470d-4704-88b4-5e950f3e4967.png)
 
 ![image](https://user-images.githubusercontent.com/93007518/203609758-e00558f6-447b-4920-86bf-8f54bbd34850.png)
-
-![image](https://user-images.githubusercontent.com/93007518/203609705-4e93bf2f-1cf3-48bb-b6ee-189199249a71.png)
