@@ -13,8 +13,6 @@ public class TutorialViewer extends Viewer<Tutorial> {
     @Override
     protected void drawElements(GUI gui) {
 
-       // gui.drawOutLine();
-
         gui.drawText(new Position(7, 2), "T", color.getColor("RED"));
         gui.drawText(new Position(8, 2), "U", color.getColor("ORANGE"));
         gui.drawText(new Position(9, 2), "T", color.getColor("YELLOW"));
