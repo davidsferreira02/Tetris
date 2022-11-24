@@ -15,7 +15,7 @@ public class BlockHeroTest {
     @BeforeEach
     public void setUp(){
         color=new Color();
-        BlockHero blockHero=new BlockHero(color.getColor("BLUE"));
+        blockHero=new BlockHero(color.getColor("BLUE"));
     }
     @Test
     public void getHeroColorTest(){
