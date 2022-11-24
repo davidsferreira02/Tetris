@@ -17,11 +17,12 @@ import static com.aor.tetris.model.direction.Direction.LEFT;
 public class ITest {
     private Direction direction;
     private Position[] position;
+    private Forms I;
 
     @BeforeEach
     public void setPosition(){
         position = new Position[4];
-        Forms I = new I(new Position(10,0));
+        I = new I(new Position(10,0));
     }
 
     @Test
