@@ -25,7 +25,7 @@ Tetris' goal is just to try to fight the computerized tetrimino dropper to play 
 
 1. Right - Move to the right;
 2. Left - Move to the left;
-3. L - Rotate right;
+3. Z - Rotate right;
 4. Up/X - Rotate left;
 5. Space - Drop piece;
 6. Down - Move down;
