@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.tetris.model.MenuTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-11-24T15:03:27" hostname="MBP-de-Nuno-4.lan" time="0.005">
+<testsuite name="com.aor.tetris.model.MenuTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-11-24T15:31:13" hostname="MBP-de-Nuno-4.lan" time="0.01">
   <properties/>
-  <testcase name="PreviousEntryTest()" classname="com.aor.tetris.model.MenuTest" time="0.0"/>
-  <testcase name="NextEntryTest()" classname="com.aor.tetris.model.MenuTest" time="0.0"/>
-  <testcase name="getCurentEntry()" classname="com.aor.tetris.model.MenuTest" time="0.0"/>
-  <testcase name="isSelectedStartTest()" classname="com.aor.tetris.model.MenuTest" time="0.0"/>
-  <testcase name="isSelectedExitTest()" classname="com.aor.tetris.model.MenuTest" time="0.001"/>
+  <testcase name="PreviousEntryTest()" classname="com.aor.tetris.model.MenuTest" time="0.001"/>
+  <testcase name="NextEntryTest()" classname="com.aor.tetris.model.MenuTest" time="0.001"/>
+  <testcase name="getCurentEntry()" classname="com.aor.tetris.model.MenuTest" time="0.001"/>
+  <testcase name="isSelectedStartTest()" classname="com.aor.tetris.model.MenuTest" time="0.001"/>
+  <testcase name="isSelectedExitTest()" classname="com.aor.tetris.model.MenuTest" time="0.002"/>
   <testcase name="isSelectedTutorialTest()" classname="com.aor.tetris.model.MenuTest" time="0.001"/>
-  <testcase name="getNumberEntriesTest()" classname="com.aor.tetris.model.MenuTest" time="0.001"/>
-  <testcase name="isSelectedTest()" classname="com.aor.tetris.model.MenuTest" time="0.0"/>
+  <testcase name="getNumberEntriesTest()" classname="com.aor.tetris.model.MenuTest" time="0.0"/>
+  <testcase name="isSelectedTest()" classname="com.aor.tetris.model.MenuTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

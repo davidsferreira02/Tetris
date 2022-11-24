@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.tetris.model.ScreenTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-11-24T15:03:27" hostname="MBP-de-Nuno-4.lan" time="0.006">
+<testsuite name="com.aor.tetris.model.ScreenTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-11-24T15:31:13" hostname="MBP-de-Nuno-4.lan" time="0.008">
   <properties/>
-  <testcase name="ScreenTest()" classname="com.aor.tetris.model.ScreenTest" time="0.006">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;com.aor.tetris.model.Arena.Arena@4808bc9b&gt; but was: &lt;com.aor.tetris.model.Arena.Arena@70e38ce1&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;com.aor.tetris.model.Arena.Arena@4808bc9b&gt; but was: &lt;com.aor.tetris.model.Arena.Arena@70e38ce1&gt;
+  <testcase name="ScreenTest()" classname="com.aor.tetris.model.ScreenTest" time="0.008">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;com.aor.tetris.model.Arena.Arena@72d6b3ba&gt; but was: &lt;com.aor.tetris.model.Arena.Arena@1787f2a0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;com.aor.tetris.model.Arena.Arena@72d6b3ba&gt; but was: &lt;com.aor.tetris.model.Arena.Arena@1787f2a0&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at app//org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
