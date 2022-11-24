@@ -42,13 +42,19 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 
 * Starting Menu;
 * Tutorial;
-* Game Over Menu.
+* Game Over Message.
+* Arena
+* BlockHero
+* Rotate Block
 
 
 **Mockups:**
 
-![image](https://user-images.githubusercontent.com/93007518/203609705-4e93bf2f-1cf3-48bb-b6ee-189199249a71.png)
+![image](https://user-images.githubusercontent.com/93715921/203797407-4248cfe7-538b-43d6-a44f-d978c270eeeb.png)
+![image](https://user-images.githubusercontent.com/93715921/203797500-1aa1bdc8-cd3d-409e-8642-18c8f0a26fe6.png)
+![image](https://user-images.githubusercontent.com/93715921/203797588-e78cbd12-41cd-46c4-a926-29db9a6e00b9.png)
+![image](https://user-images.githubusercontent.com/93715921/203797641-3036cba7-e3c9-42f9-905c-e51b18b86a65.png)
 
-![image](https://user-images.githubusercontent.com/93007518/203609735-16e38d9a-470d-4704-88b4-5e950f3e4967.png)
 
-![image](https://user-images.githubusercontent.com/93007518/203609758-e00558f6-447b-4920-86bf-8f54bbd34850.png)
+
+
