@@ -13,7 +13,7 @@ import static com.aor.tetris.model.direction.Direction.UP;
 import static com.aor.tetris.model.direction.Direction.DOWN;
 import static com.aor.tetris.model.direction.Direction.RIGHT;
 import static com.aor.tetris.model.direction.Direction.LEFT;
-
+/*
 public class ITest {
     private Direction direction;
     private Position[] position;
@@ -64,3 +64,4 @@ public class ITest {
         Assertions.assertEquals(I.getPosition(direction), position);
     }
 }
+*/

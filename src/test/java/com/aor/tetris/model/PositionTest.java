@@ -1,35 +1,29 @@
 package com.aor.tetris.model;
 
 import com.aor.tetris.model.Hero.Position;
-import net.jqwik.api.ForAll;
-import net.jqwik.api.Property;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PositionTest {
     private Position position;
 
-    @Property
-    void getLeft(@ForAll int x, @ForAll int y) {
-        assertEquals(x - 1, new Position(x, y).getLeft().getX());
-        assertEquals(y, new Position(x, y).getLeft().getY());
-    }
 
-    @Property
-    void getRight(@ForAll int x, @ForAll int y) {
-        assertEquals(x + 1, new Position(x, y).getRight().getX());
-        assertEquals(y, new Position(x, y).getRight().getY());
+    @BeforeEach
+    public void setup(){
+        position=new Position(12,12);
     }
-
-    @Property
-    void getUp(@ForAll int x, @ForAll int y) {
-        assertEquals(x, new Position(x, y).getUp().getX());
-        assertEquals(y - 1, new Position(x, y).getUp().getY());
+    @Test
+    public void getX(){
+        Assertions.assertEquals(12,position.getX());
     }
+    @Test
+    public void getY(){
 
-    @Property
-    void getDown(@ForAll int x, @ForAll int y) {
-        assertEquals(x, new Position(x, y).getDown().getX());
-        assertEquals(y + 1, new Position(x, y).getDown().getY());
+        Assertions.assertEquals(12,position.getY());
     }
 }

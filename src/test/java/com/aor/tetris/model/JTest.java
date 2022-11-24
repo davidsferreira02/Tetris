@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.aor.tetris.model.direction.Direction.*;
 import static com.aor.tetris.model.direction.Direction.LEFT;
-
+/*
 public class JTest {
     private Direction direction;
     private Position[] position;
@@ -62,3 +62,4 @@ public class JTest {
         Assertions.assertEquals(I.getPosition(direction), position);
     }
 }
+*/
