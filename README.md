@@ -12,13 +12,13 @@
 
 The game consists in stacking the tetriminos that go down the screen in order to complete horizontal lines.
 
-The tetriminos have different forms and go one after the other randomly, with a specific time gap.
+The BlockHero have different forms and go one after the other randomly, with a specific time gap.
 
 The objective is to fill all the empty space in a line.
 
 When a line forms, it vanishes from the screen, the upper layers fall and the player earned points.
 
-Tetris' goal is just to try to fight the computerized tetrimino dropper to play for as long as possible while you're earning points.
+Tetris' goal is just to try to fight the computerized BlockHero dropper to play for as long as possible while you're earning points.
 
 
 **Controls Game menu:**
