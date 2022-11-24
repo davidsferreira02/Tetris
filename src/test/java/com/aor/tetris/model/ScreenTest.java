@@ -7,16 +7,18 @@ import org.junit.jupiter.api.Test;
 
 public class ScreenTest {
     private Screen screen;
+    private Arena arena;
 
     @BeforeEach
     public void setScreen() {
         screen = new Screen(4, 7);
+        arena = new Arena(4, 7);
     }
 
     @Test
     public void ScreenTest(){
-        Arena tes = new Arena(4, 7);
-        Assertions.assertEquals(screen.getArena(),tes);
+
+        Assertions.assertEquals(screen.getArena(),arena);
     }
 
 }
