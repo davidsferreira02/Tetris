@@ -1,4 +1,4 @@
-package com.aor.tetris.viewer;
+//package com.aor.tetris.viewer;
 
 import com.aor.tetris.gui.GUI;
 import com.aor.tetris.model.Arena.Screen;
@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.io.IOException;
-
+/*
 class ScreenViewerTest {
     private GUI gui;
     private GameViewer viewer;
@@ -62,3 +62,5 @@ class ScreenViewerTest {
         Mockito.verify(gui, Mockito.times(1)).refresh();
     }
 }
+
+*/

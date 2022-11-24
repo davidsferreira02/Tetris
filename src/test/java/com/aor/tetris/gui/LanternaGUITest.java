@@ -8,7 +8,7 @@ import com.googlecode.lanterna.screen.Screen;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-
+/*
 class LanternaGUITest {
     private Screen screen;
     private LanternaGUI gui;
@@ -41,4 +41,4 @@ class LanternaGUITest {
         Mockito.verify(tg, Mockito.times(1)).setForegroundColor(new TextColor.RGB(51, 102, 153));
         Mockito.verify(tg, Mockito.times(1)).putString(1, 1, "Hello World");
     }
-}
+}*/
