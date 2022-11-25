@@ -1,4 +1,4 @@
-package com.aor.tetris.model;
+package com.aor.tetris.controller.model;
 
 import com.aor.tetris.model.menu.Menu;
 import org.junit.jupiter.api.Assertions;
@@ -34,12 +34,12 @@ public class MenuTest {
 
     @Test
     public void getNumberEntriesTest(){
-        Assertions.assertEquals(3,menu.getNumberEntries());
+        Assertions.assertEquals(3,menu.getNumEntries());
     }
 
     @Test
     public void isSelectedStartTest(){
-        menu.isSelectedStart();
+        menu.isSelectedPlay();
         Assertions.assertTrue(menu.getCurrentEntry()==0);
 
     }

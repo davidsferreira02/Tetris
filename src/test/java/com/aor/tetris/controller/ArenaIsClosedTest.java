@@ -1,9 +1,9 @@
 package com.aor.tetris.controller;
-
+/*
 import com.aor.tetris.gui.GUI;
 import net.jqwik.api.*;
-import net.jqwik.api.constraints.IntRange;
-
+import net.jqwik.api.constraintsY.IntRange;
+*/
 import java.util.List;
 
 /*public class ArenaIsClosedTest {

@@ -20,7 +20,7 @@ public class EndGameViewer extends Viewer<EndGame> {
     }
 
     @Override
-    protected void drawElements(GUI gui) {
+    public void drawElements(GUI gui) {
         for(int i = 5;i < 17;i++) {
             for(int j = 8;j <13;j++ ) {
                 gui.drawSquare(new Position(i, j), color.getColor(" BLACK"));
