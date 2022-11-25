@@ -23,7 +23,7 @@ public class LTest {
         position = new Position[4];
         L = new L(new Position(10,1));
     }
-
+/*
     @Test
     public void LUpTest(){
         direction = UP;
@@ -63,4 +63,6 @@ public class LTest {
         position[3] = new Position(-1, -1);
         Assertions.assertEquals(L.getPosition(direction), position);
     }
+
+ */
 }

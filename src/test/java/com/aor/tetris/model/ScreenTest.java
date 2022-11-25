@@ -14,11 +14,13 @@ public class ScreenTest {
         screen = new Screen(4, 7);
         arena = new Arena(4, 7);
     }
-
+/*
     @Test
     public void ScreenTest(){
 
         Assertions.assertEquals(screen.getArena(),arena);
     }
+
+ */
 
 }

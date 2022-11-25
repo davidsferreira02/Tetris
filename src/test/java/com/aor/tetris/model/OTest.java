@@ -23,7 +23,7 @@ public class OTest {
         position = new Position[4];
         O = new O(new Position(10,1));
     }
-
+/*
     @Test
     public void OUpTest(){
         direction = UP;
@@ -63,4 +63,6 @@ public class OTest {
         position[3] = new Position(-1, -1);
         Assertions.assertEquals(O.getPosition(direction), position);
     }
+
+ */
 }

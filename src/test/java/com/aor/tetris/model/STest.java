@@ -22,7 +22,7 @@ public class STest {
         position = new Position[4];
         S = new S(new Position(10,1));
     }
-
+/*
     @Test
     public void SUpTest(){
         direction = UP;
@@ -62,4 +62,6 @@ public class STest {
         position[3] = new Position(-1, -1);
         Assertions.assertEquals(S.getPosition(direction), position);
     }
+
+ */
 }

@@ -22,7 +22,7 @@ public class ZTest {
         position = new Position[4];
         Z = new Z(new Position(10,1));
     }
-
+/*
     @Test
     public void ZUpTest(){
         direction = UP;
@@ -62,4 +62,6 @@ public class ZTest {
         position[3] = new Position(0, -1);
         Assertions.assertEquals(Z.getPosition(direction), position);
     }
+
+ */
 }
