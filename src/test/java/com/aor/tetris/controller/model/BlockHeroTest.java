@@ -1,4 +1,4 @@
-package com.aor.tetris.model;
+package com.aor.tetris.controller.model;
 
 import org.junit.jupiter.api.Assertions;
 import com.aor.tetris.model.Hero.BlockHero;
