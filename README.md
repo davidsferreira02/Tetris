@@ -22,13 +22,12 @@ Tetris' goal is just to try to fight the computerized BlockHero dropper to play 
 
 
 **Controls Game menu:**
-
-1. Right - Move to the right;
-2. Left - Move to the left;
-3. Z - Rotate right;
-4. Up/X - Rotate left;
-5. Space - Drop piece;
-6. Down - Move down;
+1. Left - Move to the left;
+2. Right - Move to the right;
+3. Down - Move down;
+4. Z - Rotate right;
+5. Up/X - Rotate left;
+6. Space - Drop piece;
 7. Q/ESC - Exit to menu.
 
 
@@ -51,7 +50,7 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 **Mockups:**
 
 ![image](https://user-images.githubusercontent.com/93715921/203797407-4248cfe7-538b-43d6-a44f-d978c270eeeb.png)
-![image](https://user-images.githubusercontent.com/93715921/203797500-1aa1bdc8-cd3d-409e-8642-18c8f0a26fe6.png)
+![image](https://user-images.githubusercontent.com/93715921/204037331-f5ac5d96-c812-4330-9a26-7209e794f822.png)
 ![image](https://user-images.githubusercontent.com/93715921/203797588-e78cbd12-41cd-46c4-a926-29db9a6e00b9.png)
 ![image](https://user-images.githubusercontent.com/93715921/203797641-3036cba7-e3c9-42f9-905c-e51b18b86a65.png)
 
@@ -60,6 +59,7 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 **UML:**
 
 ![UML_TETRIS_LDTS drawio (1) drawio (4)](https://user-images.githubusercontent.com/93005732/204039990-17b99fcf-1cf4-4e61-b8b5-987bb1eac8ef.png)
+
 
 
 **(Design Patterns) utilizados:**

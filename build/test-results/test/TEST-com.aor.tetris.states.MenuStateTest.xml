@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.tetris.states.MenuStateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-25T16:43:13" hostname="MacBook-Pro-de-Nuno-4.local" time="0.001">
+<testsuite name="com.aor.tetris.states.MenuStateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-25T18:01:33" hostname="LAPTOP-E57OMIBJ" time="0.003">
   <properties/>
-  <testcase name="MenuStateTest()" classname="com.aor.tetris.states.MenuStateTest" time="0.001"/>
+  <testcase name="MenuStateTest()" classname="com.aor.tetris.states.MenuStateTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

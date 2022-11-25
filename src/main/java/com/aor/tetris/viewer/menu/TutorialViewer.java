@@ -22,16 +22,16 @@ public class TutorialViewer extends Viewer<Tutorial> {
         gui.drawText(new Position(13, 2), "A", color.getColor("RED"));
         gui.drawText(new Position(14, 2), "L", color.getColor("ORANGE"));
 
-        gui.drawText(new Position(2, 5), "UP/X", color.getColor("BLUE"));
-        gui.drawText(new Position(8, 5), "ROTATE LEFT", color.getColor("WHITE"));
-        gui.drawText(new Position(2, 7), "Z", color.getColor("BLUE"));
-        gui.drawText(new Position(8, 7), "ROTATE RIGHT", color.getColor("WHITE"));
-        gui.drawText(new Position(2, 9), "LEFT", color.getColor("BLUE"));
-        gui.drawText(new Position(8, 9), "MOVE LEFT", color.getColor("WHITE"));
-        gui.drawText(new Position(2, 11), "RIGHT", color.getColor("BLUE"));
-        gui.drawText(new Position(8, 11), "MOVE RIGHT", color.getColor("WHITE"));
-        gui.drawText(new Position(2, 13), "DOWN", color.getColor("BLUE"));
-        gui.drawText(new Position(8, 13), "MOVE DOWN", color.getColor("WHITE"));
+        gui.drawText(new Position(2, 5), "LEFT", color.getColor("BLUE"));
+        gui.drawText(new Position(8, 5), "MOVE LEFT", color.getColor("WHITE"));
+        gui.drawText(new Position(2, 7), "RIGHT", color.getColor("BLUE"));
+        gui.drawText(new Position(8, 7), "MOVE RIGHT", color.getColor("WHITE"));
+        gui.drawText(new Position(2, 9), "DOWN", color.getColor("BLUE"));
+        gui.drawText(new Position(8, 9), "MOVE DOWN", color.getColor("WHITE"));
+        gui.drawText(new Position(2, 11), "Z", color.getColor("BLUE"));
+        gui.drawText(new Position(8, 11), "ROTATE RIGHT", color.getColor("WHITE"));;
+        gui.drawText(new Position(2, 13), "UP/X", color.getColor("BLUE"));
+        gui.drawText(new Position(8, 13), "ROTATE LEFT", color.getColor("WHITE"));
         gui.drawText(new Position(2, 15), "SPACE", color.getColor("BLUE"));
         gui.drawText(new Position(8, 15), "DROP PIECE", color.getColor("WHITE"));
         gui.drawText(new Position(2, 17), "Q/ESC", color.getColor("BLUE"));
