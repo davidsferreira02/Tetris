@@ -57,18 +57,17 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 
 
 **(Design Patterns) utilizados:**
- *Game Loop Pattern: 
+ Game Loop Pattern: 
 	Em quanto um jogo corre, temos um loop que irá correr continuamente. Sem causar interrupção do jogo, a cada loop que ocorra, o input é processado, o modelo é atualizado e o jogo é renderizado. A frequência com que isto acontece será determinada pelos “FPS” (frames por segundo) do jogo.
 
-*MVC Architecture Pattern:
+MVC Architecture Pattern:
 	Qualquer aplicação se encontra dividida em três partes: o ‘Controller’, o ‘Model’ e ‘View’.
 O ‘Model’ é utilizado, apenas, para guardar a informação, e essa informação é mostrada ao utilizador através do ‘View’. A ‘View’ recebe também os inputs do utilizador, que são depois enviados para o ‘Controller’. Por fim, a função do ‘Controller’ é transformar as ações do utilizador, envia-las para a ‘View’.	
 
  
-*State Pattern:
+State Pattern:
 	Este padrão será usado para permitir que haja trocas de estado entre o ‘Menu’, ‘Game’ e ‘Tutorial’. A classe ‘Game’ guarda o estado atual e é esse estado que permite à classe ‘Game’ utilizar duas das três partes de uma aplicação, o ‘Controller’ e a ‘View’, próprios de cada estado. Assim, teremos um código onde será mais fácil evitar o uso de instruções demasiado longas, como por exemplo, switch clauses.
 
-*Factory Method Pattern:
 
 
 
