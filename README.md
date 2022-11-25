@@ -64,6 +64,7 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 
 
 **(Design Patterns) utilizados:**
+
  Game Loop Pattern: 
 	Em quanto um jogo corre, temos um loop que irá correr continuamente. Sem causar interrupção do jogo, a cada loop que ocorra, o input é processado, o modelo é atualizado e o jogo é renderizado. A frequência com que isto acontece será determinada pelos “FPS” (frames por segundo) do jogo.
 
