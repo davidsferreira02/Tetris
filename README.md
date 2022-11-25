@@ -59,7 +59,7 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 
 **UML:**
 
-![UML_TETRIS_LDTS drawio (1) drawio (2)](https://user-images.githubusercontent.com/93005732/203954730-b07ee79e-5abd-4475-ab24-c9e06aa85609.png)
+![UML_TETRIS_LDTS drawio (1) drawio (3)](https://user-images.githubusercontent.com/93005732/204005679-79a1b743-7d0b-4849-8913-963bdc2d95a5.png)
 
 
 
