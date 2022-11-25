@@ -56,6 +56,13 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 ![image](https://user-images.githubusercontent.com/93715921/203797641-3036cba7-e3c9-42f9-905c-e51b18b86a65.png)
 
 
+
+**UML:**
+
+![UML_TETRIS_LDTS drawio (1) drawio (2)](https://user-images.githubusercontent.com/93005732/203954730-b07ee79e-5abd-4475-ab24-c9e06aa85609.png)
+
+
+
 **(Design Patterns) utilizados:**
  Game Loop Pattern: 
 	Em quanto um jogo corre, temos um loop que irá correr continuamente. Sem causar interrupção do jogo, a cada loop que ocorra, o input é processado, o modelo é atualizado e o jogo é renderizado. A frequência com que isto acontece será determinada pelos “FPS” (frames por segundo) do jogo.
@@ -67,6 +74,13 @@ O ‘Model’ é utilizado, apenas, para guardar a informação, e essa informa�
  
 State Pattern:
 	Este padrão será usado para permitir que haja trocas de estado entre o ‘Menu’, ‘Game’ e ‘Tutorial’. A classe ‘Game’ guarda o estado atual e é esse estado que permite à classe ‘Game’ utilizar duas das três partes de uma aplicação, o ‘Controller’ e a ‘View’, próprios de cada estado. Assim, teremos um código onde será mais fácil evitar o uso de instruções demasiado longas, como por exemplo, switch clauses.
+
+Factory Method Pattern:
+	Este padrão está a ser implementado no nosso jogo, no seguimento do State Pattern. As funções ‘getViewer’ e ‘getController’, de uma classe abstrata, vão ser usadas pelos diferentes estados, permitindo assim que ambos os estados possam criar objetos distintos usando controladores e “viewers” diferentes.
+
+
+Singleton Pattern:
+	Como a classe ‘Game’ é a classe principal do jogo, temos de garantir que existem apenas um objeto desta classe. Assim implementamos este padrão na classe ‘Game’, para obtermos essa garantia.
 
 
 
