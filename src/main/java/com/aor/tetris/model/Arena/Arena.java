@@ -3,6 +3,8 @@ package com.aor.tetris.model.Arena;
 import com.aor.tetris.model.Hero.Position;
 import com.aor.tetris.model.Hero.BlockHero;
 
+import java.util.Arrays;
+
 public class Arena {
 
     private BlockHero[][] arena;
@@ -35,12 +37,28 @@ public class Arena {
         return arena[pos.getY()][pos.getX()] == null;
     }
 
+    public boolean isLineFull(int line){
+        boolean full = true;
+
+        for (BlockHero block : arena[line]){
+            if (block == null) {
+                full = false;
+                break;
+            }
+        }
+
+        return full;
+    }
+
     public void addBlock(Position position, BlockHero hero){
         arena[position.getY()][position.getX()] = hero;
     }
 
-
-
-
+    public void eraseLine(int line){
+        for (int i = line; i > 0; i--){
+            System.arraycopy(arena[i - 1], 0, arena[i], 0, arena[0].length);
+        }
+        Arrays.fill(arena[0], null);
+    }
 
 }

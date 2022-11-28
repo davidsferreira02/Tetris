@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.tetris.viewer.EndGameViewerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-11-25T18:01:37" hostname="LAPTOP-E57OMIBJ" time="0.172">
+<testsuite name="com.aor.tetris.viewer.EndGameViewerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-11-25T20:02:47" hostname="MBP-de-Nuno-4.Home" time="0.038">
   <properties/>
-  <testcase name="drawTest()" classname="com.aor.tetris.viewer.EndGameViewerTest" time="0.138"/>
-  <testcase name="drawElementsTest()" classname="com.aor.tetris.viewer.EndGameViewerTest" time="0.032"/>
+  <testcase name="drawTest()" classname="com.aor.tetris.viewer.EndGameViewerTest" time="0.03"/>
+  <testcase name="drawElementsTest()" classname="com.aor.tetris.viewer.EndGameViewerTest" time="0.008"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

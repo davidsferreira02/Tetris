@@ -87,6 +87,7 @@ public class ScreenController extends GameController{
         }
         else {
             dropBlocks();
+            removeLineFull();
             changeForms();
             return checkGameOver();
         }
@@ -132,5 +133,13 @@ public class ScreenController extends GameController{
     }
 
 
+    public void removeLineFull(){
+        for(int i = getModel().getHeight() -1; i>= 0; i--){
+            if(getModel().getArena().isLineFull(i)){
+                getModel().getArena().eraseLine(i);
+                i++;
+            }
+        }
+    }
 
 }

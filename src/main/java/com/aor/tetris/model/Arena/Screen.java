@@ -27,6 +27,10 @@ public class Screen {
         return queueOfForms;
     }
 
+    public int getHeight(){return height;}
+
+    public int getWidth(){return width;}
+
     public Arena getArena() { return arena; }
     public Forms getForms() { return forms; }
     
