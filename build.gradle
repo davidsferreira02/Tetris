@@ -6,7 +6,7 @@ plugins {
 
 
 
-group 'com.aor.tetris'
+group 'tetris'
 
 version '1.0-SNAPSHOT'
 
@@ -17,7 +17,7 @@ pitest {
     junit5PluginVersion = '0.12'
 }
 application {
-    mainClass.set('com.aor.hero.game.Game')
+    mainClass.set('tetris.Game')
 }
 
 dependencies {
