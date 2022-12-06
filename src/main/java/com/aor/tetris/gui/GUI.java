@@ -3,6 +3,7 @@ import com.aor.tetris.model.Hero.Position;
 import com.aor.tetris.model.Arena.Arena;
 import com.aor.tetris.model.Forms.QueueOfForms;
 import com.aor.tetris.model.Forms.Forms;
+import com.aor.tetris.model.Stats;
 
 import java.io.IOException;
 
@@ -17,6 +18,7 @@ public interface GUI {
 
 
     void drawText(Position position, String text, String color);
+    void drawStats(Stats stats);
 
     void drawSquare(Position position, String color);
 

@@ -19,7 +19,7 @@ public class Screen {
     public Screen(int width, int height) {
         this.width = width;
         this.height = height;
-
+        this.stats = new Stats();
         this.arena = new Arena(width, height);
         this.queueOfForms = new QueueOfForms();
         this.forms = queueOfForms.popNext();

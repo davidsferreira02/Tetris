@@ -5,6 +5,7 @@ import com.aor.tetris.model.Hero.Color;
 import com.aor.tetris.model.Hero.Position;
 import com.aor.tetris.model.Forms.QueueOfForms;
 import com.aor.tetris.model.Forms.Forms;
+import com.aor.tetris.model.Stats;
 import com.googlecode.lanterna.TerminalSize;
 import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.graphics.TextGraphics;
@@ -136,5 +137,23 @@ public class LanternaGUI implements GUI{
                     drawSquare(new Position(x+1,1+y), colors.getColor(arena.getArena()[y][x].getColor()));
             }
         }
+    }
+
+    @Override
+    public void drawStats(Stats stats) {
+        drawText(new Position(25, 1), "P", colors.getColor("GREEN"));
+        drawText(new Position(26, 1), "O", colors.getColor("BLUE"));
+        drawText(new Position(27, 1), "I", colors.getColor("PURPLE"));
+        drawText(new Position(28, 1), "N", colors.getColor("RED"));
+        drawText(new Position(29, 1), "T", colors.getColor("ORANGE"));
+        drawText(new Position(30, 1), "S", colors.getColor("YELLOW"));
+
+        drawText(new Position(26, 3), String.format("%04d", stats.getPoints()), colors.getColor("WHITE"));
+
+        drawText(new Position(24, 5), "LEVEL", colors.getColor("GREEN"));
+        drawText(new Position(31, 5), String.format("%01d", stats.getLevel()), colors.getColor("WHITE"));
+
+        drawText(new Position(24, 7), "LINES", colors.getColor("YELLOW"));
+        drawText(new Position(30, 7), String.format("%02d", stats.getLines()), colors.getColor("WHITE"));
     }
 }

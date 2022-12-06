@@ -22,7 +22,7 @@ public class ScreenController extends GameController{
     @Override
     public void step(Game game, GUI.ACTION action, long time) {
         int endOfGame = 1;
-        if(time-lastMovement>200){
+        if(time-lastMovement > (1000/getModel().getStats().getLevel())){
             endOfGame = BlockMoveDown();
             if (endOfGame == -1) {
                 game.setState(new EndGameState(new EndGame()));
@@ -141,8 +141,8 @@ public class ScreenController extends GameController{
                 i++;
                 lines++;
             }
-            getModel().getStats().removedLines(lines);
         }
+        getModel().getStats().removedLines(lines);
     }
 
 }
