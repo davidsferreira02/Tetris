@@ -134,11 +134,14 @@ public class ScreenController extends GameController{
 
 
     public void removeLineFull(){
+        int lines = 0;
         for(int i = getModel().getHeight() -1; i>= 0; i--){
             if(getModel().getArena().isLineFull(i)){
                 getModel().getArena().eraseLine(i);
                 i++;
+                lines++;
             }
+            getModel().getStats().removedLines(lines);
         }
     }
 

@@ -2,6 +2,7 @@ package com.aor.tetris.model.Arena;
 
 import com.aor.tetris.model.Forms.Forms;
 import com.aor.tetris.model.Forms.QueueOfForms;
+import com.aor.tetris.model.Stats;
 
 public class Screen {
 
@@ -12,6 +13,7 @@ public class Screen {
 
     private final int width;
     private final int height;
+    private Stats stats;
 
 
     public Screen(int width, int height) {
@@ -36,4 +38,5 @@ public class Screen {
     
     public void setForms(Forms forms) { this.forms= forms;}
 
+    public Stats getStats() {return stats;}
 }
