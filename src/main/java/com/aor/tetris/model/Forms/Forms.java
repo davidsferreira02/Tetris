@@ -28,6 +28,9 @@ public abstract class Forms {
         return position;
     }
 
+    public void setDirection(Direction direction){
+        this.direction = direction;
+    }
 
     public Position getCentralPosition() {
         return centralPosition;

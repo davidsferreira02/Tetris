@@ -35,6 +35,7 @@ public class Screen {
 
     public Arena getArena() { return arena; }
     public Forms getForms() { return forms; }
+
     
     public void setForms(Forms forms) { this.forms= forms;}
 
