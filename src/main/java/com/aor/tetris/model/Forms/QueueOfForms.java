@@ -1,5 +1,6 @@
 package com.aor.tetris.model.Forms;
 
+
 import com.aor.tetris.model.Hero.Position;
 
 import java.util.ArrayDeque;
@@ -9,7 +10,10 @@ import java.util.Random;
 
 public class QueueOfForms {
 
-    private Queue<Forms> FormsQueue;
+    //private Queue<Forms> FormsQueue;
+    private ArrayDeque<Forms> FormsQueue;
+    private Forms last;
+
 
     public QueueOfForms() {
         FormsQueue = new ArrayDeque<>();
@@ -18,8 +22,14 @@ public class QueueOfForms {
 
     public Forms popNext() {
         FormsQueue.add(generateLast());
+        last = FormsQueue.getLast();
         return FormsQueue.remove();
     }
+
+    public Forms getLast() {
+        return last;
+    }
+
     private Forms generateLast() {
         Random random = new Random();
         int num = random.nextInt(7);
@@ -51,4 +61,5 @@ public class QueueOfForms {
 
         return nextForms;
     }
+
 }

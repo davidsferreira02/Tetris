@@ -19,6 +19,7 @@ public interface GUI {
 
     void drawText(Position position, String text, String color);
     void drawStats(Stats stats);
+    void drawNextForm(Forms from);
 
     void drawSquare(Position position, String color);
 

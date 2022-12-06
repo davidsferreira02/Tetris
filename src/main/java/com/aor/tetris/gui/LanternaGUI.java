@@ -6,6 +6,7 @@ import com.aor.tetris.model.Hero.Position;
 import com.aor.tetris.model.Forms.QueueOfForms;
 import com.aor.tetris.model.Forms.Forms;
 import com.aor.tetris.model.Stats;
+import com.aor.tetris.model.direction.Direction;
 import com.googlecode.lanterna.TerminalSize;
 import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.graphics.TextGraphics;
@@ -156,4 +157,18 @@ public class LanternaGUI implements GUI{
         drawText(new Position(24, 7), "LINES", colors.getColor("YELLOW"));
         drawText(new Position(30, 7), String.format("%02d", stats.getLines()), colors.getColor("WHITE"));
     }
+
+    @Override
+    public void drawNextForm(Forms forms){
+        Position[] pos = forms.getPosition(forms.getDirection());
+        for (int i = 0; i < 4; i++) {
+            pos[i] = new Position(pos[i].getX() + forms.getCentralPosition().getX() + 17, pos[i].getY() + forms.getCentralPosition().getY() +14);
+        }
+        if (forms != null) {
+            for (Position position : pos){
+                drawSquare(new Position(position.getX() + 1, 1 + position.getY()), colors.getColor(forms.getColor()));
+            }
+        }
+    }
+
 }

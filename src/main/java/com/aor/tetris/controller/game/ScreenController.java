@@ -3,6 +3,7 @@ package com.aor.tetris.controller.game;
 
 import com.aor.tetris.Game;
 import com.aor.tetris.gui.GUI;
+import com.aor.tetris.model.Forms.Forms;
 import com.aor.tetris.model.endGame.EndGame;
 import com.aor.tetris.model.Hero.Position;
 import com.aor.tetris.model.menu.Menu;
@@ -105,8 +106,6 @@ public class ScreenController extends GameController{
     private void changeForms(){
         getModel().setForms(getModel().getQueueOfForms().popNext());
     }
-
-
 
     private void rotateLeft() {
         Position[] position = getModel().getForms().rotateLeftPosition();

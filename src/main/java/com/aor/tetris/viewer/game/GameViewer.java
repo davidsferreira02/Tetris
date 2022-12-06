@@ -24,5 +24,6 @@ public class GameViewer extends Viewer<Screen> {
         gui.drawForms(super.getModel().getForms());
         gui.drawArena(super.getModel().getArena());
         gui.drawStats(super.getModel().getStats());
+        gui.drawNextForm(super.getModel().getQueueOfForms().getLast());
     }
 }
