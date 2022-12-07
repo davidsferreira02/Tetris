@@ -15,6 +15,7 @@ import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.terminal.Terminal;
 import com.googlecode.lanterna.terminal.swing.AWTTerminalFontConfiguration;
 import com.googlecode.lanterna.terminal.swing.AWTTerminalFrame;
+import tetris_game.model.Stats;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -135,5 +136,45 @@ public class LanternaGUI implements GUI{
                     drawSquare(new Position(x+1,1+y), colors.getColor(arena.getArena()[y][x].getColor()));
             }
         }
+    }
+    public void drawStats(Stats stats) {
+        this.drawText(new Position(25, 1), "P", this.colors.getColor("GREEN"));
+        this.drawText(new Position(26, 1), "O", this.colors.getColor("BLUE"));
+        this.drawText(new Position(27, 1), "I", this.colors.getColor("PURPLE"));
+        this.drawText(new Position(28, 1), "N", this.colors.getColor("RED"));
+        this.drawText(new Position(29, 1), "T", this.colors.getColor("ORANGE"));
+        this.drawText(new Position(30, 1), "S", this.colors.getColor("YELLOW"));
+        this.drawText(new Position(26, 3), String.format("%04d", stats.getPoints()), this.colors.getColor("WHITE"));
+        this.drawText(new Position(24, 5), "LEVEL", this.colors.getColor("GREEN"));
+        this.drawText(new Position(31, 5), String.format("%01d", stats.getLevel()), this.colors.getColor("WHITE"));
+        this.drawText(new Position(24, 7), "LINES", this.colors.getColor("YELLOW"));
+        this.drawText(new Position(30, 7), String.format("%02d", stats.getLines()), this.colors.getColor("WHITE"));
+    }
+
+    public void drawNextForm(Forms forms) {
+        Position[] pos = forms.getPosition(forms.getDirection());
+
+        for(int i = 0; i < 4; ++i) {
+            pos[i] = new Position(pos[i].getX() + forms.getCentralPosition().getX() + 17, pos[i].getY() + forms.getCentralPosition().getY() + 14);
+        }
+
+        if (forms != null) {
+            Position[] var7 = pos;
+            int var4 = pos.length;
+
+            for(int var5 = 0; var5 < var4; ++var5) {
+                Position position = var7[var5];
+                this.drawSquare(new Position(position.getX() + 1, 1 + position.getY()), this.colors.getColor(forms.getColor()));
+            }
+        }
+
+    }
+
+    public void drawNext() {
+        this.drawText(new Position(26, 12), "N", this.colors.getColor("GREEN"));
+        this.drawText(new Position(27, 12), "E", this.colors.getColor("YELLOW"));
+        this.drawText(new Position(28, 12), "X", this.colors.getColor("RED"));
+        this.drawText(new Position(29, 12), "T", this.colors.getColor("PURPLE"));
+        this.drawText(new Position(30, 12), ":", this.colors.getColor("ORANGE"));
     }
 }

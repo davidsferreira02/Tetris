@@ -7,18 +7,28 @@ import java.util.Queue;
 import java.util.Random;
 
 public class QueueOfForms {
-
-    private Queue<Forms> FormsQueue;
+    private ArrayDeque<Forms> FormsQueue = new ArrayDeque();
+    private Forms last;
 
     public QueueOfForms() {
-        FormsQueue = new ArrayDeque<>();
-        for(int i = 0; i < 3; i++) FormsQueue.add(generateLast());
+        for(int i = 0; i < 1; ++i) {
+            this.FormsQueue.add(this.generateLast());
+        }
+
     }
 
     public Forms popNext() {
-        FormsQueue.add(generateLast());
-        return FormsQueue.remove();
+        this.FormsQueue.add(this.generateLast());
+        Forms first = (Forms)this.FormsQueue.getFirst();
+        this.FormsQueue.remove();
+        this.last = (Forms)this.FormsQueue.getLast();
+        return first;
     }
+
+    public Forms getLast() {
+        return this.last;
+    }
+
     private Forms generateLast() {
         Random random = new Random();
         int num = random.nextInt(7);
