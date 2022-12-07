@@ -15,14 +15,16 @@ public class QueueOfForms {
 
     public QueueOfForms() {
         FormsQueue = new ArrayDeque<>();
-        for(int i = 0; i < 3; i++) FormsQueue.add(generateLast());
+        for(int i = 0; i < 1; i++) FormsQueue.add(generateLast());
 
     }
 
     public Forms popNext() {
         FormsQueue.add(generateLast());
+        Forms first = FormsQueue.getFirst();
+        FormsQueue.remove();
         last = FormsQueue.getLast();
-        return FormsQueue.remove();
+        return first;
     }
 
     public Forms getLast() {

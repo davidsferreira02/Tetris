@@ -170,4 +170,13 @@ public class LanternaGUI implements GUI{
             }
         }
     }
+
+    @Override
+    public void drawNext() {
+        drawText(new Position(26, 12), "N", colors.getColor("GREEN"));
+        drawText(new Position(27, 12), "E", colors.getColor("YELLOW"));
+        drawText(new Position(28, 12), "X", colors.getColor("RED"));
+        drawText(new Position(29, 12), "T", colors.getColor("PURPLE"));
+        drawText(new Position(30, 12), ":", colors.getColor("ORANGE"));
+    }
 }
