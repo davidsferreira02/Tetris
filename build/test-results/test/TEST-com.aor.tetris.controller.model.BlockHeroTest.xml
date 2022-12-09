@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.tetris.controller.model.BlockHeroTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-11-25T20:02:46" hostname="MBP-de-Nuno-4.Home" time="0.014">
-  <properties/>
-  <testcase name="BlockHeroTest()" classname="com.aor.tetris.controller.model.BlockHeroTest" time="0.012"/>
-  <testcase name="getHeroColorTest()" classname="com.aor.tetris.controller.model.BlockHeroTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
