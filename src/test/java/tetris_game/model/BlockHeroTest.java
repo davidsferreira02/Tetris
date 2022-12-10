@@ -26,7 +26,6 @@ public class BlockHeroTest {
 
 
     Color color2;
-
     BlockHero blockHero;
 
 

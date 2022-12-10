@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.model.JTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-10T17:50:04" hostname="Air-de-David.home" time="0.004">
+<testsuite name="tetris_game.model.JTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-10T18:21:38" hostname="Air-de-David.home" time="0.009">
   <properties/>
-  <testcase name="JRightTest()" classname="tetris_game.model.JTest" time="0.001"/>
+  <testcase name="JRightTest()" classname="tetris_game.model.JTest" time="0.004"/>
   <testcase name="JUpTest()" classname="tetris_game.model.JTest" time="0.001"/>
   <testcase name="JDownTest()" classname="tetris_game.model.JTest" time="0.0"/>
   <testcase name="JLeftTest()" classname="tetris_game.model.JTest" time="0.0"/>

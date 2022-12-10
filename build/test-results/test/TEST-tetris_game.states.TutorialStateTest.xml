@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.states.TutorialStateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-10T17:50:04" hostname="Air-de-David.home" time="0.001">
-  <properties/>
-  <testcase name="MenuStateTest()" classname="tetris_game.states.TutorialStateTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
