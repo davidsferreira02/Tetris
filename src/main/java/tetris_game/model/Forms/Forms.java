@@ -35,6 +35,9 @@ public abstract class Forms {
     public Position getCentralPosition() {
         return centralPosition;
     }
+    public void setCentralPosition(Position position) {
+        this.centralPosition=centralPosition;
+    }
     public Direction getDirection() {
         return this.direction;
     }

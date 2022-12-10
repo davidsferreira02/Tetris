@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">54</div>
+<div class="counter">68</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">9</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.388s</div>
+<div class="counter">2.972s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">86%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,13 +58,57 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/tetris_game.controller.ScreenControlerTest.html">ScreenControlerTest</a>.
+<a href="classes/tetris_game.controller.ScreenControlerTest.html#dropFormsDown()">dropFormsDown()</a>
+</li>
+<li>
+<a href="classes/tetris_game.controller.ScreenControlerTest.html">ScreenControlerTest</a>.
+<a href="classes/tetris_game.controller.ScreenControlerTest.html#moveFormsDown()">moveFormsDown()</a>
+</li>
+<li>
+<a href="classes/tetris_game.controller.ScreenControlerTest.html">ScreenControlerTest</a>.
+<a href="classes/tetris_game.controller.ScreenControlerTest.html#moveFormsDownAuto()">moveFormsDownAuto()</a>
+</li>
+<li>
+<a href="classes/tetris_game.controller.ScreenControlerTest.html">ScreenControlerTest</a>.
+<a href="classes/tetris_game.controller.ScreenControlerTest.html#moveFormsLeft()">moveFormsLeft()</a>
+</li>
+<li>
+<a href="classes/tetris_game.controller.ScreenControlerTest.html">ScreenControlerTest</a>.
+<a href="classes/tetris_game.controller.ScreenControlerTest.html#moveFormsRight()">moveFormsRight()</a>
+</li>
+<li>
+<a href="classes/tetris_game.controller.ScreenControlerTest.html">ScreenControlerTest</a>.
+<a href="classes/tetris_game.controller.ScreenControlerTest.html#rotateFormsLeft()">rotateFormsLeft()</a>
+</li>
+<li>
+<a href="classes/tetris_game.controller.ScreenControlerTest.html">ScreenControlerTest</a>.
+<a href="classes/tetris_game.controller.ScreenControlerTest.html#rotateFormsRight()">rotateFormsRight()</a>
+</li>
+<li>
+<a href="classes/tetris_game.gui.LanternaGUITest.html">LanternaGUITest</a>.
+<a href="classes/tetris_game.gui.LanternaGUITest.html#drawHero()">drawHero()</a>
+</li>
+<li>
+<a href="classes/tetris_game.gui.LanternaGUITest.html">LanternaGUITest</a>.
+<a href="classes/tetris_game.gui.LanternaGUITest.html#drawText()">drawText()</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -85,27 +129,37 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>1.266s</td>
+<td>0.119s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="packages/tetris_game.controller.html">tetris_game.controller</a>
 </td>
-<td>1</td>
+<td>10</td>
+<td>7</td>
 <td>0</td>
+<td>1.554s</td>
+<td class="failures">30%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="packages/tetris_game.gui.html">tetris_game.gui</a>
+</td>
+<td>2</td>
+<td>2</td>
 <td>0</td>
-<td>0.001s</td>
-<td class="success">100%</td>
+<td>1.169s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="packages/tetris_game.controller.model.html">tetris_game.controller.model</a>
+<a href="packages/tetris_game.model.html">tetris_game.model</a>
 </td>
 <td>44</td>
 <td>0</td>
 <td>0</td>
-<td>0.060s</td>
+<td>0.044s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -115,23 +169,23 @@
 <td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.020s</td>
+<td>0.003s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/tetris_game.viewer.html">tetris_game.viewer</a>
 </td>
-<td>4</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
-<td>0.041s</td>
+<td>0.083s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -152,7 +206,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>1.266s</td>
+<td>0.119s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -162,22 +216,42 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
+<td>0.002s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/tetris_game.controller.ScreenControlerTest.html">tetris_game.controller.ScreenControlerTest</a>
+</td>
+<td>9</td>
+<td>7</td>
+<td>0</td>
+<td>1.552s</td>
+<td class="failures">22%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/tetris_game.gui.LanternaGUITest.html">tetris_game.gui.LanternaGUITest</a>
+</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>1.169s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/tetris_game.model.BlockHeroTest.html">tetris_game.model.BlockHeroTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
 <td>0.001s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="classes/tetris_game.controller.model.BlockHeroTest.html">tetris_game.controller.model.BlockHeroTest</a>
-</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0.025s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/tetris_game.controller.model.EndGameTest.html">tetris_game.controller.model.EndGameTest</a>
+<a href="classes/tetris_game.model.EndGameTest.html">tetris_game.model.EndGameTest</a>
 </td>
 <td>1</td>
 <td>0</td>
@@ -187,7 +261,7 @@
 </tr>
 <tr>
 <td class="success">
-<a href="classes/tetris_game.controller.model.FormsTest.html">tetris_game.controller.model.FormsTest</a>
+<a href="classes/tetris_game.model.FormsTest.html">tetris_game.model.FormsTest</a>
 </td>
 <td>2</td>
 <td>0</td>
@@ -197,39 +271,79 @@
 </tr>
 <tr>
 <td class="success">
-<a href="classes/tetris_game.controller.model.ITest.html">tetris_game.controller.model.ITest</a>
+<a href="classes/tetris_game.model.ITest.html">tetris_game.model.ITest</a>
 </td>
 <td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.005s</td>
+<td>0.002s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="classes/tetris_game.controller.model.JTest.html">tetris_game.controller.model.JTest</a>
+<a href="classes/tetris_game.model.JTest.html">tetris_game.model.JTest</a>
 </td>
 <td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.005s</td>
+<td>0.002s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="classes/tetris_game.controller.model.LTest.html">tetris_game.controller.model.LTest</a>
+<a href="classes/tetris_game.model.LTest.html">tetris_game.model.LTest</a>
 </td>
 <td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.005s</td>
+<td>0.002s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="classes/tetris_game.controller.model.MenuTest.html">tetris_game.controller.model.MenuTest</a>
+<a href="classes/tetris_game.model.MenuTest.html">tetris_game.model.MenuTest</a>
 </td>
 <td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0.006s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/tetris_game.model.OTest.html">tetris_game.model.OTest</a>
+</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0.004s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/tetris_game.model.PositionTest.html">tetris_game.model.PositionTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.009s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/tetris_game.model.STest.html">tetris_game.model.STest</a>
+</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0.008s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/tetris_game.model.TTest.html">tetris_game.model.TTest</a>
+</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
 <td>0.003s</td>
@@ -237,62 +351,22 @@
 </tr>
 <tr>
 <td class="success">
-<a href="classes/tetris_game.controller.model.OTest.html">tetris_game.controller.model.OTest</a>
-</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0.002s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/tetris_game.controller.model.PositionTest.html">tetris_game.controller.model.PositionTest</a>
-</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0.002s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/tetris_game.controller.model.STest.html">tetris_game.controller.model.STest</a>
-</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0.002s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/tetris_game.controller.model.TTest.html">tetris_game.controller.model.TTest</a>
-</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0.002s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/tetris_game.controller.model.TutorialTest.html">tetris_game.controller.model.TutorialTest</a>
+<a href="classes/tetris_game.model.TutorialTest.html">tetris_game.model.TutorialTest</a>
 </td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.001s</td>
+<td>0.002s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="classes/tetris_game.controller.model.ZTest.html">tetris_game.controller.model.ZTest</a>
+<a href="classes/tetris_game.model.ZTest.html">tetris_game.model.ZTest</a>
 </td>
 <td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.005s</td>
+<td>0.002s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -302,7 +376,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.003s</td>
+<td>0s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -312,7 +386,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.013s</td>
+<td>0.002s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -332,7 +406,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.004s</td>
+<td>0.001s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -349,10 +423,10 @@
 <td class="success">
 <a href="classes/tetris_game.viewer.GameViewerTest.html">tetris_game.viewer.GameViewerTest</a>
 </td>
-<td>1</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0.001s</td>
+<td>0.040s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -363,6 +437,16 @@
 <td>0</td>
 <td>0</td>
 <td>0.002s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/tetris_game.viewer.TutorialViewerTest.html">tetris_game.viewer.TutorialViewerTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.003s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
@@ -376,7 +460,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 09/12/2022, 16:06:22</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 10/12/2022, 17:50:04</p>
 </div>
 </div>
 </body>

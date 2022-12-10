@@ -5,6 +5,7 @@ public class Stats {
     private int points = 0;
     private int level = 1;
 
+
     public void removedLines(int line) {
         this.lines += line;
         switch (line) {
@@ -41,4 +42,7 @@ public class Stats {
     public int getPoints() {
         return this.points;
     }
+
+
+
 }
