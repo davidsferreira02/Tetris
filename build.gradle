@@ -31,8 +31,13 @@ dependencies {
 test {
 
     useJUnitPlatform {
-        includeEngines('junit-jupiter', 'jqwik')
     }
+}
+pitest {
+    junit5PluginVersion = '0.15'
+    verbose = true
+    pitestVersion = '1.6.7'
+    excludedTestClasses = ['tetris_game.states.StatsTest']
 }
 
 
