@@ -24,7 +24,11 @@ public class ScreenController extends GameController{
         int endOfGame = 1;
         if(time-lastMovement>(1000/getModel().getStats().getLevel())){
             endOfGame = BlockMoveDown();
+            //if (endOfGame == -1) {
+              //  game.setState(new EndGameState(new EndGame()));
+            //}
             if (endOfGame == -1) {
+                this.getModel().stopMusic();
                 game.setState(new EndGameState(new EndGame()));
             }
             this.lastMovement = time;
@@ -32,6 +36,7 @@ public class ScreenController extends GameController{
 
         switch (action){
             case EXIT:
+                this.getModel().stopMusic();
                 game.setState(new MenuState(new Menu()));
                 break;
             case DOWN:
@@ -55,7 +60,11 @@ public class ScreenController extends GameController{
             default:
                 break;
         }
+        //if (endOfGame == -1) {
+          //  game.setState(new EndGameState(new EndGame()));
+        //}
         if (endOfGame == -1) {
+            this.getModel().stopMusic();
             game.setState(new EndGameState(new EndGame()));
         }
     }
