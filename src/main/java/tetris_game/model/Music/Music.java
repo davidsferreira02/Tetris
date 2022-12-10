@@ -24,7 +24,8 @@ public class Music {
 
     private Clip loadMusic() throws NullPointerException {
         try {
-            File musicFile = new File(Objects.requireNonNull(Music.class.getResource("/music/tetris.wav")).getFile());
+            File musicFile = new File(Objects.requireNonNull(Music.class.getResource("/tetris.wav")).getFile());
+            //File musicFile = new File("D:\\LDTS\\tetris.wav");
             AudioInputStream audioInput = AudioSystem.getAudioInputStream(musicFile);
             Clip musicClip = AudioSystem.getClip();
             musicClip.open(audioInput);
