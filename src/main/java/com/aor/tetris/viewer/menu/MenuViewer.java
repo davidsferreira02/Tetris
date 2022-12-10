@@ -26,6 +26,6 @@ public class MenuViewer extends Viewer<Menu> {
             gui.drawText(
                     new Position(6, 9 + i),
                     getModel().getEntry(i),
-                    getModel().isSelected(i) ? color.getColor("YELLOW") : color.getColor("WHITE"));
+                    getModel().isSelected(i) ? color.getColor("BLUE") : color.getColor("WHITE"));
     }
 }

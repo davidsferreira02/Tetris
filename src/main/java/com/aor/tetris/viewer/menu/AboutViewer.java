@@ -45,19 +45,19 @@ public class AboutViewer extends Viewer<About> {
         gui.drawText(new Position(11, 2), "T", color.getColor("CYAN"));
 
 
-        gui.drawText(new Position(1, 4), "Tetris was created ", color.getColor("WHITE"));
-        gui.drawText(new Position(1, 5), "in June 1984", color.getColor("WHITE"));
-        gui.drawText(new Position(1, 6), "by the Russian", color.getColor("WHITE"));
-        gui.drawText(new Position(1, 7), "Alexey Pajitnov.", color.getColor("WHITE"));
-        gui.drawText(new Position(1, 8), "The objective is", color.getColor("WHITE"));
-        gui.drawText(new Position(1, 9), "to stack the", color.getColor("WHITE"));
-        gui.drawText(new Position(1, 10), "pieces that come", color.getColor("WHITE"));
-        gui.drawText(new Position(1, 11), "down the screen ", color.getColor("WHITE"));
-        gui.drawText(new Position(1, 12), "which can appear", color.getColor("WHITE"));
-        gui.drawText(new Position(1, 13), "mirrored and be", color.getColor("WHITE"));
-        gui.drawText(new Position(1, 14), "rotated in order", color.getColor("WHITE"));
-        gui.drawText(new Position(1, 15), "to complete", color.getColor("WHITE"));
-        gui.drawText(new Position(1, 16), "horizontal lines.", color.getColor("WHITE"));
+        gui.drawText(new Position(1, 4), "Tetris was created ", color.getColor("RED"));
+        gui.drawText(new Position(1, 5), "in June 1984", color.getColor("ORANGE"));
+        gui.drawText(new Position(1, 6), "by the Russian", color.getColor("YELLOW"));
+        gui.drawText(new Position(1, 7), "Alexey Pajitnov.", color.getColor("GREEN"));
+        gui.drawText(new Position(1, 8), "The objective is", color.getColor("CYAN"));
+        gui.drawText(new Position(1, 9), "to stack the", color.getColor("RED"));
+        gui.drawText(new Position(1, 10), "pieces that come", color.getColor("ORANGE"));
+        gui.drawText(new Position(1, 11), "down the screen ", color.getColor("YELLOW"));
+        gui.drawText(new Position(1, 12), "which can appear", color.getColor("GREEN"));
+        gui.drawText(new Position(1, 13), "mirrored and be", color.getColor("CYAN"));
+        gui.drawText(new Position(1, 14), "rotated in order", color.getColor("RED"));
+        gui.drawText(new Position(1, 15), "to complete", color.getColor("ORANGE"));
+        gui.drawText(new Position(1, 16), "horizontal lines.", color.getColor("YELLOW"));
 
 
 
