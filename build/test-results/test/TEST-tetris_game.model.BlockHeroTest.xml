@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.model.BlockHeroTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-12-10T18:21:38" hostname="Air-de-David.home" time="0.12">
+<testsuite name="tetris_game.model.BlockHeroTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-12-11T10:35:41" hostname="Air-de-David.home" time="0.022">
   <properties/>
-  <testcase name="BlockHeroTest()" classname="tetris_game.model.BlockHeroTest" time="0.114"/>
-  <testcase name="getHeroColorTest()" classname="tetris_game.model.BlockHeroTest" time="0.005"/>
+  <testcase name="BlockHeroTest()" classname="tetris_game.model.BlockHeroTest" time="0.021"/>
+  <testcase name="getHeroColorTest()" classname="tetris_game.model.BlockHeroTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

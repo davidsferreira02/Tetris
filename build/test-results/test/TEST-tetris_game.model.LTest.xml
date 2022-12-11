@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.model.LTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-10T18:21:38" hostname="Air-de-David.home" time="0.009">
+<testsuite name="tetris_game.model.LTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-11T10:35:41" hostname="Air-de-David.home" time="0.005">
   <properties/>
-  <testcase name="LRightTest()" classname="tetris_game.model.LTest" time="0.006"/>
-  <testcase name="LUpTest()" classname="tetris_game.model.LTest" time="0.001"/>
-  <testcase name="LDownTest()" classname="tetris_game.model.LTest" time="0.0"/>
+  <testcase name="LRightTest()" classname="tetris_game.model.LTest" time="0.001"/>
+  <testcase name="LUpTest()" classname="tetris_game.model.LTest" time="0.0"/>
+  <testcase name="LDownTest()" classname="tetris_game.model.LTest" time="0.001"/>
   <testcase name="LLeftTest()" classname="tetris_game.model.LTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

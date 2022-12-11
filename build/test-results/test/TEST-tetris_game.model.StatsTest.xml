@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.model.StatsTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-12-10T18:21:38" hostname="Air-de-David.home" time="2.417">
+<testsuite name="tetris_game.model.StatsTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-12-11T10:35:41" hostname="Air-de-David.home" time="2.353">
   <properties/>
-  <testcase name="actionUp()" classname="tetris_game.model.StatsTest" time="2.394"/>
-  <testcase name="menuToTutorialToMenu()" classname="tetris_game.model.StatsTest" time="0.005"/>
+  <testcase name="actionUp()" classname="tetris_game.model.StatsTest" time="2.279"/>
+  <testcase name="menuToTutorialToMenu()" classname="tetris_game.model.StatsTest" time="0.002"/>
   <testcase name="endGameToMenu()" classname="tetris_game.model.StatsTest" time="0.002"/>
-  <testcase name="menuToGameToMenu()" classname="tetris_game.model.StatsTest" time="0.004"/>
-  <testcase name="actionSelect()" classname="tetris_game.model.StatsTest" time="0.0"/>
-  <testcase name="actionDown()" classname="tetris_game.model.StatsTest" time="0.001"/>
-  <testcase name="actionQuit()" classname="tetris_game.model.StatsTest" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="menuToGameToMenu()" classname="tetris_game.model.StatsTest" time="0.034"/>
+  <testcase name="actionSelect()" classname="tetris_game.model.StatsTest" time="0.02"/>
+  <testcase name="actionDown()" classname="tetris_game.model.StatsTest" time="0.002"/>
+  <testcase name="actionQuit()" classname="tetris_game.model.StatsTest" time="0.002"/>
+  <system-out><![CDATA[com.sun.media.sound.DirectAudioDevice$DirectClip@58be6e8
+]]></system-out>
   <system-err><![CDATA[Warning: the fonts "Times" and "Times" are not available for the Java logical font "Serif", which may have unexpected appearance or behavior. Re-enable the "Times" font to remove this warning.
 Warning: the fonts "Times" and "Times" are not available for the Java logical font "Serif", which may have unexpected appearance or behavior. Re-enable the "Times" font to remove this warning.
 ]]></system-err>

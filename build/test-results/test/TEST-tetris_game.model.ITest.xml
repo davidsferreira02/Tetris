@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.model.ITest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-10T18:21:38" hostname="Air-de-David.home" time="0.007">
+<testsuite name="tetris_game.model.ITest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-11T10:35:41" hostname="Air-de-David.home" time="0.004">
   <properties/>
-  <testcase name="IDownTest()" classname="tetris_game.model.ITest" time="0.004"/>
-  <testcase name="IUpTest()" classname="tetris_game.model.ITest" time="0.0"/>
+  <testcase name="IDownTest()" classname="tetris_game.model.ITest" time="0.0"/>
+  <testcase name="IUpTest()" classname="tetris_game.model.ITest" time="0.001"/>
   <testcase name="ILeftTest()" classname="tetris_game.model.ITest" time="0.0"/>
-  <testcase name="IRightTest()" classname="tetris_game.model.ITest" time="0.0"/>
+  <testcase name="IRightTest()" classname="tetris_game.model.ITest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

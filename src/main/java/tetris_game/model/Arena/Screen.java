@@ -2,6 +2,7 @@ package tetris_game.model.Arena;
 
 import tetris_game.model.Forms.Forms;
 import tetris_game.model.Forms.QueueOfForms;
+import tetris_game.model.Music.Music;
 import tetris_game.model.Stats;
 
 public class Screen {
@@ -11,6 +12,8 @@ public class Screen {
     private QueueOfForms queueOfForms;
     private Forms forms;
     private Stats stats;
+
+    private Music music;
     private final int width;
     private final int height;
 
@@ -18,10 +21,15 @@ public class Screen {
     public Screen(int width, int height) {
         this.width = width;
         this.height = height;
+
+        this.music = Music.getInstance();
+
         this.arena = new Arena(width, height);
         this.queueOfForms = new QueueOfForms();
         this.forms = queueOfForms.popNext();
         this.stats = new Stats();
+
+        startMusic();
     }
 
     public QueueOfForms getQueueOfForms() {
@@ -43,6 +51,14 @@ public class Screen {
 
     public Stats getStats() {
         return this.stats;
+    }
+
+    public void startMusic(){
+        music.startMusic();
+    }
+
+    public void stopMusic(){
+        music.stopMusic();
     }
 
 }
