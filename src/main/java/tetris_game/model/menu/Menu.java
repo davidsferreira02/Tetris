@@ -9,7 +9,7 @@ public class Menu {
     private int currentEntry = 0;
 
     public Menu(){
-        this.entries = Arrays.asList("Play", "Tutorial", "Exit");
+        this.entries = Arrays.asList("Play", "Tutorial","About", "Exit");
     }
 
     public int getCurrentEntry() {
