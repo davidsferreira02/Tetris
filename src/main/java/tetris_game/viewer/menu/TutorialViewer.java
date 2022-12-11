@@ -13,14 +13,14 @@ public class TutorialViewer extends Viewer<Tutorial> {
     @Override
     protected void drawElements(GUI gui) {
 
-        gui.drawText(new Position(7, 2), "T", color.getColor("RED"));
-        gui.drawText(new Position(8, 2), "U", color.getColor("ORANGE"));
-        gui.drawText(new Position(9, 2), "T", color.getColor("YELLOW"));
-        gui.drawText(new Position(10, 2), "O", color.getColor("GREEN"));
-        gui.drawText(new Position(11, 2), "R", color.getColor("CYAN"));
-        gui.drawText(new Position(12, 2), "I", color.getColor("PURPLE"));
-        gui.drawText(new Position(13, 2), "A", color.getColor("RED"));
-        gui.drawText(new Position(14, 2), "L", color.getColor("ORANGE"));
+        gui.drawText(new Position(12, 2), "T", color.getColor("RED"));
+        gui.drawText(new Position(13, 2), "U", color.getColor("ORANGE"));
+        gui.drawText(new Position(14, 2), "T", color.getColor("YELLOW"));
+        gui.drawText(new Position(15, 2), "O", color.getColor("GREEN"));
+        gui.drawText(new Position(16, 2), "R", color.getColor("CYAN"));
+        gui.drawText(new Position(17, 2), "I", color.getColor("PURPLE"));
+        gui.drawText(new Position(18, 2), "A", color.getColor("RED"));
+        gui.drawText(new Position(19, 2), "L", color.getColor("ORANGE"));
 
         gui.drawText(new Position(2, 5), "LEFT", color.getColor("BLUE"));
         gui.drawText(new Position(8, 5), "MOVE LEFT", color.getColor("WHITE"));
@@ -38,7 +38,7 @@ public class TutorialViewer extends Viewer<Tutorial> {
         gui.drawText(new Position(8, 17), "EXIT TO MENU", color.getColor("WHITE"));
 
 
-        gui.drawText(new Position(9, 19),getModel().getEntryName(),color.getColor("RED"));
+        gui.drawText(new Position(15, 19),getModel().getEntryName(),color.getColor("RED"));
 
     }
 }
