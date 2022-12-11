@@ -28,8 +28,12 @@ public class Menu {
         return isSelected(1);
     }
 
-    public boolean isSelectedExit(){
+    public boolean isSelectedAbout(){
         return isSelected(2);
+    }
+
+    public boolean isSelectedExit(){
+        return isSelected(3);
     }
 
     public int getNumEntries() {
