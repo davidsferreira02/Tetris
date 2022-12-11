@@ -34,7 +34,7 @@ public class MenuTest {
 
     @Test
     public void getNumberEntriesTest(){
-        Assertions.assertEquals(3,menu.getNumEntries());
+        Assertions.assertEquals(4,menu.getNumEntries());
     }
 
     @Test
