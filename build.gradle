@@ -1,43 +1,33 @@
+
 plugins {
     id 'java'
     id 'application'
     id 'info.solidsoft.pitest' version '1.6.0'
 }
 
-
-
 group 'tetris_game'
-
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
-}
-pitest {
-    junit5PluginVersion = '0.12'
-}
-application {
-    mainClass.set('tetris_game.Game')
 }
 
 dependencies {
     implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     testImplementation "org.mockito:mockito-core:3.7.7"
-
     implementation group: 'com.googlecode.lanterna', name: 'lanterna', version: '3.1.1'
 }
 
 test {
-
-    useJUnitPlatform {
-    }
+    useJUnitPlatform()
 }
+
+mainClassName = 'tetris_game.Game'
+
 pitest {
     junit5PluginVersion = '0.15'
     verbose = true
     pitestVersion = '1.6.7'
-    excludedTestClasses = ['tetris_game.states.StatsTest']
+
 }
-
-
