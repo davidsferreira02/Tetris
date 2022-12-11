@@ -2,9 +2,9 @@ package tetris_game.model;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import tetris_game.model.Forms.Forms;
-import tetris_game.model.Forms.J;
-import tetris_game.model.Hero.Position;
+import tetris_game.model.forms.Forms;
+import tetris_game.model.forms.J;
+import tetris_game.model.hero.Position;
 import tetris_game.model.direction.Direction;
 import org.junit.jupiter.api.BeforeEach;
 

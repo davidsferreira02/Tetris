@@ -2,8 +2,8 @@ package tetris_game.viewer.menu;
 
 
 import tetris_game.gui.GUI;
-import tetris_game.model.Hero.Color;
-import tetris_game.model.Hero.Position;
+import tetris_game.model.hero.Color;
+import tetris_game.model.hero.Position;
 import tetris_game.model.menu.About;
 import tetris_game.viewer.Viewer;
 

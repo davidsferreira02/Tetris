@@ -4,12 +4,12 @@ package tetris_game.controller.game;
 import tetris_game.Game;
 import tetris_game.gui.GUI;
 import tetris_game.model.endGame.EndGame;
-import tetris_game.model.Hero.Position;
+import tetris_game.model.hero.Position;
 import tetris_game.model.menu.Menu;
-import tetris_game.model.Hero.BlockHero;
-import tetris_game.model.Arena.Screen;
+import tetris_game.model.hero.BlockHero;
+import tetris_game.model.arena.Screen;
 import tetris_game.states.endGame.EndGameState;
-import tetris_game.states.Menu.MenuState;
+import tetris_game.states.menu.MenuState;
 
 public class ScreenController extends GameController{
     private long lastMovement;
@@ -24,9 +24,6 @@ public class ScreenController extends GameController{
         int endOfGame = 1;
         if(time-lastMovement>(1000/getModel().getStats().getLevel())){
             endOfGame = BlockMoveDown();
-            //if (endOfGame == -1) {
-              //  game.setState(new EndGameState(new EndGame()));
-            //}
             if (endOfGame == -1) {
                 this.getModel().stopMusic();
                 game.setState(new EndGameState(new EndGame()));

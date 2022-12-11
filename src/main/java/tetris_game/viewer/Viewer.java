@@ -1,7 +1,7 @@
 package tetris_game.viewer;
 
 import tetris_game.gui.GUI;
-import tetris_game.model.Hero.Color;
+import tetris_game.model.hero.Color;
 
 import java.io.IOException;
 

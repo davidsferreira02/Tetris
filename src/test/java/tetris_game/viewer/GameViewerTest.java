@@ -2,11 +2,11 @@ package tetris_game.viewer;
 
 import org.mockito.Mockito;
 import tetris_game.gui.GUI;
-import tetris_game.model.Arena.Arena;
-import tetris_game.model.Arena.Screen;
-import tetris_game.model.Forms.Forms;
-import tetris_game.model.Forms.T;
-import tetris_game.model.Hero.Position;
+import tetris_game.model.arena.Arena;
+import tetris_game.model.arena.Screen;
+import tetris_game.model.forms.Forms;
+import tetris_game.model.forms.T;
+import tetris_game.model.hero.Position;
 import tetris_game.model.Stats;
 import tetris_game.viewer.game.GameViewer;
 import org.junit.jupiter.api.BeforeEach;

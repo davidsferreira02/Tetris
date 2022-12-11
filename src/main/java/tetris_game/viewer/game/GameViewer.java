@@ -1,8 +1,8 @@
 package tetris_game.viewer.game;
 
 import tetris_game.gui.GUI;
-import tetris_game.model.Arena.Screen;
-import tetris_game.model.Hero.Position;
+import tetris_game.model.arena.Screen;
+import tetris_game.model.hero.Position;
 import tetris_game.viewer.Viewer;
 
 

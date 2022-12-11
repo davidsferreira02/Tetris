@@ -1,7 +1,7 @@
 package tetris_game.viewer;
 
 import tetris_game.gui.GUI;
-import tetris_game.model.Hero.Position;
+import tetris_game.model.hero.Position;
 import tetris_game.model.endGame.EndGame;
 import tetris_game.viewer.endGame.EndGameViewer;
 import org.junit.jupiter.api.Test;

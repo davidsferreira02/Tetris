@@ -2,7 +2,7 @@ package tetris_game;
 
 import tetris_game.gui.LanternaGUI;
 import tetris_game.model.menu.Menu;
-import tetris_game.states.Menu.MenuState;
+import tetris_game.states.menu.MenuState;
 import tetris_game.states.State;
 
 import java.awt.*;

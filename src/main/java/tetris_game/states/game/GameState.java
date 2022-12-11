@@ -3,7 +3,7 @@ package tetris_game.states.game;
 
 import tetris_game.controller.Controller;
 import tetris_game.controller.game.ScreenController;
-import tetris_game.model.Arena.Screen;
+import tetris_game.model.arena.Screen;
 import tetris_game.states.State;
 import tetris_game.viewer.game.GameViewer;
 import tetris_game.viewer.Viewer;

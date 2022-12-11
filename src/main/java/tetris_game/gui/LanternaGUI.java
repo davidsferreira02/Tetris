@@ -1,9 +1,9 @@
 package tetris_game.gui;
 
-import tetris_game.model.Arena.Arena;
-import tetris_game.model.Hero.Color;
-import tetris_game.model.Hero.Position;
-import tetris_game.model.Forms.Forms;
+import tetris_game.model.arena.Arena;
+import tetris_game.model.hero.Color;
+import tetris_game.model.hero.Position;
+import tetris_game.model.forms.Forms;
 import com.googlecode.lanterna.TerminalSize;
 import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.graphics.TextGraphics;
@@ -26,7 +26,7 @@ import java.net.URL;
 
 public class LanternaGUI implements GUI{
     private final Screen screen;
-    private final tetris_game.model.Hero.Color colors = new Color();
+    private final tetris_game.model.hero.Color colors = new Color();
 
     public LanternaGUI(int width, int height) throws IOException, URISyntaxException, FontFormatException {
         AWTTerminalFontConfiguration fontConfig = loadSquareFont();

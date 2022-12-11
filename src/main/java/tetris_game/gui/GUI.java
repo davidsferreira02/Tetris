@@ -1,7 +1,7 @@
 package tetris_game.gui;
-import tetris_game.model.Hero.Position;
-import tetris_game.model.Arena.Arena;
-import tetris_game.model.Forms.Forms;
+import tetris_game.model.hero.Position;
+import tetris_game.model.arena.Arena;
+import tetris_game.model.forms.Forms;
 import tetris_game.model.Stats;
 
 import java.io.IOException;

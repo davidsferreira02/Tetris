@@ -1,15 +1,14 @@
 package tetris_game.states;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import tetris_game.Game;
-import tetris_game.controller.Menu.MenuController;
+import tetris_game.controller.menu.MenuController;
 import tetris_game.controller.game.GameController;
 import tetris_game.controller.game.ScreenController;
 import tetris_game.gui.GUI;
-import tetris_game.model.Arena.Screen;
+import tetris_game.model.arena.Screen;
 import tetris_game.model.menu.Menu;
 
 
@@ -39,6 +38,6 @@ public class GameTest {
         menuController.step(game, GUI.ACTION.SELECT, 0);
         Assertions.assertEquals(tetris_game.states.game.GameState.class, game.getState().getClass());
         gameController.step(game, GUI.ACTION.EXIT, 0);
-        Assertions.assertEquals(tetris_game.states.Menu.MenuState.class, game.getState().getClass());
+        Assertions.assertEquals(tetris_game.states.menu.MenuState.class, game.getState().getClass());
     }
 }

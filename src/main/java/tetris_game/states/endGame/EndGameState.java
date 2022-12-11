@@ -1,7 +1,7 @@
 package tetris_game.states.endGame;
 
 import tetris_game.controller.Controller;
-import tetris_game.controller.game.EndGame.EndGameController;
+import tetris_game.controller.game.endGame.EndGameController;
 import tetris_game.model.endGame.EndGame;
 import tetris_game.states.State;
 import tetris_game.viewer.endGame.EndGameViewer;

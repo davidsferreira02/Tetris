@@ -2,8 +2,8 @@ package tetris_game.states;
 
 import org.junit.jupiter.api.*;
 import tetris_game.Game;
-import tetris_game.controller.Menu.MenuController;
-import tetris_game.controller.Menu.TutorialController;
+import tetris_game.controller.menu.MenuController;
+import tetris_game.controller.menu.TutorialController;
 
 import tetris_game.model.menu.Menu;
 import tetris_game.gui.GUI;
@@ -40,9 +40,9 @@ public class TutorialTest {
     void  TutorialStateTest(){
         menuController.step(game, GUI.ACTION.DOWN, 0);
         menuController.step(game, GUI.ACTION.SELECT, 0);
-        Assertions.assertEquals(tetris_game.states.Menu.TutorialState.class, game.getState().getClass());
+        Assertions.assertEquals(tetris_game.states.menu.TutorialState.class, game.getState().getClass());
         tutorialController.step(game, GUI.ACTION.SELECT, 0);
-        Assertions.assertEquals(tetris_game.states.Menu.MenuState.class, game.getState().getClass());
+        Assertions.assertEquals(tetris_game.states.menu.MenuState.class, game.getState().getClass());
     }
 
 
