@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.viewer.GameViewerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-12-11T10:35:44" hostname="Air-de-David.home" time="0.037">
+<testsuite name="tetris_game.viewer.GameViewerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-12-11T11:16:25" hostname="Air-de-David.home" time="0.044">
   <properties/>
-  <testcase name="drawElements()" classname="tetris_game.viewer.GameViewerTest" time="0.015"/>
-  <testcase name="drawTetrimino()" classname="tetris_game.viewer.GameViewerTest" time="0.009"/>
-  <testcase name="refreshAndClear()" classname="tetris_game.viewer.GameViewerTest" time="0.012"/>
+  <testcase name="drawElements()" classname="tetris_game.viewer.GameViewerTest" time="0.011"/>
+  <testcase name="drawTetrimino()" classname="tetris_game.viewer.GameViewerTest" time="0.017"/>
+  <testcase name="refreshAndClear()" classname="tetris_game.viewer.GameViewerTest" time="0.014"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
