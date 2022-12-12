@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris_game.model.ZTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-12T10:13:17" hostname="MacBook-Air-de-David.local" time="0.003">
+  <properties/>
+  <testcase name="ZLeftTest()" classname="tetris_game.model.ZTest" time="0.001"/>
+  <testcase name="ZRightTest()" classname="tetris_game.model.ZTest" time="0.0"/>
+  <testcase name="ZUpTest()" classname="tetris_game.model.ZTest" time="0.0"/>
+  <testcase name="ZDownTest()" classname="tetris_game.model.ZTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

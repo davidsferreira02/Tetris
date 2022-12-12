@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris_game.model.LTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-12T10:13:17" hostname="MacBook-Air-de-David.local" time="0.009">
+  <properties/>
+  <testcase name="LRightTest()" classname="tetris_game.model.LTest" time="0.007"/>
+  <testcase name="LUpTest()" classname="tetris_game.model.LTest" time="0.001"/>
+  <testcase name="LDownTest()" classname="tetris_game.model.LTest" time="0.0"/>
+  <testcase name="LLeftTest()" classname="tetris_game.model.LTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
