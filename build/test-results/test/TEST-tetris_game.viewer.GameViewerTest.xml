@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.viewer.GameViewerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-12-12T10:13:20" hostname="MacBook-Air-de-David.local" time="0.097">
-  <properties/>
-  <testcase name="drawElements()" classname="tetris_game.viewer.GameViewerTest" time="0.06"/>
-  <testcase name="drawTetrimino()" classname="tetris_game.viewer.GameViewerTest" time="0.018"/>
-  <testcase name="refreshAndClear()" classname="tetris_game.viewer.GameViewerTest" time="0.014"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

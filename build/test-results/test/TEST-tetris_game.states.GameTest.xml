@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.states.GameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-12T10:13:18" hostname="MacBook-Air-de-David.local" time="0.246">
-  <properties/>
-  <testcase name="menuToGameToMenu()" classname="tetris_game.states.GameTest" time="0.246"/>
-  <system-out><![CDATA[com.sun.media.sound.DirectAudioDevice$DirectClip@7241a47d
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
