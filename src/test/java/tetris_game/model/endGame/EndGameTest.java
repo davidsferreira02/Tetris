@@ -1,4 +1,4 @@
-package tetris_game.model;
+package tetris_game.model.endGame;
 
 import tetris_game.model.endGame.EndGame;
 import org.junit.jupiter.api.Assertions;

@@ -1,4 +1,4 @@
-package tetris_game.viewer;
+package tetris_game.viewer.game;
 
 import org.mockito.Mockito;
 import tetris_game.gui.GUI;

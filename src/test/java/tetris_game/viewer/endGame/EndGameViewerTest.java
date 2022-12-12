@@ -1,4 +1,4 @@
-package tetris_game.viewer;
+package tetris_game.viewer.endGame;
 
 import tetris_game.gui.GUI;
 import tetris_game.model.hero.Position;

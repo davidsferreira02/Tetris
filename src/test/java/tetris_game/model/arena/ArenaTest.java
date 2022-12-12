@@ -1,4 +1,4 @@
-package tetris_game.model;
+package tetris_game.model.arena;
 
 
 import tetris_game.model.hero.BlockHero;

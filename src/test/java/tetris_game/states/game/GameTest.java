@@ -1,4 +1,4 @@
-package tetris_game.states;
+package tetris_game.states.game;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

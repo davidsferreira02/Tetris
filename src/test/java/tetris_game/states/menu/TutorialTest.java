@@ -1,4 +1,4 @@
-package tetris_game.states;
+package tetris_game.states.menu;
 
 import org.junit.jupiter.api.*;
 import tetris_game.Game;
