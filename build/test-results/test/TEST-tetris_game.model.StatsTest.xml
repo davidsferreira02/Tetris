@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.model.StatsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-12T17:37:10" hostname="Air-de-David.home" time="0.002">
+<testsuite name="tetris_game.model.StatsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-12T18:29:50" hostname="MBP-de-Nuno-4.lan" time="0.031">
   <properties/>
-  <testcase name="testStats()" classname="tetris_game.model.StatsTest" time="0.002"/>
+  <testcase name="testStats()" classname="tetris_game.model.StatsTest" time="0.031"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
