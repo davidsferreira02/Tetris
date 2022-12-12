@@ -57,9 +57,6 @@ public class ScreenController extends GameController{
             default:
                 break;
         }
-        //if (endOfGame == -1) {
-          //  game.setState(new EndGameState(new EndGame()));
-        //}
         if (endOfGame == -1) {
             this.getModel().stopMusic();
             game.setState(new EndGameState(new EndGame()));

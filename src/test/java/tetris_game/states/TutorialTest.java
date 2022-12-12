@@ -2,9 +2,9 @@ package tetris_game.states;
 
 import org.junit.jupiter.api.*;
 import tetris_game.Game;
+
 import tetris_game.controller.menu.MenuController;
 import tetris_game.controller.menu.TutorialController;
-
 import tetris_game.model.menu.Menu;
 import tetris_game.gui.GUI;
 
