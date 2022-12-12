@@ -1,5 +1,6 @@
 package tetris_game.states;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,6 +10,7 @@ import tetris_game.controller.menu.AboutController;
 import tetris_game.gui.GUI;
 import tetris_game.model.menu.Menu;
 import tetris_game.model.menu.About;
+import tetris_game.states.menu.MenuState;
 
 import java.awt.*;
 import java.io.IOException;
@@ -27,6 +29,12 @@ public class AboutTest {
         menu=new Menu();
         menuController = new MenuController(menu);
         aboutController = new AboutController(new About());
+    }
+        @AfterEach
+    void after(){
+        game.setState(new MenuState(new Menu()));
+        menu = null;
+        menuController = null;
     }
     @Test
     void  AboutStateTest(){

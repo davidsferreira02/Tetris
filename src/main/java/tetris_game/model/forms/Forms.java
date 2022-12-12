@@ -18,6 +18,9 @@ public abstract class Forms {
     public String getColor() {
         return color;
     }
+    public void setColor(String color) {
+        this.color=color;
+    }
 
     public abstract Position[] getPosition(Direction direction);
     public Position[] getActualPosition(Position centralPosition, Direction direction) {
@@ -36,7 +39,7 @@ public abstract class Forms {
         return centralPosition;
     }
     public void setCentralPosition(Position position) {
-        this.centralPosition=centralPosition;
+        this.centralPosition=position;
     }
     public Direction getDirection() {
         return this.direction;

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris_game.model.menu.MenuTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-12-12T16:40:54" hostname="Air-de-David.home" time="0.013">
+  <properties/>
+  <testcase name="PreviousEntryTest()" classname="tetris_game.model.menu.MenuTest" time="0.001"/>
+  <testcase name="NextEntryTest()" classname="tetris_game.model.menu.MenuTest" time="0.0"/>
+  <testcase name="getCurentEntry()" classname="tetris_game.model.menu.MenuTest" time="0.001"/>
+  <testcase name="isSelectedStartTest()" classname="tetris_game.model.menu.MenuTest" time="0.0"/>
+  <testcase name="isSelectedExitTest()" classname="tetris_game.model.menu.MenuTest" time="0.002"/>
+  <testcase name="isSelectedTutorialTest()" classname="tetris_game.model.menu.MenuTest" time="0.001"/>
+  <testcase name="getNumberEntriesTest()" classname="tetris_game.model.menu.MenuTest" time="0.0"/>
+  <testcase name="isSelectedTest()" classname="tetris_game.model.menu.MenuTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

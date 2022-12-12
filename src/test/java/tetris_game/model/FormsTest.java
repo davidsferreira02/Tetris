@@ -1,6 +1,7 @@
 package tetris_game.model;
 
 import tetris_game.model.forms.Forms;
+import tetris_game.model.forms.L;
 import tetris_game.model.hero.Position;
 import tetris_game.model.direction.Direction;
 import org.junit.jupiter.api.Assertions;
@@ -17,19 +18,26 @@ public class FormsTest {
     public void setDirection(){
         centralPosition = new Position(10,10);
         direction = Direction.UP;
-        color = "green";
-        form = new Forms(centralPosition) {
-            @Override
-            public Position[] getPosition(Direction direction) {
-                return new Position[0];
-            }
-        };
+        color = "WHITE";
+        form = new L(centralPosition);
     }
 
     @Test
     public void FormsTest(){
         Assertions.assertEquals(form.direction, direction);
         Assertions.assertEquals(form.getCentralPosition(), centralPosition);
+    }
+    @Test
+    public void GetColorTest(){
+        form.setColor("GREEN");
+       Assertions.assertEquals("GREEN",form.getColor());
+    }
+
+    @Test
+    public void GetCentralPositionTest(){
+        Position position=new Position(11,11);
+        form.setCentralPosition(position);
+        Assertions.assertEquals(position,form.getCentralPosition());
     }
 
 
