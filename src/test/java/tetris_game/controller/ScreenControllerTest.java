@@ -1,4 +1,4 @@
-package tetris_game.Controller;
+package tetris_game.controller;
 
 import tetris_game.Game;
 import tetris_game.controller.game.ScreenController;

@@ -29,6 +29,6 @@ pitest {
     junit5PluginVersion = '0.15'
     verbose = true
     pitestVersion = '1.6.7'
-    excludedTestClasses = [ 'tetris_game.states.AboutTest','tetris_game.states.EndGameTest','tetris_game.states.GameTest','tetris_game.states.TutorialTest']
+    excludedTestClasses = [ 'tetris_game.states.AboutTest','tetris_game.states.EndGameTest','tetris_game.states.GameTest','tetris_game.states.TutorialTest','tetris_game.controller.ScreenControllerTest']
 
 }
