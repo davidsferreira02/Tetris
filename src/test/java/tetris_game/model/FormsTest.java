@@ -29,15 +29,34 @@ public class FormsTest {
     }
     @Test
     public void GetColorTest(){
+       Assertions.assertEquals("WHITE",form.getColor());
+    }
+    @Test
+    public void SetColorTest(){
         form.setColor("GREEN");
-       Assertions.assertEquals("GREEN",form.getColor());
+        Assertions.assertEquals("GREEN",form.getColor());
     }
 
     @Test
     public void GetCentralPositionTest(){
+
+        Assertions.assertEquals(new Position(10,10),form.getCentralPosition());
+    }
+    @Test
+    public void SetCentralPositionTest(){
         Position position=new Position(11,11);
         form.setCentralPosition(position);
         Assertions.assertEquals(position,form.getCentralPosition());
+    }
+
+    @Test
+    public void GetDirectionTest(){
+        Assertions.assertEquals(Direction.UP,form.getDirection());
+    }
+    @Test
+    public void SetDirectionTest(){
+        form.setDirection(Direction.DOWN);
+        Assertions.assertEquals(Direction.DOWN,form.getDirection());
     }
 
 

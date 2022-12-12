@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.states.AboutTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-12T16:40:54" hostname="Air-de-David.home" time="1.709">
-  <properties/>
-  <testcase name="AboutStateTest()" classname="tetris_game.states.AboutTest" time="1.709"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Warning: the fonts "Times" and "Times" are not available for the Java logical font "Serif", which may have unexpected appearance or behavior. Re-enable the "Times" font to remove this warning.
-Warning: the fonts "Times" and "Times" are not available for the Java logical font "Serif", which may have unexpected appearance or behavior. Re-enable the "Times" font to remove this warning.
-]]></system-err>
-</testsuite>
