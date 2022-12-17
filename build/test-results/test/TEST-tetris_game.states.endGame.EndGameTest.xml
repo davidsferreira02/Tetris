@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.states.endGame.EndGameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-17T22:38:13" hostname="Air-de-David.home" time="0.0">
+<testsuite name="tetris_game.states.endGame.EndGameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-17T22:41:19" hostname="Air-de-David.home" time="0.001">
   <properties/>
-  <testcase name="endGame()" classname="tetris_game.states.endGame.EndGameTest" time="0.0"/>
+  <testcase name="endGame()" classname="tetris_game.states.endGame.EndGameTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

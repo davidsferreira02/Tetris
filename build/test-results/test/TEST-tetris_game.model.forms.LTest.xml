@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.model.forms.LTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-17T22:38:13" hostname="Air-de-David.home" time="0.008">
+<testsuite name="tetris_game.model.forms.LTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-17T22:41:19" hostname="Air-de-David.home" time="0.008">
   <properties/>
-  <testcase name="LRightTest()" classname="tetris_game.model.forms.LTest" time="0.004"/>
-  <testcase name="LUpTest()" classname="tetris_game.model.forms.LTest" time="0.001"/>
+  <testcase name="LRightTest()" classname="tetris_game.model.forms.LTest" time="0.002"/>
+  <testcase name="LUpTest()" classname="tetris_game.model.forms.LTest" time="0.0"/>
   <testcase name="LDownTest()" classname="tetris_game.model.forms.LTest" time="0.001"/>
   <testcase name="LLeftTest()" classname="tetris_game.model.forms.LTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

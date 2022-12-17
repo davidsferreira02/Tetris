@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.viewer.menu.TutorialViewerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-17T22:38:14" hostname="Air-de-David.home" time="0.007">
+<testsuite name="tetris_game.viewer.menu.TutorialViewerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-17T22:41:20" hostname="Air-de-David.home" time="0.003">
   <properties/>
-  <testcase name="refreshAndClearTest()" classname="tetris_game.viewer.menu.TutorialViewerTest" time="0.007"/>
+  <testcase name="refreshAndClearTest()" classname="tetris_game.viewer.menu.TutorialViewerTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
