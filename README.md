@@ -83,7 +83,12 @@ Singleton Pattern:
 	Como a classe ‘Game’ é a classe principal do jogo, temos de garantir que existem apenas um objeto desta classe. Assim implementamos este padrão na classe ‘Game’, para obtermos essa garantia.
 
 
-
+Self-Evaluation
+| Name                 | Contribution| 
+| -------------------- | --------- | 
+| David Ferreira       | 1/3 |
+| Gonçalo Santos       | 1/3 |
+| Nuno Silva           | 1/3 |
 
 
 
