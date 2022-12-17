@@ -45,6 +45,12 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 * Arena
 * BlockHero
 * Rotate Block
+* Next Form
+* About
+* lines 
+* levels
+* points
+* music
 
 
 **Mockups:**
@@ -81,6 +87,18 @@ Factory Method Pattern:
 
 Singleton Pattern:
 	Como a classe ‘Game’ é a classe principal do jogo, temos de garantir que existem apenas um objeto desta classe. Assim implementamos este padrão na classe ‘Game’, para obtermos essa garantia.
+
+
+**Pitest**
+
+![image](https://user-images.githubusercontent.com/93715921/208268192-4efd2fa5-766d-45fe-bf81-2f106e67b15a.png)
+
+**Better Code Hub**
+![image](https://user-images.githubusercontent.com/93715921/208268198-c857a68d-991b-4457-a0fa-4e86f3b90f9c.png)
+
+
+![image](https://user-images.githubusercontent.com/93715921/208268204-20404765-03a2-4cbd-95a1-dee6425391de.png)
+
 
 
 Self-Evaluation
