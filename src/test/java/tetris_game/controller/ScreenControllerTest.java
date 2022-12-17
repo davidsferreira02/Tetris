@@ -1,17 +1,19 @@
 package tetris_game.controller;
 
-import tetris_game.Game;
-import tetris_game.controller.game.ScreenController;
-import tetris_game.gui.GUI;
-import tetris_game.model.hero.BlockHero;
-import tetris_game.model.hero.Position;
-import tetris_game.model.arena.Screen;
-import tetris_game.model.direction.Direction;
-import tetris_game.model.forms.*;
-import tetris_game.states.endGame.EndGameState;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import tetris_game.Game;
+import tetris_game.controller.game.ScreenController;
+import tetris_game.gui.GUI;
+import tetris_game.model.arena.Screen;
+import tetris_game.model.direction.Direction;
+import tetris_game.model.forms.I;
+import tetris_game.model.forms.J;
+import tetris_game.model.forms.S;
+import tetris_game.model.forms.T;
+import tetris_game.model.hero.BlockHero;
+import tetris_game.model.hero.Position;
 
 import java.awt.*;
 import java.io.IOException;
@@ -29,21 +31,7 @@ public class ScreenControllerTest {
 
 
 
-    @Test
-    void moveFormsRight(){
 
-        controller.getModel().setForms(new O(new Position(6,1)));
-
-        controller.getModel().getForms().setCentralPosition(new Position(5, 15));
-        controller.step(game, GUI.ACTION.RIGHT,0);
-        Assertions.assertEquals(new Position(6, 15), controller.getModel().getForms().getCentralPosition());
-        Assertions.assertEquals(Direction.UP,controller.getModel().getForms().getDirection());
-
-        controller.getModel().getForms().setCentralPosition(new Position(10, 15));
-        controller.step(game, GUI.ACTION.RIGHT,0);
-        Assertions.assertEquals(new Position(10, 15), controller.getModel().getForms().getCentralPosition());
-        Assertions.assertEquals(Direction.UP,controller.getModel().getForms().getDirection());
-    }
 
     @Test
     void moveFormsLeft(){
@@ -122,7 +110,7 @@ public class ScreenControllerTest {
 
     }
 
-    @Test
+  /*  @Test
     void fallWithTime() {
         for(int i= 0; i < 9;i++){
             controller.getModel().getArena().addBlock(new Position(i,1),new BlockHero("WHITE"));
@@ -131,6 +119,6 @@ public class ScreenControllerTest {
         controller.step(game,GUI.ACTION.NONE,10000);
         Assertions.assertEquals(EndGameState.class,game.getState().getClass());
 
-    }
+    }*/
 
 }

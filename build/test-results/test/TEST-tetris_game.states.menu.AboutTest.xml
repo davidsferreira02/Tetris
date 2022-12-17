@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris_game.states.menu.AboutTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-17T22:38:14" hostname="Air-de-David.home" time="0.001">
+  <properties/>
+  <testcase name="AboutStateTest()" classname="tetris_game.states.menu.AboutTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.model.forms.FormsTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-12-12T18:29:50" hostname="MBP-de-Nuno-4.lan" time="0.009">
+<testsuite name="tetris_game.model.forms.FormsTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-12-17T22:38:13" hostname="Air-de-David.home" time="0.02">
   <properties/>
-  <testcase name="GetCentralPositionTest()" classname="tetris_game.model.forms.FormsTest" time="0.0"/>
-  <testcase name="SetColorTest()" classname="tetris_game.model.forms.FormsTest" time="0.0"/>
-  <testcase name="FormsTest()" classname="tetris_game.model.forms.FormsTest" time="0.0"/>
-  <testcase name="SetDirectionTest()" classname="tetris_game.model.forms.FormsTest" time="0.001"/>
-  <testcase name="moveRightTest()" classname="tetris_game.model.forms.FormsTest" time="0.001"/>
-  <testcase name="SetCentralPositionTest()" classname="tetris_game.model.forms.FormsTest" time="0.001"/>
-  <testcase name="moveDownTest()" classname="tetris_game.model.forms.FormsTest" time="0.001"/>
+  <testcase name="GetCentralPositionTest()" classname="tetris_game.model.forms.FormsTest" time="0.003"/>
+  <testcase name="SetColorTest()" classname="tetris_game.model.forms.FormsTest" time="0.004"/>
+  <testcase name="FormsTest()" classname="tetris_game.model.forms.FormsTest" time="0.001"/>
+  <testcase name="SetDirectionTest()" classname="tetris_game.model.forms.FormsTest" time="0.003"/>
+  <testcase name="moveRightTest()" classname="tetris_game.model.forms.FormsTest" time="0.0"/>
+  <testcase name="SetCentralPositionTest()" classname="tetris_game.model.forms.FormsTest" time="0.0"/>
+  <testcase name="moveDownTest()" classname="tetris_game.model.forms.FormsTest" time="0.0"/>
   <testcase name="moveLeftTest()" classname="tetris_game.model.forms.FormsTest" time="0.001"/>
-  <testcase name="GetDirectionTest()" classname="tetris_game.model.forms.FormsTest" time="0.001"/>
-  <testcase name="GetColorTest()" classname="tetris_game.model.forms.FormsTest" time="0.0"/>
+  <testcase name="GetDirectionTest()" classname="tetris_game.model.forms.FormsTest" time="0.002"/>
+  <testcase name="GetColorTest()" classname="tetris_game.model.forms.FormsTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
