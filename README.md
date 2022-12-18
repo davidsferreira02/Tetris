@@ -55,10 +55,15 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 
 **Mockups:**
 
-![image](https://user-images.githubusercontent.com/93715921/203797407-4248cfe7-538b-43d6-a44f-d978c270eeeb.png)
-![image](https://user-images.githubusercontent.com/93715921/204037331-f5ac5d96-c812-4330-9a26-7209e794f822.png)
-![image](https://user-images.githubusercontent.com/93715921/203797588-e78cbd12-41cd-46c4-a926-29db9a6e00b9.png)
-![image](https://user-images.githubusercontent.com/93715921/203797641-3036cba7-e3c9-42f9-905c-e51b18b86a65.png)
+<img width="1009" alt="Menu" src="https://user-images.githubusercontent.com/93007518/208271375-ff8f0618-bdd1-4b15-8651-33aafb8ec2f0.png">
+<img width="1009" alt="Tutorial" src="https://user-images.githubusercontent.com/93007518/208271393-757ce4a4-c555-4d82-8a15-5a39c12a3266.png">
+<img width="1013" alt="About" src="https://user-images.githubusercontent.com/93007518/208271402-ac3bdd9b-4462-409f-97ca-8ea623da13c6.png">
+<img width="1013" alt="Begin" src="https://user-images.githubusercontent.com/93007518/208271403-d9c92714-2a63-4f5a-8257-555f6f655108.png">
+<img width="1010" alt="Nível 1" src="https://user-images.githubusercontent.com/93007518/208271406-3390e504-0912-482e-b0eb-2b26a0197edb.png">
+<img width="1014" alt="Nível 2" src="https://user-images.githubusercontent.com/93007518/208271408-24f9bd72-e51e-493c-bfc9-260b44979fa9.png">
+<img width="1010" alt="Nível 3" src="https://user-images.githubusercontent.com/93007518/208271410-51c82584-c8bc-4003-91f8-956916997f94.png">
+<img width="1012" alt="Game Over" src="https://user-images.githubusercontent.com/93007518/208271413-ca2f2422-3e93-4017-baa2-0cab23de1fa1.png">
+
 
 
 
