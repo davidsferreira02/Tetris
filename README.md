@@ -73,44 +73,36 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 
 
 
+
 **(Design Patterns) utilizados:**
 
- Game Loop Pattern: 
-	Em quanto um jogo corre, temos um loop que irá correr continuamente. Sem causar interrupção do jogo, a cada loop que ocorra, o input é processado, o modelo é atualizado e o jogo é renderizado. A frequência com que isto acontece será determinada pelos “FPS” (frames por segundo) do jogo.
+**Game Loop Pattern:** Em quanto um jogo corre, temos um loop que irá correr continuamente. Sem causar interrupção do jogo, a cada loop que ocorra, o input é processado, o modelo é atualizado e o jogo é renderizado. A frequência com que isto acontece será determinada pelos “FPS” (frames por segundo) do jogo.
 
-MVC Architecture Pattern:
-	Qualquer aplicação se encontra dividida em três partes: o ‘Controller’, o ‘Model’ e ‘View’.
-O ‘Model’ é utilizado, apenas, para guardar a informação, e essa informação é mostrada ao utilizador através do ‘View’. A ‘View’ recebe também os inputs do utilizador, que são depois enviados para o ‘Controller’. Por fim, a função do ‘Controller’ é transformar as ações do utilizador, envia-las para a ‘View’.	
+**MVC Architecture Pattern**: Qualquer aplicação se encontra dividida em três partes: o ‘Controller’, o ‘Model’ e ‘View’. O ‘Model’ é utilizado, apenas, para guardar a informação, e essa informação é mostrada ao utilizador através do ‘View’. A ‘View’ recebe também os inputs do utilizador, que são depois enviados para o ‘Controller’. Por fim, a função do ‘Controller’ é transformar as ações do utilizador, envia-las para a ‘View’.
 
- 
-State Pattern:
+**State Pattern:**
 
- Este padrão será usado para permitir que haja trocas de estado entre o ‘Menu’, ‘Game’ e ‘Tutorial’. A classe ‘Game’ guarda o estado atual e é esse estado que permite à classe ‘Game’ utilizar duas das três partes de uma aplicação, o ‘Controller’ e a ‘View’, próprios de cada estado. Assim, teremos um código onde será mais fácil evitar o uso de instruções demasiado longas, como por exemplo, switch clauses.
+Este padrão será usado para permitir que haja trocas de estado entre o ‘Menu’, ‘Game’ e ‘Tutorial’. A classe ‘Game’ guarda o estado atual e é esse estado que permite à classe ‘Game’ utilizar duas das três partes de uma aplicação, o ‘Controller’ e a ‘View’, próprios de cada estado. Assim, teremos um código onde será mais fácil evitar o uso de instruções demasiado longas, como por exemplo, switch clauses.
 
-Problema: Um jogo funciona como uma máquina de estado finito. Dado um momento, um jogo só pode estar em um certo estado. No caso do nosso jogo, nós tanto podemos estar  no Menu, vendo informação sobre o Jogo, a jogar o Jogo, etc... Pode-se usar a lógica condicional para mudar entre os estados. No entanto, isso não apenas seria mais difícil de ler e manter, mas também seria uma violação do Princípio da Responsabilidade Única e do Princípio Aberto e Fechado.
+**Problema:** Um jogo funciona como uma máquina de estado finito. Dado um momento, um jogo só pode estar em um certo estado. No caso do nosso jogo, nós tanto podemos estar no Menu, vendo informação sobre o Jogo, a jogar o Jogo, etc... Pode-se usar a lógica condicional para mudar entre os estados. No entanto, isso não apenas seria mais difícil de ler e manter, mas também seria uma violação do Princípio da Responsabilidade Única e do Princípio Aberto e Fechado.
 
-Solução: Criar classes para todos os diferentes estados. Todos os estados implementam a mesma interface State. Isto permite que o Game renderize diferentes Views e faça com que o jogador (user) trabalhe em diferentes Controllers sabendo apenas em que estado ele está.
+**Solução:** Criar classes para todos os diferentes estados. Todos os estados implementam a mesma interface State. Isto permite que o Game renderize diferentes Views e faça com que o jogador (user) trabalhe em diferentes Controllers sabendo apenas em que estado ele está.
 
+**Factory Method Pattern:**
 
+Este padrão está a ser implementado no nosso jogo, no seguimento do State Pattern. As funções ‘getViewer’ e ‘getController’, de uma classe abstrata, vão ser usadas pelos diferentes estados, permitindo assim que ambos os estados possam criar objetos distintos usando controladores e “viewers” diferentes.
 
-Factory Method Pattern:
+**Problema:** Imaginemos que temos um método que tem de retornar objetos de classes diferentes sempre que for chamado. Ao aplicar o State Pattern, encontramos esse problema. Para cada estado diferente, precisávamos dos métodos getController() e getViewer() para retornar objetos de classes diferentes. A questão é como fazê-lo...
 
- Este padrão está a ser implementado no nosso jogo, no seguimento do State Pattern. As funções ‘getViewer’ e ‘getController’, de uma classe abstrata, vão ser usadas pelos diferentes estados, permitindo assim que ambos os estados possam criar objetos distintos usando controladores e “viewers” diferentes.
- 
-Problema: Imaginemos que temos um método que tem de retornar objetos de classes diferentes sempre que for chamado. Ao aplicar o State Pattern, encontramos esse problema. Para cada estado diferente, precisávamos dos métodos getController() e getViewer() para retornar objetos de classes diferentes. A questão é como fazê-lo...
+**Solução:** O Factory Method é um padrão de desenho que fornece uma interface para criar objetos numa superclasse, mas permite que as subclasses al****terem o tipo de objetos que serão criados. Assim, a mesma interface, neste caso,State pode retornar Controllers e Viewers diferentes e necessários.
 
-Solução: O Factory Method é um padrão de desenho que fornece uma interface para criar objetos numa superclasse, mas permite que as subclasses alterem o tipo de objetos que serão criados. Assim, a mesma interface, neste caso,State pode retornar Controllers e Viewers diferentes e necessários.
-
-
-
-Singleton Pattern: 
+**Singleton Pattern:**
 
 Como a classe ‘Game’ é a classe principal do jogo, temos de garantir que existem apenas um objeto desta classe. Assim implementamos este padrão na classe ‘Game’, para obtermos essa garantia.
 
-Problema: No nosso projeto, existem classes onde não é suposto existir mais que uma instância dessa classe. Por exemplo, num jogo como o Tetris, não queremos que o objeto principal seja criado mais que uma vez, pois deve ser jogado um "jogo" de cada vez no mesmo dispositivo. Além disso, a classe Music no nosso projeto carrega a música que pode ser ouvida no jogo sempre que é construída, por tê-la como um Singleton, ela carregará o arquivo de música apenas uma vez.
+**Problema:** No nosso projeto, existem classes onde não é suposto existir mais que uma instância dessa classe. Por exemplo, num jogo como o Tetris, não queremos que o objeto principal seja criado mais que uma vez, pois deve ser jogado um "jogo" de cada vez no mesmo dispositivo. Além disso, a classe Music no nosso projeto carrega a música que pode ser ouvida no jogo sempre que é construída, por tê-la como um Singleton, ela carregará o arquivo de música apenas uma vez.
 
-Solução: A criação de um singleton é realizada em duas diferentes etapas, fazendo com que o construtor se torne  privado e também criando um método getInstance() que retorna a instância da classe se ela já existir ou cria uma nova instância se ela ainda não existir.
-
+**Solução:** A criação de um singleton é realizada em duas diferentes etapas, fazendo com que o construtor se torne privado e também criando um método getInstance() que retorna a instância da classe se ela já existir ou cria uma nova instância se ela ainda não existir.
 
 
 
