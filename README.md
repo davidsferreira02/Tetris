@@ -90,9 +90,11 @@ Para cada volta do loop, a entrada do user é processada sem bloquear, atualiza 
 
 Qualquer aplicação se encontra dividida em três partes: o ‘Controller’, o ‘Model’ e ‘View’. O ‘Model’ é utilizado, apenas, para guardar a informação, e essa informação é mostrada ao utilizador através do ‘View’. A ‘View’ recebe também os inputs do utilizador, que são depois enviados para o ‘Controller’. Por fim, a função do ‘Controller’ é transformar as ações do utilizador, envia-las para a ‘View’.
 
-#### Problema: No Tetris, ou mais amplamente, em qualquer jogo ou aplicação que use uma interface gráfica do usuário (GUI) para comunicar com o usuário, como se podem separar os diferentes componentes?
+#### Problema: 
+No Tetris, ou mais amplamente, em qualquer jogo ou aplicação que use uma interface gráfica do usuário (GUI) para comunicar com o usuário, como se podem separar os diferentes componentes?
 
-#### Solução: Uma solução comum para isto é a utilização da Arquitetura MVC (também conhecida como Model-View-Controller), que consiste em dividir a aplicação em três partes (o model, a view e o controller).
+#### Solução: 
+Uma solução comum para isto é a utilização da Arquitetura MVC (também conhecida como Model-View-Controller), que consiste em dividir a aplicação em três partes (o model, a view e o controller).
 
 *Model* - Contém apenas as informações do jogo/aplicaçãp e é independente da GUI. No caso do Tetris, o modelo do jogo, por exemplo, armazena as informações do Tetrimino, quais blocos estão no tabuleiro e onde, quantos pontos o user tem, etc...
 
@@ -131,7 +133,7 @@ A criação de um singleton é realizada em duas diferentes etapas, fazendo com 
 
 
 ## Code Smells and Possible Refactorings
-While working on this project we came across with a lot of  code that was working but wasn`t as good/improved as it could be. With that in mind, we`ve changed our code numerous times to get the most improved we could have, that is, eliminating the code smells that were there.
+While working on this project we came across with a lot of  code that was working but wasn't as good/improved as it could be. With that in mind, we've changed our code numerous times to get the most improved we could have, that is, eliminating the code smells that were there.
 
 ### Removing Repeated Code
 #### Replace Temp with Query
