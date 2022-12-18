@@ -76,9 +76,28 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 
 **(Design Patterns) utilizados:**
 
-**Game Loop Pattern:** Em quanto um jogo corre, temos um loop que irá correr continuamente. Sem causar interrupção do jogo, a cada loop que ocorra, o input é processado, o modelo é atualizado e o jogo é renderizado. A frequência com que isto acontece será determinada pelos “FPS” (frames por segundo) do jogo.
+**Game Loop Pattern:** 
 
-**MVC Architecture Pattern**: Qualquer aplicação se encontra dividida em três partes: o ‘Controller’, o ‘Model’ e ‘View’. O ‘Model’ é utilizado, apenas, para guardar a informação, e essa informação é mostrada ao utilizador através do ‘View’. A ‘View’ recebe também os inputs do utilizador, que são depois enviados para o ‘Controller’. Por fim, a função do ‘Controller’ é transformar as ações do utilizador, envia-las para a ‘View’.
+Enquanto um jogo corre, temos um loop que irá correr continuamente. Sem causar interrupção do jogo, a cada loop que ocorra, o input é processado, o modelo é atualizado e o jogo é renderizado. A frequência com que isto acontece será determinada pelos “FPS” (frames por segundo) do jogo.
+
+**Problema:** Num jogo como o Tetris, o jogo(game) deve-se repetir continuamente durante o jogo (gameplay).
+
+**Solução:** Para cada volta do loop, a entrada do user é processada sem bloquear, atualiza o estado do jogo e renderiza o jogo. O loop do jogo permite que o jogo seja executado sem problemas, independentemente da entrada do user ou da falta dela. Também permite uma gestão mais fácil da taxa de quadros.
+
+**MVC Architecture Pattern**:
+
+Qualquer aplicação se encontra dividida em três partes: o ‘Controller’, o ‘Model’ e ‘View’. O ‘Model’ é utilizado, apenas, para guardar a informação, e essa informação é mostrada ao utilizador através do ‘View’. A ‘View’ recebe também os inputs do utilizador, que são depois enviados para o ‘Controller’. Por fim, a função do ‘Controller’ é transformar as ações do utilizador, envia-las para a ‘View’.
+
+**Problema:** No Tetris, ou mais amplamente, em qualquer jogo ou aplicação que use uma interface gráfica do usuário (GUI) para comunicar com o usuário, como se podem separar os diferentes componentes?
+
+**Solução:** Uma solução comum para isto é a utilização da Arquitetura MVC (também conhecida como Model-View-Controller), que consiste em dividir a aplicação em três partes (o model, a view e o controller).
+
+*Model* - Contém apenas as informações do jogo/aplicaçãp e é independente da GUI. No caso do Tetris, o modelo do jogo, por exemplo, armazena as informações do Tetrimino, quais blocos estão no tabuleiro e onde, quantos pontos o user tem, etc...
+
+*Viewer* - Esta parte é a que ajuda o user a visualizar os dados do modelo. A exibição chama a GUI para representar os dados do modelo de uma maneira que o user possa interagir.
+
+*Controller* - A maior parte do trabalho é feita pelo controlador, que converte as entradas do user em comandos para o jogo/aplicação, que resultam em alterações no modelo.
+
 
 **State Pattern:**
 
