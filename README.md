@@ -127,11 +127,14 @@ Como a classe ‘Game’ é a classe principal do jogo, temos de garantir que ex
 **Code Smells and Possible Refactorings**
 While working on this project we came across with a lot of  code that was working but wasn`t as good/improved as it could be. With that in mind, we`ve changed our code numerous times to get the most improved we could have, that is, eliminating the code smells that were there.
 
-**Removing Repeated Code**
-**Replace Temp with Query**
+## Removing Repeated Code
+#### Replace Temp with Query
 In this case we had the exact same variable being constructed a lot of times in a row.
+
 ![Before treating](https://user-images.githubusercontent.com/93007518/208295513-0885ed63-77d3-47ba-8382-cc61db524872.png)
+
 To remove this smell, we constructed the new variable before, and then just called it, instead of constructing it enumerous times.
+
 ![After treating](https://user-images.githubusercontent.com/93007518/208295524-31fa03bb-dd78-434c-ad42-6300e831013a.png)
 
 
