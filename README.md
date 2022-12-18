@@ -113,13 +113,15 @@ Um jogo funciona como uma máquina de estado finito. Dado um momento, um jogo s�
 #### Solução: 
 Criar classes para todos os diferentes estados. Todos os estados implementam a mesma interface State. Isto permite que o Game renderize diferentes Views e faça com que o jogador (user) trabalhe em diferentes Controllers sabendo apenas em que estado ele está.
 
-**Factory Method Pattern:**
+### Factory Method Pattern:
 
 Este padrão está a ser implementado no nosso jogo, no seguimento do State Pattern. As funções ‘getViewer’ e ‘getController’, de uma classe abstrata, vão ser usadas pelos diferentes estados, permitindo assim que ambos os estados possam criar objetos distintos usando controladores e “viewers” diferentes.
 
-**Problema:** Imaginemos que temos um método que tem de retornar objetos de classes diferentes sempre que for chamado. Ao aplicar o State Pattern, encontramos esse problema. Para cada estado diferente, precisávamos dos métodos getController() e getViewer() para retornar objetos de classes diferentes. A questão é como fazê-lo...
+#### Problema:
+Imaginemos que temos um método que tem de retornar objetos de classes diferentes sempre que for chamado. Ao aplicar o State Pattern, encontramos esse problema. Para cada estado diferente, precisávamos dos métodos getController() e getViewer() para retornar objetos de classes diferentes. A questão é como fazê-lo...
 
-**Solução:** O Factory Method é um padrão de desenho que fornece uma interface para criar objetos numa superclasse, mas permite que as subclasses al****terem o tipo de objetos que serão criados. Assim, a mesma interface, neste caso,State pode retornar Controllers e Viewers diferentes e necessários.
+#### Solução: 
+O Factory Method é um padrão de desenho que fornece uma interface para criar objetos numa superclasse, mas permite que as subclasses alterem o tipo de objetos que serão criados. Assim, a mesma interface, neste caso,State pode retornar Controllers e Viewers diferentes e necessários.
 
 ### Singleton Pattern:
 
