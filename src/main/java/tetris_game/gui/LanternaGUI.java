@@ -137,6 +137,7 @@ public class LanternaGUI implements GUI{
             }
         }
     }
+    @Override
     public void drawStats(Stats stats) {
         this.drawText(new Position(25, 1), "P", this.colors.getColor("GREEN"));
         this.drawText(new Position(26, 1), "O", this.colors.getColor("BLUE"));
@@ -150,7 +151,7 @@ public class LanternaGUI implements GUI{
         this.drawText(new Position(24, 7), "LINES", this.colors.getColor("YELLOW"));
         this.drawText(new Position(30, 7), String.format("%02d", stats.getLines()), this.colors.getColor("WHITE"));
     }
-
+@Override
     public void drawNextForm(Forms forms) {
         Position[] pos = forms.getPosition(forms.getDirection());
 
