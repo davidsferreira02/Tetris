@@ -1,5 +1,7 @@
 package tetris_game.viewer.endGame;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import tetris_game.gui.GUI;
 import tetris_game.model.hero.Position;
 import tetris_game.model.endGame.EndGame;
@@ -15,11 +17,17 @@ public class EndGameViewerTest {
 
     private EndGameViewer endGameViewer;
 
-
-    public EndGameViewerTest() {
+@BeforeEach
+    void setup() {
         endGame = new EndGame();
         gui = Mockito.mock(GUI.class);
         endGameViewer = new EndGameViewer(endGame);
+    }
+    @AfterEach
+    void after(){
+        endGame=null;
+        gui=null;
+        endGameViewer=null;
     }
 @Test
     public void drawElementsTest() {

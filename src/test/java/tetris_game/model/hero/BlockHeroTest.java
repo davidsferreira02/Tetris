@@ -1,5 +1,6 @@
 package tetris_game.model.hero;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import tetris_game.model.hero.BlockHero;
 
@@ -16,6 +17,11 @@ public class BlockHeroTest {
     @BeforeEach
     public void setColor(){
         color = "green";
+    }
+
+    @AfterEach
+    void after(){
+        color=null;
     }
 
     @Test

@@ -1,6 +1,7 @@
 package tetris_game.model.forms;
 
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import tetris_game.model.forms.Forms;
@@ -20,6 +21,12 @@ public class ITest {
     public void setPosition(){
         position = new Position[4];
         I = new I(new Position(0,0));
+    }
+
+    @AfterEach
+    void after(){
+        position=null;
+        I=null;
     }
 
     @Test

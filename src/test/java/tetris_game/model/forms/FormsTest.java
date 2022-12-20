@@ -1,5 +1,6 @@
 package tetris_game.model.forms;
 
+import org.junit.jupiter.api.AfterEach;
 import tetris_game.model.forms.Forms;
 import tetris_game.model.forms.L;
 import tetris_game.model.hero.Position;
@@ -22,6 +23,14 @@ public class FormsTest {
         form = new L(centralPosition);
     }
 
+
+    @AfterEach
+    void after(){
+        centralPosition=null;
+        direction=null;
+        color=null;
+        form=null;
+    }
     @Test
     public void FormsTest(){
         Assertions.assertEquals(form.direction, direction);

@@ -1,6 +1,7 @@
 package tetris_game.model;
 
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,6 +13,10 @@ public class StatsTest {
     @BeforeEach
     void setUp(){
         stats = new Stats();
+    }
+    @AfterEach
+    void after(){
+        stats=null;
     }
 
     @Test

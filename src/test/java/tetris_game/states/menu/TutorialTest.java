@@ -28,6 +28,13 @@ public class TutorialTest {
         menuController = new MenuController(menu);
         tutorialController = new TutorialController(new Tutorial());
     }
+    @AfterEach
+    void after(){
+        game.setState(new MenuState(new Menu()));
+        menu = null;
+        menuController = null;
+        tutorialController=null;
+    }
 
 
 

@@ -1,5 +1,6 @@
 package tetris_game.states.game;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -32,6 +33,13 @@ public class GameTest {
      gameController=new ScreenController(new Screen(10, 10));
 
 
+    }
+    @AfterEach
+    void after(){
+        game=null;
+        menu=null;
+        menuController=null;
+        gameController=null;
     }
     @Test
     void menuToGameToMenu(){

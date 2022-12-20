@@ -1,5 +1,6 @@
 package tetris_game.model.menu;
 
+import org.junit.jupiter.api.AfterEach;
 import tetris_game.model.menu.Tutorial;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,6 +12,10 @@ public class TutorialTest {
     @BeforeEach
     void TutorialTest(){
         tutorial=new Tutorial();
+    }
+    @AfterEach
+    void after(){
+        tutorial=null;
     }
     @Test
     public void getEntryNameTest(){

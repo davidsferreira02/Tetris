@@ -1,5 +1,6 @@
 package tetris_game.viewer.menu;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -21,6 +22,12 @@ public class AboutViewerTest {
             gui = Mockito.mock(GUI.class);
             aboutViewer = new AboutViewer(about);
         }
+    @AfterEach
+    void after(){
+        about=null;
+        gui=null;
+        aboutViewer=null;
+    }
         @Test
         void refreshAndClearTest() throws IOException {
             aboutViewer.draw(gui);

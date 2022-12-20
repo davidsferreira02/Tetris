@@ -35,6 +35,7 @@ public class AboutTest {
         game.setState(new MenuState(new Menu()));
         menu = null;
         menuController = null;
+        aboutController=null;
     }
     @Test
     void  AboutStateTest(){

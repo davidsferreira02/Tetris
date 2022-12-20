@@ -1,5 +1,6 @@
 package tetris_game.controller;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,7 +15,7 @@ import tetris_game.model.forms.S;
 import tetris_game.model.forms.T;
 import tetris_game.model.hero.BlockHero;
 import tetris_game.model.hero.Position;
-import tetris_game.states.endGame.EndGameState;
+
 
 import java.awt.*;
 import java.io.IOException;
@@ -28,6 +29,13 @@ public class ScreenControllerTest {
         game = Game.getInstance();
         controller = new ScreenController(new Screen(20,20));
     }
+
+    @AfterEach
+    void after(){
+        game=null;
+        controller=null;
+    }
+
 
 
 

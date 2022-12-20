@@ -1,5 +1,6 @@
 package tetris_game.viewer.game;
 
+import org.junit.jupiter.api.AfterEach;
 import org.mockito.Mockito;
 import tetris_game.gui.GUI;
 import tetris_game.model.arena.Arena;
@@ -26,6 +27,12 @@ public class GameViewerTest {
         viewer = new GameViewer(screen);
 
         screen.setForms(new T(new Position(3, 10)));
+    }
+    @AfterEach
+    void after(){
+        screen=null;
+        gui=null;
+        viewer=null;
     }
 
     @Test

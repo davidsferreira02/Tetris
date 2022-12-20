@@ -1,5 +1,6 @@
 package tetris_game.states.endGame;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -24,6 +25,11 @@ public class EndGameTest {
     void setup() throws IOException, URISyntaxException, FontFormatException {
         this.game=Game.getInstance();
         this.endGameController = new EndGameController(new EndGame());
+    }
+    @AfterEach
+    void after(){
+        game=null;
+        endGameController=null;
     }
 
     @Test

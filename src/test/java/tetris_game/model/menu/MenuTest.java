@@ -1,5 +1,6 @@
 package tetris_game.model.menu;
 
+import org.junit.jupiter.api.AfterEach;
 import tetris_game.model.menu.Menu;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,6 +16,10 @@ public class MenuTest {
     @BeforeEach
     void MenuTest(){
         this.menu=new Menu();
+    }
+    @AfterEach
+    void after(){
+       menu=null;
     }
 
     @Test

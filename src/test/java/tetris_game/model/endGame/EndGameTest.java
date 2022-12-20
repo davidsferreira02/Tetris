@@ -1,5 +1,6 @@
 package tetris_game.model.endGame;
 
+import org.junit.jupiter.api.AfterEach;
 import tetris_game.model.endGame.EndGame;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,6 +13,11 @@ public class EndGameTest {
     @BeforeEach
     public void setTes(){
         tes = "Exit";
+    }
+
+    @AfterEach
+    void after(){
+        tes=null;
     }
 
     @Test
