@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.controller.ScreenControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-12-19T14:55:49" hostname="Air-de-David.home" time="3.633">
+<testsuite name="tetris_game.controller.ScreenControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-12-20T14:43:14" hostname="Air-de-David.home" time="3.145">
   <properties/>
-  <testcase name="moveFormsDownAuto()" classname="tetris_game.controller.ScreenControllerTest" time="3.619"/>
-  <testcase name="fullLines()" classname="tetris_game.controller.ScreenControllerTest" time="0.002"/>
-  <testcase name="rotateFormsLeft()" classname="tetris_game.controller.ScreenControllerTest" time="0.003"/>
+  <testcase name="moveFormsDownAuto()" classname="tetris_game.controller.ScreenControllerTest" time="3.118"/>
+  <testcase name="fullLines()" classname="tetris_game.controller.ScreenControllerTest" time="0.011"/>
+  <testcase name="rotateFormsLeft()" classname="tetris_game.controller.ScreenControllerTest" time="0.002"/>
   <testcase name="moveFormsLeft()" classname="tetris_game.controller.ScreenControllerTest" time="0.001"/>
   <testcase name="rotateFormsRight()" classname="tetris_game.controller.ScreenControllerTest" time="0.002"/>
-  <system-out><![CDATA[com.sun.media.sound.DirectAudioDevice$DirectClip@4b41dd5c
+  <system-out><![CDATA[com.sun.media.sound.DirectAudioDevice$DirectClip@3b96c42e
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -11,12 +11,10 @@ import java.util.List;
 
 public class MenuTest {
     private Menu menu;
-    private List<String> entries=new ArrayList<String>();
 
     @BeforeEach
     void MenuTest(){
-        menu=new Menu();
-        entries = Arrays.asList("Start", "Tutorial", "Exit");
+        this.menu=new Menu();
     }
 
     @Test

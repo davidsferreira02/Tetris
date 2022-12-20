@@ -1,5 +1,7 @@
 package tetris_game.model.hero;
 
+import java.util.Objects;
+
 public class Position {
     private final int x;
     private final int y;
@@ -18,10 +20,14 @@ public class Position {
         return y;
     }
 
-    @Override
+@Override
     public boolean equals(Object obj) {
         final Position position = (Position) obj;
         return (this.x == position.getX() && this.y == position.getY());
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(x,y);
+    }
 }
