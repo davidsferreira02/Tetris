@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.model.menu.MenuTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-12-17T22:41:19" hostname="Air-de-David.home" time="0.019">
+<testsuite name="tetris_game.model.menu.MenuTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-12-19T14:55:53" hostname="Air-de-David.home" time="0.008">
   <properties/>
   <testcase name="PreviousEntryTest()" classname="tetris_game.model.menu.MenuTest" time="0.001"/>
   <testcase name="NextEntryTest()" classname="tetris_game.model.menu.MenuTest" time="0.0"/>
-  <testcase name="getCurentEntry()" classname="tetris_game.model.menu.MenuTest" time="0.004"/>
-  <testcase name="isSelectedStartTest()" classname="tetris_game.model.menu.MenuTest" time="0.001"/>
-  <testcase name="isSelectedExitTest()" classname="tetris_game.model.menu.MenuTest" time="0.002"/>
-  <testcase name="isSelectedTutorialTest()" classname="tetris_game.model.menu.MenuTest" time="0.0"/>
+  <testcase name="getCurentEntry()" classname="tetris_game.model.menu.MenuTest" time="0.0"/>
+  <testcase name="isSelectedStartTest()" classname="tetris_game.model.menu.MenuTest" time="0.0"/>
+  <testcase name="isSelectedExitTest()" classname="tetris_game.model.menu.MenuTest" time="0.0"/>
+  <testcase name="isSelectedTutorialTest()" classname="tetris_game.model.menu.MenuTest" time="0.001"/>
   <testcase name="getNumberEntriesTest()" classname="tetris_game.model.menu.MenuTest" time="0.001"/>
   <testcase name="isSelectedTest()" classname="tetris_game.model.menu.MenuTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

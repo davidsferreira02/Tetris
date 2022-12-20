@@ -9,6 +9,7 @@ public class Z extends Forms {
         super(position);
         this.color = "CYAN";
     }
+    @Override
 
     public Position[] getPosition(Direction direction) {
         Position[] position = new Position[4];

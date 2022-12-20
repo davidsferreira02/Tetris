@@ -169,7 +169,7 @@ public class LanternaGUI implements GUI{
         }
 
     }
-
+@Override
     public void drawNext() {
         this.drawText(new Position(26, 12), "N", this.colors.getColor("GREEN"));
         this.drawText(new Position(27, 12), "E", this.colors.getColor("YELLOW"));

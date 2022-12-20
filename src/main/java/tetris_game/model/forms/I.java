@@ -10,7 +10,7 @@ public class I extends Forms {
         this.color = "BLUE";
     }
 
-
+    @Override
     public Position[] getPosition(Direction direction) {
         Position[] position = new Position[4];
         switch (direction) {

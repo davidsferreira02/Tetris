@@ -11,7 +11,7 @@ public class J extends Forms {
         this.color = "ORANGE";
     }
 
-
+    @Override
 
     public Position[] getPosition(Direction direction){
         Position[] positions = new Position[4];

@@ -11,7 +11,7 @@ public class L extends Forms {
     }
 
 
-
+    @Override
     public Position[] getPosition(Direction direction) {
         Position[] position = new Position[4];
         switch (direction) {
