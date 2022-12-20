@@ -14,11 +14,11 @@ import tetris_game.model.forms.S;
 import tetris_game.model.forms.T;
 import tetris_game.model.hero.BlockHero;
 import tetris_game.model.hero.Position;
+import tetris_game.states.endGame.EndGameState;
 
 import java.awt.*;
 import java.io.IOException;
 import java.net.URISyntaxException;
-
 public class ScreenControllerTest {
     private ScreenController controller;
     private Game game;
@@ -109,16 +109,4 @@ public class ScreenControllerTest {
         }
 
     }
-
-  /*  @Test
-    void fallWithTime() {
-        for(int i= 0; i < 9;i++){
-            controller.getModel().getArena().addBlock(new Position(i,1),new BlockHero("WHITE"));
-        }
-        controller.getModel().setForms(new I(new Position(5,0)));
-        controller.step(game,GUI.ACTION.NONE,10000);
-        Assertions.assertEquals(EndGameState.class,game.getState().getClass());
-
-    }*/
-
 }

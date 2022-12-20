@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.model.StatsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-20T14:43:17" hostname="Air-de-David.home" time="0.0">
+<testsuite name="tetris_game.model.StatsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-20T14:56:47" hostname="Air-de-David.home" time="0.0">
   <properties/>
   <testcase name="testStats()" classname="tetris_game.model.StatsTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

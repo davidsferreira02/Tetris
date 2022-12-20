@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.model.arena.ArenaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-20T14:43:17" hostname="Air-de-David.home" time="0.001">
+<testsuite name="tetris_game.model.arena.ArenaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-20T14:56:47" hostname="Air-de-David.home" time="0.005">
   <properties/>
-  <testcase name="BlockcanOccupy()" classname="tetris_game.model.arena.ArenaTest" time="0.001"/>
+  <testcase name="BlockcanOccupy()" classname="tetris_game.model.arena.ArenaTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
