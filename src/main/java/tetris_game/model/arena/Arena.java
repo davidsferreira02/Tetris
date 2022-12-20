@@ -12,9 +12,9 @@ public class Arena {
     public Arena(int width, int height) {
         arena = new BlockHero[height][width];
 
-        for (BlockHero[] v1 : arena) {
+    /*    for (BlockHero[] v1 : arena) {
             for (BlockHero b : v1) b = null;
-        }
+        }*/
     }
 
     public BlockHero[][] getArena(){
