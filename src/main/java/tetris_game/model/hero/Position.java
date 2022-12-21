@@ -22,9 +22,13 @@ public class Position {
 
 @Override
     public boolean equals(Object obj) {
+    if (!(obj instanceof Position)) {
+        return false;
+    } else {
         final Position position = (Position) obj;
         return (this.x == position.getX() && this.y == position.getY());
     }
+}
 
     @Override
     public int hashCode() {

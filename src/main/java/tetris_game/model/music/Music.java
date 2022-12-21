@@ -6,6 +6,7 @@ import javax.sound.sampled.Clip;
 import javax.sound.sampled.FloatControl;
 import java.io.File;
 import java.util.Objects;
+import java.util.logging.Logger;
 
 public class Music {
     private final Clip music;
@@ -34,7 +35,7 @@ public class Music {
             System.out.println(musicClip);
             return musicClip;
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace(System.out);
         }
         return null;
     }

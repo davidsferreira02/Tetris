@@ -27,7 +27,7 @@ public class Game {
         return instance;
     }
 
-    public static void main(String[] args) throws IOException, URISyntaxException, FontFormatException {
+    public static void main(String[] args) throws IOException, URISyntaxException, FontFormatException, InterruptedException {
         getInstance().start();
     }
 
@@ -38,7 +38,7 @@ public class Game {
         return state;
     }
 
-    private void start() throws IOException {
+    private void start() throws IOException, InterruptedException {
         int FPS = 40;
         int frameTime = 1000 / FPS;
 
@@ -50,10 +50,11 @@ public class Game {
             long elapsedTime = System.currentTimeMillis() - startTime;
             long sleepTime = frameTime - elapsedTime;
 
-            try {
+           // try {
                 if (sleepTime > 0) Thread.sleep(sleepTime);
-            } catch (InterruptedException e) {
-            }
+           // } catch (InterruptedException e) {
+
+           // }
         }
 
         gui.close();
