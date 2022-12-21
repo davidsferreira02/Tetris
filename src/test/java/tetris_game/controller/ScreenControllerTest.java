@@ -36,7 +36,17 @@ public class ScreenControllerTest {
         controller=null;
     }
 
+    @Test
+    void moveFormsRight(){
 
+        controller.getModel().setForms(new I(new Position(6,0)));
+
+        controller.getModel().getForms().setCentralPosition(new Position(5, 15));
+        controller.step(game, GUI.ACTION.RIGHT,0);
+        Assertions.assertEquals(new Position(6, 15), controller.getModel().getForms().getCentralPosition());
+        Assertions.assertEquals(Direction.UP,controller.getModel().getForms().getDirection());
+
+    }
 
 
 
