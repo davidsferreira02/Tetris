@@ -147,6 +147,9 @@ To remove this smell, we constructed the new variable before, and then just call
 
 ![After treating](https://user-images.githubusercontent.com/93007518/208295524-31fa03bb-dd78-434c-ad42-6300e831013a.png)
 
+## Coverage
+
+<img width="633" alt="Captura de ecrã 2022-12-22, às 16 31 01" src="https://user-images.githubusercontent.com/93715921/209179697-39e609ce-8d14-42e5-a89a-58f7412704ad.png">
 
 
 ## Pitest
