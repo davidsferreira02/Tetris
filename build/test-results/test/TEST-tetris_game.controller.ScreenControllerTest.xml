@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris_game.controller.ScreenControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-12-21T12:19:24" hostname="Air-de-David.home" time="3.179">
+<testsuite name="tetris_game.controller.ScreenControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-12-22T16:29:46" hostname="Air-de-David.home" time="3.169">
   <properties/>
-  <testcase name="moveFormsDownAuto()" classname="tetris_game.controller.ScreenControllerTest" time="3.155"/>
-  <testcase name="moveFormsRight()" classname="tetris_game.controller.ScreenControllerTest" time="0.003"/>
-  <testcase name="fullLines()" classname="tetris_game.controller.ScreenControllerTest" time="0.002"/>
-  <testcase name="rotateFormsLeft()" classname="tetris_game.controller.ScreenControllerTest" time="0.002"/>
+  <testcase name="moveFormsDownAuto()" classname="tetris_game.controller.ScreenControllerTest" time="3.141"/>
+  <testcase name="moveFormsRight()" classname="tetris_game.controller.ScreenControllerTest" time="0.004"/>
+  <testcase name="fullLines()" classname="tetris_game.controller.ScreenControllerTest" time="0.003"/>
+  <testcase name="rotateFormsLeft()" classname="tetris_game.controller.ScreenControllerTest" time="0.003"/>
   <testcase name="moveFormsLeft()" classname="tetris_game.controller.ScreenControllerTest" time="0.002"/>
   <testcase name="rotateFormsRight()" classname="tetris_game.controller.ScreenControllerTest" time="0.006"/>
-  <system-out><![CDATA[com.sun.media.sound.DirectAudioDevice$DirectClip@363a52f
+  <system-out><![CDATA[com.sun.media.sound.DirectAudioDevice$DirectClip@42bc14c1
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[Warning: the fonts "Times" and "Times" are not available for the Java logical font "Serif", which may have unexpected appearance or behavior. Re-enable the "Times" font to remove this warning.
+Warning: the fonts "Times" and "Times" are not available for the Java logical font "Serif", which may have unexpected appearance or behavior. Re-enable the "Times" font to remove this warning.
+]]></system-err>
 </testsuite>
