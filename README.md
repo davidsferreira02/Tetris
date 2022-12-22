@@ -155,6 +155,7 @@ To remove this smell, we constructed the new variable before, and then just call
 ## Pitest
 
 ![image](https://user-images.githubusercontent.com/93715921/208268192-4efd2fa5-766d-45fe-bf81-2f106e67b15a.png)
+http://localhost:63342/Tetris/build/reports/pitest/202212211219/index.html?_ijt=cm4b87ssp7joi0if9a4dukpulk&_ij_reload=RELOAD_ON_SAVE
 
 ## Better Code Hub
 
