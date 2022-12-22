@@ -154,6 +154,8 @@ To remove this smell, we constructed the new variable before, and then just call
 ![image](https://user-images.githubusercontent.com/93715921/208268192-4efd2fa5-766d-45fe-bf81-2f106e67b15a.png)
 
 ## Better Code Hub
+
+No Better Code Hub conseguimos aingir uma pontuaçao 9/10 falhando apenas no "Keep architecture Components Balanced".Este topico falha porque as nossas classes nao tem tamanhos similares entre eles,isto acontece devido ao facto de termos classes como o AboutController que so tem o seu construtor e uma funçao para abrir a pagina about no menu,e depois temos classes como o ScreenController que nao deixa o bloco ultrapassar os limites da arena,ou se o jogo ja acabou,entre outras features do jogo.
 ![image](https://user-images.githubusercontent.com/93715921/208268198-c857a68d-991b-4457-a0fa-4e86f3b90f9c.png)
 
 
