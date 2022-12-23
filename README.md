@@ -69,8 +69,7 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 
 ## UML:
 
-![UML_TETRIS_LDTS drawio (1) drawio (4)](https://user-images.githubusercontent.com/93005732/204039990-17b99fcf-1cf4-4e61-b8b5-987bb1eac8ef.png)
-
+![Captura de ecrã 2022-12-23, às 16 23 54](https://user-images.githubusercontent.com/93007518/209370152-e7a43d40-6795-439a-b6ed-3420d387c19c.png)
 
 
 
