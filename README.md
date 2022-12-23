@@ -76,62 +76,70 @@ Then either you choose "Enter" to select current option or "Q/ECS" to exit.
 
 ## (Design Patterns) utilizados:
 
-### Game Loop Pattern: 
 
-Enquanto um jogo corre, temos um loop que irá correr continuamente. Sem causar interrupção do jogo, a cada loop que ocorra, o input é processado, o modelo é atualizado e o jogo é renderizado. A frequência com que isto acontece será determinada pelos “FPS” (frames por segundo) do jogo.
+## Game Loop Pattern:
 
-#### Problema: 
-Num jogo como o Tetris, o jogo(game) deve-se repetir continuamente durante o jogo (gameplay).
+While a game is running, we have a loop that will run continuously. Without interrupting the game, with each loop that occurs, the input is processed, the model is updated and the game is rendered. How often this happens will be determined by the “FPS” (frames per second) of the game.
 
-#### Solução: 
-Para cada volta do loop, a entrada do user é processada sem bloquear, atualiza o estado do jogo e renderiza o jogo. O loop do jogo permite que o jogo seja executado sem problemas, independentemente da entrada do user ou da falta dela. Também permite uma gestão mais fácil da taxa de quadros.
+### Problem:
 
-### MVC Architecture Pattern:
+In a game like Tetris, the game (game) must be repeated continuously during the game (gameplay).
 
-Qualquer aplicação se encontra dividida em três partes: o ‘Controller’, o ‘Model’ e ‘View’. O ‘Model’ é utilizado, apenas, para guardar a informação, e essa informação é mostrada ao utilizador através do ‘View’. A ‘View’ recebe também os inputs do utilizador, que são depois enviados para o ‘Controller’. Por fim, a função do ‘Controller’ é transformar as ações do utilizador, envia-las para a ‘View’.
+### Solution:
 
-#### Problema: 
-No Tetris, ou mais amplamente, em qualquer jogo ou aplicação que use uma interface gráfica do usuário (GUI) para comunicar com o usuário, como se podem separar os diferentes componentes?
-
-#### Solução: 
-Uma solução comum para isto é a utilização da Arquitetura MVC (também conhecida como Model-View-Controller), que consiste em dividir a aplicação em três partes (o model, a view e o controller).
-
-*Model* - Contém apenas as informações do jogo/aplicaçãp e é independente da GUI. No caso do Tetris, o modelo do jogo, por exemplo, armazena as informações do Tetrimino, quais blocos estão no tabuleiro e onde, quantos pontos o user tem, etc...
-
-*Viewer* - Esta parte é a que ajuda o user a visualizar os dados do modelo. A exibição chama a GUI para representar os dados do modelo de uma maneira que o user possa interagir.
-
-*Controller* - A maior parte do trabalho é feita pelo controlador, que converte as entradas do user em comandos para o jogo/aplicação, que resultam em alterações no modelo.
+For each round of the loop, user input is processed without blocking, updates the game state, and renders the game. The game loop allows the game to run smoothly regardless of user input or lack thereof. It also allows for easier frame rate management.
 
 
-### State Pattern:
+## MVC Architecture Pattern:
 
-Este padrão será usado para permitir que haja trocas de estado entre o ‘Menu’, ‘Game’ e ‘Tutorial’. A classe ‘Game’ guarda o estado atual e é esse estado que permite à classe ‘Game’ utilizar duas das três partes de uma aplicação, o ‘Controller’ e a ‘View’, próprios de cada estado. Assim, teremos um código onde será mais fácil evitar o uso de instruções demasiado longas, como por exemplo, switch clauses.
+Any application is divided into three parts: the 'Controller', the 'Model' and the 'View'. The 'Model' is used only to store the information, and this information is shown to the user through the 'View'. The 'View' also receives inputs from the user, which are then sent to the 'Controller'. Finally, the function of the 'Controller' is to transform the user's actions, send them to the 'View'.
 
-#### Problema: 
-Um jogo funciona como uma máquina de estado finito. Dado um momento, um jogo só pode estar em um certo estado. No caso do nosso jogo, nós tanto podemos estar no Menu, vendo informação sobre o Jogo, a jogar o Jogo, etc... Pode-se usar a lógica condicional para mudar entre os estados. No entanto, isso não apenas seria mais difícil de ler e manter, mas também seria uma violação do Princípio da Responsabilidade Única e do Princípio Aberto e Fechado.
+### Problem:
 
-#### Solução: 
-Criar classes para todos os diferentes estados. Todos os estados implementam a mesma interface State. Isto permite que o Game renderize diferentes Views e faça com que o jogador (user) trabalhe em diferentes Controllers sabendo apenas em que estado ele está.
+In Tetris, or more broadly any game or application that uses a graphical user interface (GUI) to communicate with the user, how do you separate the different components?
+### Solution:
 
-### Factory Method Pattern:
+A common solution for this is the use of the MVC Architecture (also known as Model-View-Controller), which consists of dividing the application into three parts (the model, the view and the controller).
 
-Este padrão está a ser implementado no nosso jogo, no seguimento do State Pattern. As funções ‘getViewer’ e ‘getController’, de uma classe abstrata, vão ser usadas pelos diferentes estados, permitindo assim que ambos os estados possam criar objetos distintos usando controladores e “viewers” diferentes.
+Model - Contains game/application information only and is GUI independent. In the case of Tetris, the game model, for example, stores Tetrimino information, which blocks are on the board and where, how many points the user has, etc...
 
-#### Problema:
-Imaginemos que temos um método que tem de retornar objetos de classes diferentes sempre que for chamado. Ao aplicar o State Pattern, encontramos esse problema. Para cada estado diferente, precisávamos dos métodos getController() e getViewer() para retornar objetos de classes diferentes. A questão é como fazê-lo...
+Viewer - This part is what helps the user to visualize the model data. The view calls the GUI to represent the model's data in a way that the user can interact with.
 
-#### Solução: 
-O Factory Method é um padrão de desenho que fornece uma interface para criar objetos numa superclasse, mas permite que as subclasses alterem o tipo de objetos que serão criados. Assim, a mesma interface, neste caso,State pode retornar Controllers e Viewers diferentes e necessários.
+Controller - Most of the work is done by the controller, which converts user inputs into commands for the game/application, which result in model changes.
 
-### Singleton Pattern:
 
-Como a classe ‘Game’ é a classe principal do jogo, temos de garantir que existem apenas um objeto desta classe. Assim implementamos este padrão na classe ‘Game’, para obtermos essa garantia.
+## State Pattern:
 
-#### Problema:
-No nosso projeto, existem classes onde não é suposto existir mais que uma instância dessa classe. Por exemplo, num jogo como o Tetris, não queremos que o objeto principal seja criado mais que uma vez, pois deve ser jogado um "jogo" de cada vez no mesmo dispositivo. Além disso, a classe Music no nosso projeto carrega a música que pode ser ouvida no jogo sempre que é construída, por tê-la como um Singleton, ela carregará o arquivo de música apenas uma vez.
+This pattern will be used to allow state switching between 'Menu', 'Game' and 'Tutorial'. The 'Game' class stores the current state and it is this state that allows the 'Game' class to use two of the three parts of an application, the 'Controller' and the 'View', specific to each state. Thus, we will have a code where it will be easier to avoid using too long instructions, such as switch clauses.
+### Problem:
 
-#### Solução: 
-A criação de um singleton é realizada em duas diferentes etapas, fazendo com que o construtor se torne privado e também criando um método getInstance() que retorna a instância da classe se ela já existir ou cria uma nova instância se ela ainda não existir.
+A game works like a finite state machine. Given a moment, a game can only be in a certain state. In the case of our game, we can either be in the Menu, seeing information about the Game, playing the Game, etc... Conditional logic can be used to switch between states. However, not only would this be more difficult to read and maintain, it would also be a violation of the Single Responsibility Principle and the Open Closed Principle.
+### Solution:
+
+Create classes for all the different states. All states implement the same State interface. This allows the Game to render different Views and make the player (user) work on different Controllers knowing only what state he is in.
+
+
+## Factory Method Pattern:
+
+This pattern is being implemented in our game, following the State Pattern. The functions 'getViewer' and 'getController', from an abstract class, will be used by different states, thus allowing both states to create different objects using different controllers and "viewers".
+### Problem:
+
+Let's imagine that we have a method that has to return objects of different classes every time it is called. When applying the State Pattern, we encountered this problem. For each different state, we needed getController() and getViewer() methods to return objects of different classes. The question is how to do it...
+### Solution:
+
+The Factory Method is a design pattern that provides an interface for creating objects in a superclass, but allows subclasses to change the type of objects that will be created. Thus, the same interface, in this case, State can return different and necessary Controllers and Viewers.
+
+
+## Singleton Pattern:
+
+As the 'Game' class is the main class of the game, we have to ensure that there is only one object of this class. So we implement this pattern in the 'Game' class, to obtain this guarantee.
+### Problem:
+
+In our project, there are classes where no more than one instance of that class is supposed to exist. For example, in a game like Tetris, we don't want the main object to be created more than once, as it must be played one "game" at a time on the same device. Also, the Music class in our project loads the music that can be heard in the game every time it is built, by having it as a Singleton it will only load the music file once.
+### Solution:
+
+Creating a singleton is done in two different steps, making the constructor private and also creating a getInstance() method that returns the instance of the class if it already exists or creates a new instance if it doesn't already exist.
+
 
 
 ## Code Smells and Possible Refactorings
@@ -160,7 +168,9 @@ http://localhost:63342/Tetris/build/reports/pitest/202212211219/index.html?_ijt=
 
 ## Better Code Hub
 
-No Better Code Hub conseguimos aingir uma pontuaçao 9/10 falhando apenas no "Keep architecture Components Balanced".Este topico falha porque as nossas classes nao tem tamanhos similares entre eles,isto acontece devido ao facto de termos classes como o AboutController que so tem o seu construtor e uma funçao para abrir a pagina about no menu,e depois temos classes como o ScreenController que nao deixa o bloco ultrapassar os limites da arena,ou se o jogo ja acabou,entre outras features do jogo.
+In Better Code Hub we managed to achieve a score of 9/10 failing only in "Keep architecture Components Balanced". This topic fails because our classes do not have similar sizes between them, this happens due to the fact that we have classes like AboutController that only have the its constructor is a function to open the about page in the menu, and then we have classes like the ScreenController that doesn't let the block go beyond the limits of the arena, or if the game is already over, among other features of the game.
+
+
 ![image](https://user-images.githubusercontent.com/93715921/208268198-c857a68d-991b-4457-a0fa-4e86f3b90f9c.png)
 
 
